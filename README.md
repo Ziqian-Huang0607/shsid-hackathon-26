@@ -8,10 +8,10 @@ soft-penalty burden by **more than half** compared with a current-style
 rigid timetable.
 
 Verified at full school scale: **1 000 students** (≈250 per grade,
-20 per class), 65 cohort clusters, 529 lessons, 607 sections, ~320 teachers,
-112 rooms — **0 hard violations on 10/10 tested seeds**, ~45 s per
-optimisation pass (~2 min for the default best-of-3 run), pure Python 3.10+,
-**zero runtime dependencies**.
+20 per class), 54 cohort clusters, 40 courses, 452 lessons, 525 sections,
+~290 teachers, 104 rooms — **0 hard violations on 10/10 tested seeds**,
+~48 s per optimisation pass (~2.5 min for the default best-of-3 run),
+pure Python 3.10+, **zero runtime dependencies**.
 
 ---
 
@@ -70,7 +70,7 @@ traded off globally.
 **F4 · Scarce shared facilities saturate per slot, not per week.** With
 ~250 students per grade, a grade-wide PE block books ~13 venues *at once*;
 two grades' PE at the same slot would need ~26 of the 16 venues. Lab
-demand peaks at 23 of 24 labs in a single period. Feasibility is decided
+demand peaks at 19 of 24 labs in a single period. Feasibility is decided
 by **demand ≤ supply at every slot**, not by weekly totals — so that
 invariant, not individual rooms, is what the search maintains.
 
@@ -89,16 +89,35 @@ decision*, not a scheduling bug.
 
 ### Modelling decisions (be ready to defend these)
 
-* `modules.xlsx` lists some modules as combined totals (e.g. *Module 1
-  Total 650 = Physics 320 + Chemistry 330*). We model such combined
-  tracks as **one course**, which makes the academic-course counts match
-  the constraint sheet: **7 courses for G9/G10, 6 for G11/G12** (H1).
-  Every line item's minutes are preserved exactly.
+* **Only course names from the sheet are used.** `modules.xlsx` names
+  some courses explicitly (Mathematics, English, Chinese, Physics,
+  Chemistry, History, AP Physics 2, Honors Organic Chemistry, PE, CAS,
+  Personal Growth, Optional) and leaves the elective **modules
+  anonymous** ("Module 2: 310", "Module 3: Electives: 230"). Every
+  anonymous module is modelled as **one course named after the module**
+  — no invented elective names. STEM/HUM categories and difficulty
+  scores are assigned only where the sheet's name makes the content
+  obvious; anonymous modules stay neutral (OTHER / 3.0). If the school
+  supplies the real option lists later, they drop straight into
+  `data/curriculum.json`.
+* **Combined totals are one course.** Where the sheet lists components
+  plus a combined total (*Module 1 Total 650 = Physics 320 + Chemistry
+  330*; *Module 1: Science Total 965*), we model the track as **one
+  course**, which makes the academic-course counts match the constraint
+  sheet: **7 courses for G9/G10, 6 for G11/G12** (H1). Every line item's
+  minutes are preserved exactly (per-grade totals check out against the
+  sheet: 3040/2880/3040/3040). Two consequences of taking the sheet
+  literally: **G11 has no Optional line, so none is modelled** (its
+  programme already totals exactly 3040), and G11 "Language" is flagged
+  non-academic — otherwise G11 would count 7 academic courses against
+  the 6-course rule. Zero-minute module lines (G12 Module 3/4) are
+  dropped.
 * **School rules we were given verbally** (no facilities/staffing data
   exists, so we do not invent it):
   * ~250 students per grade, **20 per class** (section capacity 20);
   * ~16 classrooms per grade wing; shared pools derived from measured
-    demand: 24 labs, 16 PE venues, 8 studios (≈30% headroom each);
+    demand: 24 labs, 16 PE venues (no course in the sheet needs a
+    studio, so none are built);
   * **teachers are hired on demand** — no fixed total is assumed;
     each teacher is building-loyal (one building only, so H10 travel
     holds by construction) and may declare ~10% of the plentiful
@@ -111,9 +130,9 @@ decision*, not a scheduling bug.
     session**: the constraint sheet only requires that a room "cannot
     accommodate two classes simultaneously" and that every session has a
     "suitable classroom" — nothing forces a section to keep one room all
-    cycle. We use that freedom only where the search needs it (about 3%
-    of sessions get an override room at full scale; the rest keep their
-    home room).
+    cycle. We use that freedom only where the search needs it (about
+    1.5% of sessions get an override room at full scale; the rest keep
+    their home room).
 * "Empty time = 3040 − used": the grid holds 3200 min/cycle, students take
   ≤3040, the remainder is self-study (penalty 4 applies to badly-placed
   free periods).
@@ -203,7 +222,7 @@ totals. Teachers are created on demand with three loyalty rules:
 building-loyal (one building ever → H10 by construction), full-availability
 fresh teachers for grade-wide blocks, and cluster-continuity preference
 for cluster lessons. Rooms come from the stated per-wing classrooms plus
-demand-derived shared pools (24 labs / 16 PE venues / 8 studios).
+demand-derived shared pools (24 labs / 16 PE venues).
 
 During the search, rooms are tracked only as a **per-slot
 demand-vs-supply invariant** per (building, room type) — the one
@@ -234,14 +253,15 @@ ladder, each rung reached only when the previous fails:
 
 Time is not the only currency students spend. Each course carries a
 **difficulty score (1–5)** — its 烧脑程度 — in `curriculum.json`
-(AP Physics = 5.0, Geometry = 4.5, History = 3.5, PE/CAS = 1.0). Three
+(sciences and maths = 4.5, English = 4.0, History = 3.5, anonymous
+modules = 3.0, PE/CAS = 1.0). Three
 low-priority soft terms then shape the schedule around student energy:
 
 | term | rule |
 |---|---|
 | brain-burning adjacency | two difficulty ≥ 4 courses back-to-back within one segment (lunch resets) are penalised |
 | brutal-day balance | a day whose difficulty-weighted minutes exceed 1.25× the week average is penalised — energy is *spread*, not just capped |
-| difficulty-scaled prime time | the reward for using high-weight periods (P1/P5) is proportional to difficulty/5: P1 belongs to AP Physics, not to CAS |
+| difficulty-scaled prime time | the reward for using high-weight periods (P1/P5) is proportional to difficulty/5: P1 belongs to Physics + Chemistry, not to CAS |
 
 Because the annealer optimises **one weighted sum of all penalties**,
 adding an energy dimension required no new algorithm — it is another
@@ -294,80 +314,82 @@ Measured by the built-in penalty model; baseline = current-style rigid
 timetable from the same constructor with mirroring and soft preferences
 disabled.
 
-Default run (seed 7, best-of-3 attempts, 1000 students, 529 lessons,
-607 sections, 322 teachers, 112 rooms, 132 s total):
+Default run (seed 7, best-of-3 attempts, 1000 students, 452 lessons,
+525 sections, 291 teachers, 104 rooms, 145 s total):
 
 | Penalty (lower is better) | Baseline | Optimised | Change |
 |---|---|---|---|
 | **Hard constraint violations (H1–H11 audit)** | 0 | **0** | ±0 |
-| Subject alternation (STEM/HUM streaks) | 116 040 | 63 130 | **−46%** |
+| Subject alternation (STEM/HUM streaks) | 87 920 | 36 650 | **−58%** |
 | PE in P1/P5 | 0 | 0 | ±0 |
-| Subject time diversity | 45 059 | 17 829 | **−60%** |
-| Self-study placement | 17 680 | 16 130 | −9% |
-| Daily workload spikes | 41 740 | 37 360 | −10% |
-| Odd/even week instability | 201 160 | 28 800 | **−86%** |
+| Subject time diversity | 52 150 | 19 502 | **−63%** |
+| Self-study placement | 13 275 | 12 880 | −3% |
+| Daily workload spikes | 56 500 | 51 180 | −9% |
+| Odd/even week instability | 194 496 | 25 544 | **−87%** |
 | Teacher mobility | 0 | 0 | ±0 |
-| Cognitive load (烧脑连排 + brutal days) | 30 829 | 26 923 | −13% *(low priority by design)* |
-| **Total soft penalty** | **454 888** | **192 880** | **−57.6%** |
-| Soft penalty **per student per cycle** | 454.9 | 192.9 | **−58%** |
+| Cognitive load (烧脑连排 + brutal days) | 24 614 | 20 985 | −15% *(low priority by design)* |
+| **Total soft penalty** | **430 907** | **168 885** | **−60.8%** |
+| Soft penalty **per student per cycle** | 430.9 | 168.9 | **−61%** |
 
 ### Robustness: not one lucky seed
 
 Single optimisation pass (8 000 iterations), full scale, seeds 0–9 —
 **10/10 reach 0 hard violations**:
 
-| | soft penalty after one pass | vs baseline (454 888) |
+| | soft penalty after one pass | vs baseline (430 907) |
 |---|---|---|
-| best (seed 9) | 163 494 | −64% |
-| mean over 10 seeds | 173 746 | −62% |
-| worst (seed 6) | 185 140 | −59% |
+| best (seed 1) | 143 751 | −67% |
+| mean over 10 seeds | 156 550 | −64% |
+| worst (seed 6) | 171 018 | −60% |
 
-Runtime ≈ 44 s per pass; the default `main.py` run does best-of-3 and
+Runtime ≈ 48 s per pass; the default `main.py` run does best-of-3 and
 keeps the winner.
 
 ### Scale sweep (seed 7, same config)
 
 | students/grade | total students | result | time |
 |---|---|---|---|
-| 100 | 400 | 0 violations, soft 64 944 | 34 s |
-| 150 | 600 | 0 violations, soft 101 809 | 37 s |
-| 250 (default) | 1 000 | 0 violations, soft 178 248 | 44 s |
-| 300 | 1 200 | 0 violations, soft 216 333 | 48 s |
+| 100 | 400 | 0 violations, soft 59 890 | 40 s |
+| 150 | 600 | 0 violations, soft 90 850 | 45 s |
+| 250 (default) | 1 000 | 0 violations, soft 157 580 | 48 s |
+| 300 | 1 200 | 0 violations, soft 196 838 | 51 s |
 | 350 | 1 400 | **stops with a precise diagnosis** — synchronised PE needs 17 gyms, only 16 exist (F6) | — |
 
 ### What the output looks like
 
-`out/sample_student.png` — one real student's two-week grid. Week A/B
-are near-identical (odd/even stability), STEM and humanities interleave,
-PE sits mid-day, and each session shows its actual room:
+`out/sample_student.png` — one real student's two-week grid, using only
+course names from the module sheet. Week A/B are near-identical
+(odd/even stability), STEM and humanities interleave, PE sits mid-day,
+and each session shows its actual room:
 
 ![sample student timetable](out/sample_student.png)
 
 `out/room_utilisation.png` — per-slot demand ÷ supply for every
 (building, room-type) pool. Demand stays below supply **everywhere**
-(the feasibility invariant the search maintains); gyms peak at 93.75%
-(15 of 16) during grade-wide PE blocks — F4 made visible:
+(the feasibility invariant the search maintains); the tightest pool is a
+classroom wing at 87.5%, and gyms hit 81% (13 of 16) whenever a grade's
+synchronised PE block runs — F4 made visible:
 
 ![room pool utilisation](out/room_utilisation.png)
 
 **Who benefits and how much:**
 * **Students** — every student drops ~262 penalty points' worth of
-  friction per cycle: near-identical Week A/B routines (odd/even −86%),
+  friction per cycle: near-identical Week A/B routines (odd/even −87%),
   no more triple-STEM mornings stacked the same way, free periods no
   longer stranded at P1, fewer 4+-demanding-class days, and — via the
   difficulty model — fewer back-to-back brain-burners and no single
   "brutal day" carrying the week's cognitive load.
 * **Teachers** — zero cross-building zig-zag days (building-loyal by
   construction), zero clashes, zero teaching during declared
-  unavailability; ~320 teachers hired on demand, exactly matching the
+  unavailability; ~290 teachers hired on demand, exactly matching the
   timetable's needs.
 * **Administrators** — every course's minutes exact to the module sheet;
   capacity 20 never exceeded; grade-wide PE/Optional synchronised with
   the G11/G12 and IB exemptions honoured; machine-checkable audit below.
 
-**Honest trade-offs:** `same_day_repeat` rises slightly (+328 points on a
+**Honest trade-offs:** `same_day_repeat` rises slightly (+192 points on a
 small base) — mirroring both weeks sometimes forces a course into two
-short sessions on one day; and ~3% of sessions use an override room of
+short sessions on one day; and ~1.5% of sessions use an override room of
 the same type and wing instead of the section's home room (explicitly
 allowed by the constraint sheet; it is what buys feasibility at 95%
 density). Both are deliberate, documented choices where the alternative
@@ -396,7 +418,7 @@ assertion.
 | H4 | capacity ≤ 20 (school's number; brief says 25) | clusters ≤20, balanced sectioning |
 | H5 | eligible + available teachers | subject-keyed eligibility; availability checked per slot; flex-shift re-binds |
 | H6 | inside teaching periods | slots are grid indices by construction |
-| H7 | section + teacher + suitable room | lesson builder; lab/venue/studio typing checked per session |
+| H7 | section + teacher + suitable room | lesson builder; lab/venue typing checked per session |
 | H8 | PE / Personal Growth / CAS present | fixed programme components; IB PE exemption honoured; validator checks per student |
 | H9 | whole-period sessions (60/40/45/55), ≤7/day | sessions are whole periods; 7 slots/day by construction |
 | H10 | travel time between buildings | teachers are building-loyal (zero-gap cross-building impossible); validator still audits adjacency+building per slot |
@@ -425,7 +447,7 @@ assertion.
 * SA delta evaluation is exact and local (a move re-evaluates only the
   affected cluster, teachers and touched slots), so one iteration is
   microseconds; the default run is 3 attempts × 8 000 iterations plus
-  repair, ~2 min at full scale (~45 s for a single pass).
+  repair, ~2.5 min at full scale (~48 s for a single pass).
 * The penalty model encodes the school's published list; weights are our
   judgement (documented in `school.json`) and are exactly what the judges
   should challenge — the system makes the trade-off *explicit* rather

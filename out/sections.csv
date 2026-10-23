@@ -1,17 +1,17 @@
 section,course,grade,teacher,room,students,required_minutes,scheduled_minutes,sessions
-0,Optional,9,T-OPTIONAL-1,Wing-9-01,20,90,90,2
-1,Optional,9,T-OPTIONAL-2,Wing-9-02,20,90,90,2
-2,Optional,9,T-OPTIONAL-3,Wing-9-03,20,90,90,2
-3,Optional,9,T-OPTIONAL-4,Wing-9-04,20,90,90,2
-4,Optional,9,T-OPTIONAL-5,Wing-9-05,20,90,90,2
-5,Optional,9,T-OPTIONAL-6,Wing-9-06,20,90,90,2
-6,Optional,9,T-OPTIONAL-7,Wing-9-07,20,90,90,2
-7,Optional,9,T-OPTIONAL-8,Wing-9-08,20,90,90,2
-8,Optional,9,T-OPTIONAL-9,Wing-9-09,20,90,90,2
-9,Optional,9,T-OPTIONAL-10,Wing-9-10,20,90,90,2
-10,Optional,9,T-OPTIONAL-11,Wing-9-11,20,90,90,2
-11,Optional,9,T-OPTIONAL-12,Wing-9-12,20,90,90,2
-12,Optional,9,T-OPTIONAL-13,Wing-9-13,10,90,90,2
+0,Optional,9,T-OPTIONAL-11,Wing-9-01,20,90,90,2
+1,Optional,9,T-OPTIONAL-12,Wing-9-02,20,90,90,2
+2,Optional,9,T-OPTIONAL-13,Wing-9-03,20,90,90,2
+3,Optional,9,T-OPTIONAL-14,Wing-9-04,20,90,90,2
+4,Optional,9,T-OPTIONAL-15,Wing-9-05,20,90,90,2
+5,Optional,9,T-OPTIONAL-16,Wing-9-06,20,90,90,2
+6,Optional,9,T-OPTIONAL-17,Wing-9-07,20,90,90,2
+7,Optional,9,T-OPTIONAL-18,Wing-9-08,20,90,90,2
+8,Optional,9,T-OPTIONAL-19,Wing-9-09,20,90,90,2
+9,Optional,9,T-OPTIONAL-20,Wing-9-10,20,90,90,2
+10,Optional,9,T-OPTIONAL-21,Wing-9-11,20,90,90,2
+11,Optional,9,T-OPTIONAL-22,Wing-9-12,20,90,90,2
+12,Optional,9,T-OPTIONAL-23,Wing-9-13,10,90,90,2
 13,PE,9,T-PE-19,PE-03,20,220,220,5
 14,PE,9,T-PE-20,PE-04,20,220,220,5
 15,PE,9,T-PE-21,PE-05,20,220,220,5
@@ -25,19 +25,19 @@ section,course,grade,teacher,room,students,required_minutes,scheduled_minutes,se
 23,PE,9,T-PE-29,PE-13,20,220,220,5
 24,PE,9,T-PE-30,PE-14,20,220,220,5
 25,PE,9,T-PE-31,PE-15,10,220,220,5
-26,Optional,10,T-OPTIONAL-14,Wing-10-01,20,90,90,2
-27,Optional,10,T-OPTIONAL-15,Wing-10-02,20,90,90,2
-28,Optional,10,T-OPTIONAL-16,Wing-10-03,20,90,90,2
-29,Optional,10,T-OPTIONAL-17,Wing-10-04,20,90,90,2
-30,Optional,10,T-OPTIONAL-18,Wing-10-05,20,90,90,2
-31,Optional,10,T-OPTIONAL-19,Wing-10-06,20,90,90,2
-32,Optional,10,T-OPTIONAL-20,Wing-10-07,20,90,90,2
-33,Optional,10,T-OPTIONAL-21,Wing-10-08,20,90,90,2
-34,Optional,10,T-OPTIONAL-22,Wing-10-09,20,90,90,2
-35,Optional,10,T-OPTIONAL-23,Wing-10-10,20,90,90,2
-36,Optional,10,T-OPTIONAL-24,Wing-10-11,20,90,90,2
-37,Optional,10,T-OPTIONAL-25,Wing-10-12,20,90,90,2
-38,Optional,10,T-OPTIONAL-26,Wing-10-13,10,90,90,2
+26,Optional,10,T-OPTIONAL-24,Wing-10-01,20,90,90,2
+27,Optional,10,T-OPTIONAL-25,Wing-10-02,20,90,90,2
+28,Optional,10,T-OPTIONAL-26,Wing-10-03,20,90,90,2
+29,Optional,10,T-OPTIONAL-27,Wing-10-04,20,90,90,2
+30,Optional,10,T-OPTIONAL-28,Wing-10-05,20,90,90,2
+31,Optional,10,T-OPTIONAL-29,Wing-10-06,20,90,90,2
+32,Optional,10,T-OPTIONAL-30,Wing-10-07,20,90,90,2
+33,Optional,10,T-OPTIONAL-31,Wing-10-08,20,90,90,2
+34,Optional,10,T-OPTIONAL-32,Wing-10-09,20,90,90,2
+35,Optional,10,T-OPTIONAL-33,Wing-10-10,20,90,90,2
+36,Optional,10,T-OPTIONAL-34,Wing-10-11,20,90,90,2
+37,Optional,10,T-OPTIONAL-35,Wing-10-12,20,90,90,2
+38,Optional,10,T-OPTIONAL-36,Wing-10-13,10,90,90,2
 39,PE,10,T-PE-32,PE-16,20,220,220,5
 40,PE,10,T-PE-33,PE-03,20,220,220,5
 41,PE,10,T-PE-34,PE-04,20,220,220,5
@@ -51,558 +51,476 @@ section,course,grade,teacher,room,students,required_minutes,scheduled_minutes,se
 49,PE,10,T-PE-42,PE-12,20,220,220,5
 50,PE,10,T-PE-43,PE-13,20,220,220,5
 51,PE,10,T-PE-44,PE-14,10,220,220,5
-52,Independent Study,11,T-OPTIONAL-27,Wing-11-01,20,90,90,2
-53,Independent Study,11,T-OPTIONAL-28,Wing-11-12,20,90,90,2
-54,Independent Study,11,T-OPTIONAL-29,Wing-11-08,5,90,90,2
-55,Club Activities,11,T-CLUB-1,Wing-11-04,20,90,90,2
-56,Club Activities,11,T-CLUB-2,Wing-11-13,20,90,90,2
-57,Club Activities,11,T-CLUB-3,Wing-11-06,20,90,90,2
-58,Club Activities,11,T-CLUB-4,Wing-11-07,20,90,90,2
-59,Club Activities,11,T-CLUB-5,Wing-11-02,20,90,90,2
-60,Club Activities,11,T-CLUB-6,Wing-11-09,15,90,90,2
-61,PE,11,T-PE-1,PE-01,20,240,240,6
-62,PE,11,T-PE-2,PE-02,20,240,240,6
-63,PE,11,T-PE-3,PE-03,20,240,240,6
-64,PE,11,T-PE-4,PE-04,20,240,240,6
-65,PE,11,T-PE-5,PE-05,20,240,240,6
-66,PE,11,T-PE-6,PE-06,20,240,240,6
-67,PE,11,T-PE-7,PE-07,20,240,240,6
-68,PE,11,T-PE-8,PE-08,20,240,240,6
-69,PE,11,T-PE-9,PE-09,15,240,240,6
-70,Creative Writing,12,T-WRITING-1,Wing-12-11,20,110,110,2
-71,Creative Writing,12,T-WRITING-2,Wing-12-02,20,110,110,2
-72,Creative Writing,12,T-WRITING-3,Wing-12-03,20,110,110,2
-73,Creative Writing,12,T-WRITING-4,Wing-12-01,20,110,110,2
-74,Creative Writing,12,T-WRITING-5,Wing-12-05,17,110,110,2
-75,Research Seminar,12,T-SEMINAR-1,Wing-12-06,20,110,110,2
-76,Research Seminar,12,T-SEMINAR-2,Wing-12-07,20,110,110,2
-77,Research Seminar,12,T-SEMINAR-3,Wing-12-13,20,110,110,2
-78,Research Seminar,12,T-SEMINAR-4,Wing-12-15,19,110,110,2
-79,PE,12,T-PE-10,PE-10,20,240,240,6
-80,PE,12,T-PE-11,PE-11,20,240,240,6
-81,PE,12,T-PE-12,PE-12,20,240,240,6
-82,PE,12,T-PE-13,PE-13,20,240,240,6
-83,PE,12,T-PE-14,PE-14,20,240,240,6
-84,PE,12,T-PE-15,PE-15,20,240,240,6
-85,PE,12,T-PE-16,PE-16,20,240,240,6
-86,PE,12,T-PE-17,PE-01,20,240,240,6
-87,PE,12,T-PE-18,PE-02,18,240,240,6
-88,Mathematics (Geometry),9,T-MATH-31,Wing-9-16,20,435,435,10
-89,English,9,T-ENGLISH-21,Wing-9-16,20,460,460,9
-90,Chinese,9,T-CHINESE-9,Wing-9-09,20,240,240,5
-91,History,9,T-HISTORY-1,Wing-9-07,20,320,320,8
-92,Integrated Science (Physics+Chemistry),9,T-SCIENCE-28,LAB-06,20,640,640,15
-93,Music,9,T-MUSIC-3,ART-07,20,310,310,6
-94,Computer Science,9,T-CS-12,Wing-9-13,20,165,165,3
-95,World Language,9,T-LANGUAGE-14,Wing-9-04,20,80,80,2
-96,CAS,9,T-CAS-1,Wing-9-13,20,80,80,2
-97,Mathematics (Geometry),9,T-MATH-31,Wing-9-04,8,435,435,9
-98,English,9,T-ENGLISH-22,Wing-9-06,8,460,460,8
-99,Chinese,9,T-CHINESE-9,Wing-9-11,8,240,240,5
-100,History,9,T-HISTORY-14,Wing-9-16 (+3 session overrides),8,320,320,8
-101,Integrated Science (Physics+Chemistry),9,T-SCIENCE-29,LAB-23,8,640,640,15
-102,Music,9,T-MUSIC-3,ART-03,8,310,310,7
-103,Computer Science,9,T-CS-12,Wing-9-02,8,165,165,4
-104,World Language,9,T-LANGUAGE-14,Wing-9-03,8,80,80,2
-105,CAS,9,T-CAS-1,Wing-9-15,8,80,80,2
-106,Mathematics (Geometry),9,T-MATH-31,Wing-9-06 (+1 session overrides),20,435,435,10
-107,English,9,T-ENGLISH-23,Wing-9-05,20,460,460,8
-108,Chinese,9,T-CHINESE-9,Wing-9-11,20,240,240,6
-109,History,9,T-HISTORY-2,Wing-9-11,20,320,320,8
-110,Integrated Science (Physics+Chemistry),9,T-SCIENCE-30,LAB-21,20,640,640,15
-111,Music,9,T-MUSIC-4,ART-01,20,310,310,6
-112,World Language,9,T-LANGUAGE-14,Wing-9-03,20,80,80,2
-113,CAS,9,T-CAS-1,Wing-9-06,20,80,80,2
-114,Psychology,9,T-PSYCH-5,Wing-9-12,20,165,165,3
-115,Mathematics (Geometry),9,T-MATH-32,Wing-9-06 (+6 session overrides),5,435,435,9
-116,English,9,T-ENGLISH-21,Wing-9-04 (+1 session overrides),5,460,460,10
-117,Chinese,9,T-CHINESE-13,Wing-9-04 (+3 session overrides),5,240,240,6
-118,History,9,T-HISTORY-2,Wing-9-02 (+1 session overrides),5,320,320,7
-119,Integrated Science (Physics+Chemistry),9,T-SCIENCE-42,LAB-05,5,640,640,15
-120,Music,9,T-MUSIC-4,ART-08,5,310,310,6
-121,World Language,9,T-LANGUAGE-14,Wing-9-01,5,80,80,2
-122,CAS,9,T-CAS-1,Wing-9-08,5,80,80,2
-123,Psychology,9,T-PSYCH-6,Wing-9-07,5,165,165,3
-124,Mathematics (Geometry),9,T-MATH-32,Wing-9-09,20,435,435,10
-125,English,9,T-ENGLISH-24,Wing-9-02,20,460,460,10
-126,Chinese,9,T-CHINESE-10,Wing-9-03,20,240,240,4
-127,History,9,T-HISTORY-2,Wing-9-09 (+3 session overrides),20,320,320,7
-128,Integrated Science (Physics+Chemistry),9,T-SCIENCE-31,LAB-20,20,640,640,15
-129,Computer Science,9,T-CS-12,Wing-9-14,20,165,165,3
-130,World Language,9,T-LANGUAGE-18,Wing-9-13,20,80,80,2
-131,CAS,9,T-CAS-9,Wing-9-15,20,80,80,2
-132,Visual Art,9,T-ART-6,ART-02,20,310,310,7
-133,Mathematics (Geometry),9,T-MATH-33,Wing-9-05 (+2 session overrides),13,435,435,9
-134,English,9,T-ENGLISH-25,Wing-9-09 (+2 session overrides),13,460,460,10
-135,Chinese,9,T-CHINESE-9,Wing-9-01,13,240,240,5
-136,History,9,T-HISTORY-1,Wing-9-10,13,320,320,7
-137,Integrated Science (Physics+Chemistry),9,T-SCIENCE-32,LAB-03,13,640,640,16
-138,Computer Science,9,T-CS-13,Wing-9-09 (+1 session overrides),13,165,165,3
-139,World Language,9,T-LANGUAGE-14,Wing-9-02,13,80,80,2
-140,CAS,9,T-CAS-1,Wing-9-03,13,80,80,2
-141,Visual Art,9,T-ART-2,ART-05,13,310,310,6
-142,Mathematics (Geometry),9,T-MATH-33,Wing-9-12 (+1 session overrides),20,435,435,10
-143,English,9,T-ENGLISH-26,Wing-9-10,20,460,460,8
-144,Chinese,9,T-CHINESE-10,Wing-9-10,20,240,240,6
-145,History,9,T-HISTORY-3,Wing-9-08,20,320,320,8
-146,Integrated Science (Physics+Chemistry),9,T-SCIENCE-33,LAB-22,20,640,640,15
-147,Computer Science,9,T-CS-14,Wing-9-04,20,165,165,3
-148,World Language,9,T-LANGUAGE-15,Wing-9-11 (+2 session overrides),20,80,80,2
-149,CAS,9,T-CAS-2,Wing-9-14,20,80,80,2
-150,Drama,9,T-DRAMA-1,ART-04,20,310,310,6
-151,Mathematics (Geometry),9,T-MATH-34,Wing-9-03,6,435,435,9
-152,English,9,T-ENGLISH-27,Wing-9-03 (+3 session overrides),6,460,460,10
-153,Chinese,9,T-CHINESE-10,Wing-9-03 (+3 session overrides),6,240,240,6
-154,History,9,T-HISTORY-3,Wing-9-11 (+4 session overrides),6,320,320,8
-155,Integrated Science (Physics+Chemistry),9,T-SCIENCE-29,LAB-07,6,640,640,14
-156,Computer Science,9,T-CS-13,Wing-9-07,6,165,165,3
-157,World Language,9,T-LANGUAGE-14,Wing-9-14,6,80,80,2
-158,CAS,9,T-CAS-12,Wing-9-13 (+1 session overrides),6,80,80,2
-159,Drama,9,T-DRAMA-1,ART-01,6,310,310,6
-160,Mathematics (Geometry),9,T-MATH-34,Wing-9-16 (+2 session overrides),20,435,435,9
-161,English,9,T-ENGLISH-24,Wing-9-06 (+2 session overrides),20,460,460,10
-162,Chinese,9,T-CHINESE-10,Wing-9-01,20,240,240,5
-163,History,9,T-HISTORY-3,Wing-9-07 (+3 session overrides),20,320,320,7
-164,Integrated Science (Physics+Chemistry),9,T-SCIENCE-30,LAB-21,20,640,640,14
-165,World Language,9,T-LANGUAGE-18,Wing-9-03 (+2 session overrides),20,80,80,2
-166,CAS,9,T-CAS-1,Wing-9-09 (+1 session overrides),20,80,80,2
-167,Psychology,9,T-PSYCH-5,Wing-9-07,20,165,165,4
-168,Visual Art,9,T-ART-3,ART-04,20,310,310,7
-169,Mathematics (Geometry),9,T-MATH-35,Wing-9-05 (+2 session overrides),10,435,435,10
-170,English,9,T-ENGLISH-25,Wing-9-10 (+4 session overrides),10,460,460,10
-171,Chinese,9,T-CHINESE-11,Wing-9-16,10,240,240,5
-172,History,9,T-HISTORY-4,Wing-9-05 (+2 session overrides),10,320,320,8
-173,Integrated Science (Physics+Chemistry),9,T-SCIENCE-34,LAB-16,10,640,640,14
-174,World Language,9,T-LANGUAGE-14,Wing-9-13,10,80,80,2
-175,CAS,9,T-CAS-1,Wing-9-08 (+1 session overrides),10,80,80,2
-176,Psychology,9,T-PSYCH-7,Wing-9-12 (+1 session overrides),10,165,165,3
-177,Visual Art,9,T-ART-3,ART-02,10,310,310,6
-178,Mathematics (Geometry),9,T-MATH-35,Wing-9-02 (+5 session overrides),20,435,435,9
-179,English,9,T-ENGLISH-28,Wing-9-10 (+1 session overrides),20,460,460,9
-180,Chinese,9,T-CHINESE-13,Wing-9-03 (+3 session overrides),20,240,240,6
-181,History,9,T-HISTORY-4,Wing-9-08,20,320,320,6
-182,Integrated Science (Physics+Chemistry),9,T-SCIENCE-35,LAB-06 (+4 session overrides),20,640,640,16
-183,World Language,9,T-LANGUAGE-14,Wing-9-09 (+2 session overrides),20,80,80,2
-184,CAS,9,T-CAS-1,Wing-9-13 (+1 session overrides),20,80,80,2
-185,Visual Art,9,T-ART-4,ART-06,20,310,310,7
-186,Economics,9,T-ECON-8,Wing-9-05 (+1 session overrides),20,165,165,3
-187,Mathematics (Geometry),9,T-MATH-32,Wing-9-11 (+5 session overrides),5,435,435,10
-188,English,9,T-ENGLISH-29,Wing-9-01,5,460,460,9
-189,Chinese,9,T-CHINESE-12,Wing-9-01 (+1 session overrides),5,240,240,4
-190,History,9,T-HISTORY-4,Wing-9-10,5,320,320,8
-191,Integrated Science (Physics+Chemistry),9,T-SCIENCE-34,LAB-16,5,640,640,15
-192,World Language,9,T-LANGUAGE-18,Wing-9-10 (+1 session overrides),5,80,80,2
-193,CAS,9,T-CAS-2,Wing-9-07 (+1 session overrides),5,80,80,2
-194,Visual Art,9,T-ART-4,ART-05,5,310,310,6
-195,Economics,9,T-ECON-8,Wing-9-06 (+1 session overrides),5,165,165,4
-196,Mathematics (Geometry),9,T-MATH-36,Wing-9-04 (+3 session overrides),20,435,435,9
-197,English,9,T-ENGLISH-30,Wing-9-07 (+4 session overrides),20,460,460,9
-198,Chinese,9,T-CHINESE-12,Wing-9-07 (+4 session overrides),20,240,240,6
-199,History,9,T-HISTORY-5,Wing-9-02 (+5 session overrides),20,320,320,8
-200,Integrated Science (Physics+Chemistry),9,T-SCIENCE-36,LAB-23 (+5 session overrides),20,640,640,15
-201,World Language,9,T-LANGUAGE-15,Wing-9-07,20,80,80,2
-202,CAS,9,T-CAS-10,Wing-9-05,20,80,80,2
-203,Drama,9,T-DRAMA-2,ART-03,20,310,310,6
-204,Economics,9,T-ECON-8,Wing-9-04 (+1 session overrides),20,165,165,3
-205,Mathematics (Geometry),9,T-MATH-36,Wing-9-04 (+2 session overrides),16,435,435,10
-206,English,9,T-ENGLISH-31,Wing-9-11 (+1 session overrides),16,460,460,8
-207,Chinese,9,T-CHINESE-12,Wing-9-15,16,240,240,6
-208,History,9,T-HISTORY-5,Wing-9-08 (+1 session overrides),16,320,320,7
-209,Integrated Science (Physics+Chemistry),9,T-SCIENCE-37,LAB-04,16,640,640,15
-210,World Language,9,T-LANGUAGE-15,Wing-9-07 (+2 session overrides),16,80,80,2
-211,CAS,9,T-CAS-9,Wing-9-11 (+1 session overrides),16,80,80,2
-212,Drama,9,T-DRAMA-2,ART-04 (+2 session overrides),16,310,310,7
-213,Economics,9,T-ECON-9,Wing-9-01 (+2 session overrides),16,165,165,3
-214,Mathematics (Geometry),9,T-MATH-33,Wing-9-12 (+1 session overrides),20,435,435,10
-215,English,9,T-ENGLISH-22,Wing-9-12 (+2 session overrides),20,460,460,11
-216,Chinese,9,T-CHINESE-11,Wing-9-12,20,240,240,5
-217,History,9,T-HISTORY-6,Wing-9-14,20,320,320,6
-218,Integrated Science (Physics+Chemistry),9,T-SCIENCE-38,LAB-24,20,640,640,13
-219,World Language,9,T-LANGUAGE-15,Wing-9-09 (+2 session overrides),20,80,80,2
-220,CAS,9,T-CAS-2,Wing-9-04 (+2 session overrides),20,80,80,2
-221,Psychology,9,T-PSYCH-6,Wing-9-03 (+1 session overrides),20,165,165,4
-222,Drama,9,T-DRAMA-1,ART-07,20,310,310,7
-223,Mathematics (Geometry),9,T-MATH-36,Wing-9-13 (+2 session overrides),4,435,435,10
-224,English,9,T-ENGLISH-32,Wing-9-13,4,460,460,10
-225,Chinese,9,T-CHINESE-11,Wing-9-08 (+3 session overrides),4,240,240,6
-226,History,9,T-HISTORY-7,Wing-9-09 (+1 session overrides),4,320,320,6
-227,Integrated Science (Physics+Chemistry),9,T-SCIENCE-39,LAB-02,4,640,640,15
-228,World Language,9,T-LANGUAGE-15,Wing-9-16 (+1 session overrides),4,80,80,2
-229,CAS,9,T-CAS-2,Wing-9-11 (+1 session overrides),4,80,80,2
-230,Psychology,9,T-PSYCH-7,Wing-9-07 (+1 session overrides),4,165,165,3
-231,Drama,9,T-DRAMA-3,ART-05,4,310,310,6
-232,Mathematics (Geometry),9,T-MATH-37,Wing-9-15,20,435,435,9
-233,English,9,T-ENGLISH-33,Wing-9-15,20,460,460,8
-234,Chinese,9,T-CHINESE-14,Wing-9-01 (+2 session overrides),20,240,240,6
-235,History,9,T-HISTORY-6,Wing-9-15,20,320,320,6
-236,Integrated Science (Physics+Chemistry),9,T-SCIENCE-40,LAB-14,20,640,640,16
-237,Music,9,T-MUSIC-4,ART-02,20,310,310,7
-238,World Language,9,T-LANGUAGE-15,Wing-9-04 (+2 session overrides),20,80,80,2
-239,CAS,9,T-CAS-2,Wing-9-08,20,80,80,2
-240,Economics,9,T-ECON-9,Wing-9-15 (+1 session overrides),20,165,165,4
-241,Mathematics (Geometry),9,T-MATH-37,Wing-9-14,3,435,435,10
-242,English,9,T-ENGLISH-34,Wing-9-08 (+2 session overrides),3,460,460,8
-243,Chinese,9,T-CHINESE-10,Wing-9-01 (+3 session overrides),3,240,240,6
-244,History,9,T-HISTORY-5,Wing-9-05 (+4 session overrides),3,320,320,7
-245,Integrated Science (Physics+Chemistry),9,T-SCIENCE-41,LAB-18,3,640,640,15
-246,Music,9,T-MUSIC-2,ART-08,3,310,310,7
-247,World Language,9,T-LANGUAGE-15,Wing-9-08 (+2 session overrides),3,80,80,2
-248,CAS,9,T-CAS-13,Wing-9-06 (+1 session overrides),3,80,80,2
-249,Economics,9,T-ECON-10,Wing-9-14 (+2 session overrides),3,165,165,3
-250,Mathematics,10,T-MATH-22,Wing-10-12,20,450,450,10
-251,English,10,T-ENGLISH-35,Wing-10-08,20,440,440,9
-252,Chinese,10,T-CHINESE-1,Wing-10-10,20,250,250,5
-253,World Language,10,T-LANGUAGE-17,Wing-10-13,20,80,80,2
-254,Module 1 Science (Physics+Chemistry),10,T-SCIENCE-20,LAB-24 (+2 session overrides),20,650,650,15
-255,Visual Art,10,T-ART-1,ART-07 (+2 session overrides),20,320,320,8
-256,History,10,T-HISTORY-8,Wing-10-04,20,300,300,6
-257,CAS,10,T-CAS-3,Wing-10-02,20,80,80,2
-258,Mathematics,10,T-MATH-23,Wing-10-16,20,450,450,9
-259,English,10,T-ENGLISH-35,Wing-10-14,20,440,440,9
-260,Chinese,10,T-CHINESE-1,Wing-10-03,20,250,250,5
-261,World Language,10,T-LANGUAGE-16,Wing-10-09,20,80,80,2
-262,Module 1 Science (Physics+Chemistry),10,T-SCIENCE-20,LAB-24,20,650,650,15
-263,Visual Art,10,T-ART-1,ART-08 (+2 session overrides),20,320,320,8
-264,History,10,T-HISTORY-9,Wing-10-05,20,300,300,6
-265,CAS,10,T-CAS-14,Wing-10-15,20,80,80,2
-266,Mathematics,10,T-MATH-23,Wing-10-08,20,450,450,10
-267,English,10,T-ENGLISH-36,Wing-10-08 (+2 session overrides),20,440,440,8
-268,Chinese,10,T-CHINESE-2,Wing-10-10,20,250,250,5
-269,World Language,10,T-LANGUAGE-16,Wing-10-09,20,80,80,2
-270,Module 1 Science (Physics+Chemistry),10,T-SCIENCE-21,LAB-07 (+3 session overrides),20,650,650,15
-271,Visual Art,10,T-ART-1,ART-08,20,320,320,7
-272,History,10,T-HISTORY-8,Wing-10-10,20,300,300,7
-273,CAS,10,T-CAS-4,Wing-10-02,20,80,80,2
-274,Mathematics,10,T-MATH-22,Wing-10-01,20,450,450,9
-275,English,10,T-ENGLISH-37,Wing-10-13,20,440,440,10
-276,Chinese,10,T-CHINESE-2,Wing-10-13 (+2 session overrides),20,250,250,6
-277,World Language,10,T-LANGUAGE-16,Wing-10-07,20,80,80,2
-278,Module 1 Science (Physics+Chemistry),10,T-SCIENCE-22,LAB-18 (+2 session overrides),20,650,650,14
-279,Visual Art,10,T-ART-2,ART-05 (+1 session overrides),20,320,320,7
-280,History,10,T-HISTORY-10,Wing-10-16 (+2 session overrides),20,300,300,6
-281,CAS,10,T-CAS-3,Wing-10-08 (+2 session overrides),20,80,80,2
-282,Mathematics,10,T-MATH-24,Wing-10-02,12,450,450,8
-283,English,10,T-ENGLISH-37,Wing-10-16 (+2 session overrides),12,440,440,10
-284,Chinese,10,T-CHINESE-2,Wing-10-10,12,250,250,5
-285,World Language,10,T-LANGUAGE-17,Wing-10-01,12,80,80,2
-286,Module 1 Science (Physics+Chemistry),10,T-SCIENCE-22,LAB-17,12,650,650,15
-287,Visual Art,10,T-ART-2,ART-03,12,320,320,8
-288,History,10,T-HISTORY-9,Wing-10-16 (+1 session overrides),12,300,300,7
-289,CAS,10,T-CAS-15,Wing-10-07,12,80,80,2
-290,Mathematics,10,T-MATH-25,Wing-10-12,20,450,450,9
-291,English,10,T-ENGLISH-37,Wing-10-04,20,440,440,10
-292,Chinese,10,T-CHINESE-1,Wing-10-03,20,250,250,6
-293,World Language,10,T-LANGUAGE-19,Wing-10-11,20,80,80,2
-294,Module 1 Science (Physics+Chemistry),10,T-SCIENCE-23,LAB-08,20,650,650,13
-295,History,10,T-HISTORY-10,Wing-10-02,20,300,300,7
-296,CAS,10,T-CAS-4,Wing-10-12,20,80,80,2
-297,Music,10,T-MUSIC-1,ART-07,20,320,320,8
-298,Mathematics,10,T-MATH-24,Wing-10-03 (+2 session overrides),20,450,450,10
-299,English,10,T-ENGLISH-36,Wing-10-09 (+2 session overrides),20,440,440,10
-300,Chinese,10,T-CHINESE-5,Wing-10-09,20,250,250,5
-301,World Language,10,T-LANGUAGE-16,Wing-10-02,20,80,80,2
-302,Module 1 Science (Physics+Chemistry),10,T-SCIENCE-21,LAB-09,20,650,650,15
-303,History,10,T-HISTORY-11,Wing-10-06,20,300,300,6
-304,CAS,10,T-CAS-3,Wing-10-05,20,80,80,2
-305,Music,10,T-MUSIC-1,ART-03,20,320,320,6
-306,Mathematics,10,T-MATH-27,Wing-10-05 (+3 session overrides),20,450,450,8
-307,English,10,T-ENGLISH-38,Wing-10-01 (+2 session overrides),20,440,440,10
-308,Chinese,10,T-CHINESE-4,Wing-10-06,20,250,250,5
-309,World Language,10,T-LANGUAGE-16,Wing-10-05,20,80,80,2
-310,Module 1 Science (Physics+Chemistry),10,T-SCIENCE-24,LAB-17 (+12 session overrides),20,650,650,16
-311,History,10,T-HISTORY-11,Wing-10-09,20,300,300,6
-312,CAS,10,T-CAS-3,Wing-10-16 (+1 session overrides),20,80,80,2
-313,Music,10,T-MUSIC-2,ART-02 (+1 session overrides),20,320,320,7
-314,Mathematics,10,T-MATH-25,Wing-10-11,15,450,450,10
-315,English,10,T-ENGLISH-38,Wing-10-01 (+2 session overrides),15,440,440,11
-316,Chinese,10,T-CHINESE-3,Wing-10-11,15,250,250,5
-317,World Language,10,T-LANGUAGE-16,Wing-10-04,15,80,80,2
-318,Module 1 Science (Physics+Chemistry),10,T-SCIENCE-24,LAB-04 (+2 session overrides),15,650,650,14
-319,History,10,T-HISTORY-9,Wing-10-10 (+5 session overrides),15,300,300,6
-320,CAS,10,T-CAS-3,Wing-10-07,15,80,80,2
-321,Music,10,T-MUSIC-2,ART-02,15,320,320,6
-322,Mathematics,10,T-MATH-28,Wing-10-07,20,450,450,8
-323,English,10,T-ENGLISH-35,Wing-10-14,20,440,440,11
-324,Chinese,10,T-CHINESE-5,Wing-10-01,20,250,250,5
-325,World Language,10,T-LANGUAGE-16,Wing-10-06,20,80,80,2
-326,Module 1 Science (Physics+Chemistry),10,T-SCIENCE-25,LAB-13,20,650,650,15
-327,History,10,T-HISTORY-11,Wing-10-06,20,300,300,7
-328,CAS,10,T-CAS-3,Wing-10-08,20,80,80,2
-329,Design & Technology,10,T-DT-1,ART-06,20,320,320,6
-330,Mathematics,10,T-MATH-26,Wing-10-15,20,450,450,10
-331,English,10,T-ENGLISH-39,Wing-10-15,20,440,440,10
-332,Chinese,10,T-CHINESE-6,Wing-10-08 (+1 session overrides),20,250,250,5
-333,World Language,10,T-LANGUAGE-16,Wing-10-09,20,80,80,2
-334,Module 1 Science (Physics+Chemistry),10,T-SCIENCE-25,LAB-13,20,650,650,14
-335,History,10,T-HISTORY-12,Wing-10-15 (+2 session overrides),20,300,300,6
-336,CAS,10,T-CAS-3,Wing-10-10,20,80,80,2
-337,Design & Technology,10,T-DT-2,ART-02 (+3 session overrides),20,320,320,7
-338,Mathematics,10,T-MATH-29,Wing-10-11 (+7 session overrides),20,450,450,10
-339,English,10,T-ENGLISH-40,Wing-10-07 (+2 session overrides),20,440,440,9
-340,Chinese,10,T-CHINESE-6,Wing-10-13,20,250,250,5
-341,World Language,10,T-LANGUAGE-17,Wing-10-15,20,80,80,2
-342,Module 1 Science (Physics+Chemistry),10,T-SCIENCE-26,LAB-16 (+6 session overrides),20,650,650,15
-343,History,10,T-HISTORY-13,Wing-10-01 (+2 session overrides),20,300,300,6
-344,CAS,10,T-CAS-4,Wing-10-12 (+2 session overrides),20,80,80,2
-345,Design & Technology,10,T-DT-1,ART-06 (+2 session overrides),20,320,320,8
-346,Mathematics,10,T-MATH-29,Wing-10-05,20,450,450,11
-347,English,10,T-ENGLISH-39,Wing-10-07 (+1 session overrides),20,440,440,10
-348,Chinese,10,T-CHINESE-7,Wing-10-14 (+1 session overrides),20,250,250,5
-349,World Language,10,T-LANGUAGE-17,Wing-10-02,20,80,80,2
-350,Module 1 Science (Physics+Chemistry),10,T-SCIENCE-27,LAB-14,20,650,650,13
-351,History,10,T-HISTORY-12,Wing-10-06 (+2 session overrides),20,300,300,7
-352,CAS,10,T-CAS-4,Wing-10-07,20,80,80,2
-353,Design & Technology,10,T-DT-3,ART-04,20,320,320,6
-354,Mathematics,10,T-MATH-30,Wing-10-09 (+3 session overrides),3,450,450,9
-355,English,10,T-ENGLISH-41,Wing-10-03,3,440,440,9
-356,Chinese,10,T-CHINESE-8,Wing-10-06 (+2 session overrides),3,250,250,5
-357,World Language,10,T-LANGUAGE-17,Wing-10-03,3,80,80,2
-358,Module 1 Science (Physics+Chemistry),10,T-SCIENCE-26,LAB-03 (+2 session overrides),3,650,650,14
-359,History,10,T-HISTORY-13,Wing-10-03 (+5 session overrides),3,300,300,7
-360,CAS,10,T-CAS-4,Wing-10-05 (+1 session overrides),3,80,80,2
-361,Design & Technology,10,T-DT-3,ART-01,3,320,320,8
-362,Mathematics,11,T-MATH-1,Wing-11-02,20,490,490,10
-363,English,11,T-ENGLISH-12,Wing-11-06,20,480,480,10
-364,Language,11,T-LANGUAGE-9,Wing-11-05,20,235,235,5
-365,Personal Growth,11,T-PG-1,Wing-11-06,20,80,80,2
-366,CAS,11,T-CAS-5,Wing-11-06,20,80,80,2
-367,AP Chemistry,11,T-CHEMISTRY-1,LAB-12,20,490,490,12
-368,Computer Science,11,T-CS-1,Wing-11-15,20,355,355,7
-369,Psychology,11,T-PSYCH-1,Wing-11-04,20,230,230,4
-370,Mathematics,11,T-MATH-2,Wing-11-03,20,490,490,10
-371,English,11,T-ENGLISH-13,Wing-11-04 (+1 session overrides),20,480,480,11
-372,Language,11,T-LANGUAGE-9,Wing-11-04,20,235,235,5
-373,Personal Growth,11,T-PG-1,Wing-11-15,20,80,80,2
-374,CAS,11,T-CAS-5,Wing-11-04,20,80,80,2
-375,AP Chemistry,11,T-CHEMISTRY-1,LAB-11,20,490,490,11
-376,Computer Science,11,T-CS-2,Wing-11-15 (+2 session overrides),20,355,355,7
-377,Psychology,11,T-PSYCH-1,Wing-11-12,20,230,230,5
-378,Mathematics,11,T-MATH-3,Wing-11-02,20,490,490,10
-379,English,11,T-ENGLISH-12,Wing-11-14,20,480,480,10
-380,Language,11,T-LANGUAGE-9,Wing-11-03,20,235,235,5
-381,Personal Growth,11,T-PG-1,Wing-11-15,20,80,80,2
-382,CAS,11,T-CAS-5,Wing-11-03,20,80,80,2
-383,AP Chemistry,11,T-CHEMISTRY-2,LAB-13,20,490,490,12
-384,Computer Science,11,T-CS-3,Wing-11-16,20,355,355,7
-385,Psychology,11,T-PSYCH-2,Wing-11-13,20,230,230,5
-386,Mathematics,11,T-MATH-1,Wing-11-10,20,490,490,11
-387,English,11,T-ENGLISH-13,Wing-11-10,20,480,480,10
-388,Language,11,T-LANGUAGE-10,Wing-11-01,20,235,235,5
-389,Fine Art,11,T-ART-1,ART-04 (+2 session overrides),20,230,230,4
-390,Personal Growth,11,T-PG-1,Wing-11-09,20,80,80,2
-391,CAS,11,T-CAS-5,Wing-11-04 (+2 session overrides),20,80,80,2
-392,AP Chemistry,11,T-CHEMISTRY-2,LAB-01,20,490,490,12
-393,Computer Science,11,T-CS-1,Wing-11-11,20,355,355,7
-394,Mathematics,11,T-MATH-4,Wing-11-12 (+1 session overrides),20,490,490,11
-395,English,11,T-ENGLISH-14,Wing-11-12,20,480,480,12
-396,Language,11,T-LANGUAGE-10,Wing-11-09,20,235,235,4
-397,Fine Art,11,T-ART-5,ART-08 (+4 session overrides),20,230,230,4
-398,Personal Growth,11,T-PG-1,Wing-11-16,20,80,80,2
-399,CAS,11,T-CAS-5,Wing-11-12,20,80,80,2
-400,AP Chemistry,11,T-CHEMISTRY-3,LAB-20 (+2 session overrides),20,490,490,11
-401,Computer Science,11,T-CS-4,Wing-11-12,20,355,355,7
-402,Mathematics,11,T-MATH-5,Wing-11-13,20,490,490,10
-403,English,11,T-ENGLISH-15,Wing-11-08,20,480,480,9
-404,Language,11,T-LANGUAGE-10,Wing-11-02 (+1 session overrides),20,235,235,5
-405,Fine Art,11,T-ART-5,ART-01 (+4 session overrides),20,230,230,4
-406,Personal Growth,11,T-PG-1,Wing-11-09,20,80,80,2
-407,CAS,11,T-CAS-5,Wing-11-14 (+2 session overrides),20,80,80,2
-408,AP Chemistry,11,T-CHEMISTRY-3,LAB-06 (+5 session overrides),20,490,490,12
-409,Computer Science,11,T-CS-5,Wing-11-14,20,355,355,8
-410,Mathematics,11,T-MATH-2,Wing-11-07,20,490,490,10
-411,English,11,T-ENGLISH-14,Wing-11-06,20,480,480,10
-412,Language,11,T-LANGUAGE-11,Wing-11-08 (+2 session overrides),20,235,235,5
-413,Fine Art,11,T-ART-1,ART-07,20,230,230,4
-414,Personal Growth,11,T-PG-1,Wing-11-16,20,80,80,2
-415,CAS,11,T-CAS-5,Wing-11-03,20,80,80,2
-416,AP Chemistry,11,T-CHEMISTRY-4,LAB-05 (+2 session overrides),20,490,490,12
-417,Computer Science,11,T-CS-5,Wing-11-13 (+4 session overrides),20,355,355,7
-418,Mathematics,11,T-MATH-5,Wing-11-01,20,490,490,11
-419,English,11,T-ENGLISH-16,Wing-11-01,20,480,480,11
-420,Language,11,T-LANGUAGE-11,Wing-11-04 (+1 session overrides),20,235,235,4
-421,Fine Art,11,T-ART-6,ART-01,20,230,230,4
-422,Personal Growth,11,T-PG-1,Wing-11-16,20,80,80,2
-423,CAS,11,T-CAS-5,Wing-11-04,20,80,80,2
-424,AP Chemistry,11,T-CHEMISTRY-4,LAB-19,20,490,490,12
-425,Computer Science,11,T-CS-6,Wing-11-02 (+1 session overrides),20,355,355,7
-426,Mathematics,11,T-MATH-6,Wing-11-15,15,490,490,10
-427,English,11,T-ENGLISH-16,Wing-11-01 (+3 session overrides),15,480,480,10
-428,Language,11,T-LANGUAGE-11,Wing-11-11,15,235,235,5
-429,Fine Art,11,T-ART-7,ART-08 (+3 session overrides),15,230,230,5
-430,Personal Growth,11,T-PG-1,Wing-11-08,15,80,80,2
-431,CAS,11,T-CAS-5,Wing-11-09,15,80,80,2
-432,AP Chemistry,11,T-CHEMISTRY-5,LAB-07 (+2 session overrides),15,490,490,11
-433,Computer Science,11,T-CS-7,Wing-11-09,15,355,355,8
-434,Mathematics,11,T-MATH-4,Wing-11-03 (+4 session overrides),20,490,490,10
-435,English,11,T-ENGLISH-17,Wing-11-16 (+2 session overrides),20,480,480,10
-436,Language,11,T-LANGUAGE-12,Wing-11-07 (+5 session overrides),20,235,235,5
-437,AP Physics 1,11,T-PHYSICS-1,LAB-22 (+2 session overrides),20,490,490,12
-438,Personal Growth,11,T-PG-1,Wing-11-01 (+2 session overrides),20,80,80,2
-439,CAS,11,T-CAS-5,Wing-11-02,20,80,80,2
-440,Economics,11,T-ECON-1,Wing-11-14 (+3 session overrides),20,355,355,7
-441,Psychology,11,T-PSYCH-2,Wing-11-13,20,230,230,5
-442,Mathematics,11,T-MATH-7,Wing-11-11 (+2 session overrides),10,490,490,11
-443,English,11,T-ENGLISH-18,Wing-11-10 (+4 session overrides),10,480,480,10
-444,Language,11,T-LANGUAGE-12,Wing-11-15 (+2 session overrides),10,235,235,5
-445,AP Physics 1,11,T-PHYSICS-1,LAB-15,10,490,490,12
-446,Personal Growth,11,T-PG-1,Wing-11-02 (+1 session overrides),10,80,80,2
-447,CAS,11,T-CAS-5,Wing-11-04,10,80,80,2
-448,Economics,11,T-ECON-2,Wing-11-10,10,355,355,8
-449,Psychology,11,T-PSYCH-3,Wing-11-01,10,230,230,4
-450,Mathematics,11,T-MATH-6,Wing-11-08,20,490,490,12
-451,English,11,T-ENGLISH-19,Wing-11-05,20,480,480,9
-452,Language,11,T-LANGUAGE-12,Wing-11-16 (+2 session overrides),20,235,235,4
-453,AP Physics 1,11,T-PHYSICS-2,LAB-10,20,490,490,12
-454,Personal Growth,11,T-PG-2,Wing-11-09 (+2 session overrides),20,80,80,2
-455,CAS,11,T-CAS-6,Wing-11-06,20,80,80,2
-456,Computer Science,11,T-CS-7,Wing-11-05,20,355,355,8
-457,Psychology,11,T-PSYCH-3,Wing-11-15 (+5 session overrides),20,230,230,5
-458,Mathematics,11,T-MATH-8,Wing-11-06 (+3 session overrides),20,490,490,10
-459,English,11,T-ENGLISH-20,Wing-11-07 (+1 session overrides),20,480,480,10
-460,Language,11,T-LANGUAGE-10,Wing-11-07 (+1 session overrides),20,235,235,5
-461,AP Physics 1,11,T-PHYSICS-2,LAB-10,20,490,490,12
-462,Personal Growth,11,T-PG-2,Wing-11-16 (+2 session overrides),20,80,80,2
-463,CAS,11,T-CAS-6,Wing-11-16,20,80,80,2
-464,Computer Science,11,T-CS-8,Wing-11-06 (+4 session overrides),20,355,355,7
-465,Psychology,11,T-PSYCH-4,Wing-11-13,20,230,230,5
-466,Mathematics,11,T-MATH-7,Wing-11-09 (+4 session overrides),5,490,490,11
-467,English,11,T-ENGLISH-19,Wing-11-08 (+3 session overrides),5,480,480,11
-468,Language,11,T-LANGUAGE-13,Wing-11-04 (+1 session overrides),5,235,235,5
-469,AP Physics 1,11,T-PHYSICS-3,LAB-08,5,490,490,12
-470,Personal Growth,11,T-PG-2,Wing-11-16,5,80,80,2
-471,CAS,11,T-CAS-6,Wing-11-16,5,80,80,2
-472,Computer Science,11,T-CS-9,Wing-11-09 (+1 session overrides),5,355,355,7
-473,Psychology,11,T-PSYCH-4,Wing-11-10 (+2 session overrides),5,230,230,4
-474,Mathematics,12,T-MATH-9,Wing-12-10,17,480,480,12
-475,English,12,T-ENGLISH-1,Wing-12-01,17,490,490,9
-476,Language,12,T-LANGUAGE-1,Wing-12-01,17,245,245,5
-477,Module 1 Advanced Science (AP Phys2 + Hnr OrgChem),12,T-SCIENCE-1,LAB-01 (+4 session overrides),17,965,965,21
-478,Personal Growth,12,T-PG-3,Wing-12-07,17,80,80,2
-479,CAS,12,T-CAS-7,Wing-12-06,17,80,80,2
-480,Economics,12,T-ECON-3,Wing-12-03 (+2 session overrides),17,350,350,7
-481,Mathematics,12,T-MATH-9,Wing-12-09,15,480,480,10
-482,English,12,T-ENGLISH-2,Wing-12-09,15,490,490,10
-483,Language,12,T-LANGUAGE-2,Wing-12-06,15,245,245,5
-484,Module 1 Advanced Science (AP Phys2 + Hnr OrgChem),12,T-SCIENCE-2,LAB-12,15,965,965,21
-485,Computer Science,12,T-CS-10,Wing-12-01 (+2 session overrides),15,350,350,8
-486,Personal Growth,12,T-PG-4,Wing-12-11,15,80,80,2
-487,CAS,12,T-CAS-7,Wing-12-02,15,80,80,2
-488,Mathematics,12,T-MATH-10,Wing-12-14,19,480,480,10
-489,English,12,T-ENGLISH-3,Wing-12-08,19,490,490,11
-490,Language,12,T-LANGUAGE-1,Wing-12-10,19,245,245,5
-491,Module 1 Advanced Science (AP Phys2 + Hnr OrgChem),12,T-SCIENCE-3,LAB-03 (+6 session overrides),19,965,965,21
-492,Personal Growth,12,T-PG-3,Wing-12-12,19,80,80,2
-493,CAS,12,T-CAS-11,Wing-12-05,19,80,80,2
-494,Comparative Government,12,T-GOV-1,Wing-12-13,19,350,350,7
-495,Mathematics,12,T-MATH-11,Wing-12-06,20,480,480,10
-496,English,12,T-ENGLISH-3,Wing-12-16,20,490,490,11
-497,Language,12,T-LANGUAGE-3,Wing-12-15,20,245,245,5
-498,Module 1 Advanced Science (AP Phys2 + Hnr OrgChem),12,T-SCIENCE-4,LAB-04 (+9 session overrides),20,965,965,22
-499,Computer Science,12,T-CS-10,Wing-12-02,20,350,350,7
-500,Personal Growth,12,T-PG-3,Wing-12-15,20,80,80,2
-501,CAS,12,T-CAS-7,Wing-12-06,20,80,80,2
-502,Mathematics,12,T-MATH-12,Wing-12-06 (+2 session overrides),6,480,480,10
-503,English,12,T-ENGLISH-4,Wing-12-02 (+1 session overrides),6,490,490,11
-504,Language,12,T-LANGUAGE-4,Wing-12-06,6,245,245,5
-505,Module 1 Advanced Science (AP Phys2 + Hnr OrgChem),12,T-SCIENCE-5,LAB-10 (+8 session overrides),6,965,965,21
-506,Computer Science,12,T-CS-10,Wing-12-07,6,350,350,8
-507,Personal Growth,12,T-PG-3,Wing-12-01,6,80,80,2
-508,CAS,12,T-CAS-7,Wing-12-05,6,80,80,2
-509,Mathematics,12,T-MATH-13,Wing-12-15 (+2 session overrides),19,480,480,10
-510,English,12,T-ENGLISH-4,Wing-12-15,19,490,490,10
-511,Language,12,T-LANGUAGE-2,Wing-12-05 (+2 session overrides),19,245,245,6
-512,Module 1 Advanced Science (AP Phys2 + Hnr OrgChem),12,T-SCIENCE-6,LAB-14 (+13 session overrides),19,965,965,22
-513,Computer Science,12,T-CS-11,Wing-12-11,19,350,350,7
-514,Personal Growth,12,T-PG-3,Wing-12-14,19,80,80,2
-515,CAS,12,T-CAS-7,Wing-12-06 (+1 session overrides),19,80,80,2
-516,Mathematics,12,T-MATH-14,Wing-12-02 (+3 session overrides),17,480,480,10
-517,English,12,T-ENGLISH-5,Wing-12-16 (+5 session overrides),17,490,490,11
-518,Language,12,T-LANGUAGE-3,Wing-12-04,17,245,245,6
-519,Module 1 Advanced Science (AP Phys2 + Hnr OrgChem),12,T-SCIENCE-7,LAB-23 (+8 session overrides),17,965,965,21
-520,Personal Growth,12,T-PG-5,Wing-12-01 (+1 session overrides),17,80,80,2
-521,CAS,12,T-CAS-8,Wing-12-11,17,80,80,2
-522,Comparative Government,12,T-GOV-2,Wing-12-15 (+3 session overrides),17,350,350,7
-523,Mathematics,12,T-MATH-15,Wing-12-11,20,480,480,10
-524,English,12,T-ENGLISH-6,Wing-12-05 (+1 session overrides),20,490,490,10
-525,Language,12,T-LANGUAGE-5,Wing-12-11 (+2 session overrides),20,245,245,5
-526,Module 1 Advanced Science (AP Phys2 + Hnr OrgChem),12,T-SCIENCE-8,LAB-08 (+7 session overrides),20,965,965,22
-527,Personal Growth,12,T-PG-3,Wing-12-08,20,80,80,2
-528,CAS,12,T-CAS-7,Wing-12-11,20,80,80,2
-529,Comparative Government,12,T-GOV-6,Wing-12-13 (+1 session overrides),20,350,350,8
-530,Mathematics,12,T-MATH-10,Wing-12-07 (+2 session overrides),4,480,480,10
-531,English,12,T-ENGLISH-7,Wing-12-05,4,490,490,10
-532,Language,12,T-LANGUAGE-4,Wing-12-10 (+3 session overrides),4,245,245,6
-533,Module 1 Advanced Science (AP Phys2 + Hnr OrgChem),12,T-SCIENCE-9,LAB-19,4,965,965,21
-534,Personal Growth,12,T-PG-5,Wing-12-03,4,80,80,2
-535,CAS,12,T-CAS-17,Wing-12-12,4,80,80,2
-536,Comparative Government,12,T-GOV-3,Wing-12-06 (+2 session overrides),4,350,350,8
-537,Mathematics,12,T-MATH-11,Wing-12-14 (+2 session overrides),20,480,480,11
-538,English,12,T-ENGLISH-5,Wing-12-09 (+3 session overrides),20,490,490,10
-539,Language,12,T-LANGUAGE-5,Wing-12-15 (+1 session overrides),20,245,245,6
-540,Module 1 Advanced Science (AP Phys2 + Hnr OrgChem),12,T-SCIENCE-10,LAB-09 (+4 session overrides),20,965,965,21
-541,Personal Growth,12,T-PG-3,Wing-12-14,20,80,80,2
-542,CAS,12,T-CAS-7,Wing-12-14 (+1 session overrides),20,80,80,2
-543,Economics,12,T-ECON-4,Wing-12-08 (+3 session overrides),20,350,350,7
-544,Mathematics,12,T-MATH-12,Wing-12-16 (+4 session overrides),4,480,480,11
-545,English,12,T-ENGLISH-2,Wing-12-04 (+2 session overrides),4,490,490,11
-546,Language,12,T-LANGUAGE-6,Wing-12-12,4,245,245,5
-547,Module 1 Advanced Science (AP Phys2 + Hnr OrgChem),12,T-SCIENCE-11,LAB-11 (+7 session overrides),4,965,965,22
-548,Personal Growth,12,T-PG-3,Wing-12-09,4,80,80,2
-549,CAS,12,T-CAS-7,Wing-12-03,4,80,80,2
-550,Economics,12,T-ECON-4,Wing-12-02 (+4 session overrides),4,350,350,6
-551,Mathematics,12,T-MATH-13,Wing-12-02 (+2 session overrides),17,480,480,11
-552,English,12,T-ENGLISH-8,Wing-12-03 (+1 session overrides),17,490,490,10
-553,Language,12,T-LANGUAGE-6,Wing-12-06 (+4 session overrides),17,245,245,5
-554,Module 1 Advanced Science (AP Phys2 + Hnr OrgChem),12,T-SCIENCE-12,LAB-22 (+8 session overrides),17,965,965,21
-555,Personal Growth,12,T-PG-4,Wing-12-09,17,80,80,2
-556,CAS,12,T-CAS-8,Wing-12-04,17,80,80,2
-557,Economics,12,T-ECON-3,Wing-12-08 (+2 session overrides),17,350,350,8
-558,Mathematics,12,T-MATH-16,Wing-12-13,20,480,480,10
-559,English,12,T-ENGLISH-6,Wing-12-10 (+4 session overrides),20,490,490,11
-560,Language,12,T-LANGUAGE-7,Wing-12-04,20,245,245,5
-561,Module 1 Advanced Science (AP Phys2 + Hnr OrgChem),12,T-SCIENCE-13,LAB-21 (+10 session overrides),20,965,965,20
-562,Personal Growth,12,T-PG-4,Wing-12-10,20,80,80,2
-563,CAS,12,T-CAS-8,Wing-12-04 (+2 session overrides),20,80,80,2
-564,Economics,12,T-ECON-5,Wing-12-13 (+2 session overrides),20,350,350,8
-565,Mathematics,12,T-MATH-17,Wing-12-04 (+1 session overrides),3,480,480,10
-566,English,12,T-ENGLISH-9,Wing-12-07,3,490,490,10
-567,Language,12,T-LANGUAGE-7,Wing-12-02 (+3 session overrides),3,245,245,6
-568,Module 1 Advanced Science (AP Phys2 + Hnr OrgChem),12,T-SCIENCE-14,LAB-12 (+6 session overrides),3,965,965,22
-569,Personal Growth,12,T-PG-4,Wing-12-04,3,80,80,2
-570,CAS,12,T-CAS-8,Wing-12-07 (+2 session overrides),3,80,80,2
-571,Economics,12,T-ECON-6,Wing-12-08 (+1 session overrides),3,350,350,7
-572,Mathematics,12,T-MATH-18,Wing-12-13 (+2 session overrides),20,480,480,10
-573,English,12,T-ENGLISH-7,Wing-12-09 (+6 session overrides),20,490,490,10
-574,Language,12,T-LANGUAGE-6,Wing-12-10 (+3 session overrides),20,245,245,5
-575,Module 1 Advanced Science (AP Phys2 + Hnr OrgChem),12,T-SCIENCE-15,LAB-15 (+4 session overrides),20,965,965,23
-576,Personal Growth,12,T-PG-4,Wing-12-12,20,80,80,2
-577,CAS,12,T-CAS-16,Wing-12-16 (+1 session overrides),20,80,80,2
-578,Comparative Government,12,T-GOV-4,Wing-12-10 (+1 session overrides),20,350,350,7
-579,Mathematics,12,T-MATH-14,Wing-12-03 (+1 session overrides),2,480,480,12
-580,English,12,T-ENGLISH-10,Wing-12-11 (+4 session overrides),2,490,490,10
-581,Language,12,T-LANGUAGE-3,Wing-12-03 (+1 session overrides),2,245,245,5
-582,Module 1 Advanced Science (AP Phys2 + Hnr OrgChem),12,T-SCIENCE-16,LAB-11 (+7 session overrides),2,965,965,21
-583,Personal Growth,12,T-PG-4,Wing-12-01,2,80,80,2
-584,CAS,12,T-CAS-8,Wing-12-10,2,80,80,2
-585,Comparative Government,12,T-GOV-5,Wing-12-14,2,350,350,7
-586,Mathematics,12,T-MATH-19,Wing-12-16 (+2 session overrides),9,480,480,10
-587,English,12,T-ENGLISH-1,Wing-12-01 (+5 session overrides),9,490,490,11
-588,Language,12,T-LANGUAGE-8,Wing-12-07 (+2 session overrides),9,245,245,5
-589,Module 1 Advanced Science (AP Phys2 + Hnr OrgChem),12,T-SCIENCE-17,LAB-02 (+3 session overrides),9,965,965,21
-590,Computer Science,12,T-CS-11,Wing-12-07 (+2 session overrides),9,350,350,8
-591,Personal Growth,12,T-PG-4,Wing-12-07 (+1 session overrides),9,80,80,2
-592,CAS,12,T-CAS-8,Wing-12-07 (+1 session overrides),9,80,80,2
-593,Mathematics,12,T-MATH-20,Wing-12-12 (+2 session overrides),10,480,480,10
-594,English,12,T-ENGLISH-11,Wing-12-12,10,490,490,10
-595,Language,12,T-LANGUAGE-8,Wing-12-12 (+1 session overrides),10,245,245,5
-596,Module 1 Advanced Science (AP Phys2 + Hnr OrgChem),12,T-SCIENCE-18,LAB-18 (+6 session overrides),10,965,965,22
-597,Personal Growth,12,T-PG-4,Wing-12-01,10,80,80,2
-598,CAS,12,T-CAS-8,Wing-12-07,10,80,80,2
-599,Economics,12,T-ECON-7,Wing-12-12 (+3 session overrides),10,350,350,8
-600,Mathematics,12,T-MATH-21,Wing-12-08 (+1 session overrides),8,480,480,10
-601,English,12,T-ENGLISH-9,Wing-12-05 (+2 session overrides),8,490,490,10
-602,Language,12,T-LANGUAGE-8,Wing-12-11 (+2 session overrides),8,245,245,5
-603,Module 1 Advanced Science (AP Phys2 + Hnr OrgChem),12,T-SCIENCE-19,LAB-20 (+8 session overrides),8,965,965,22
-604,Computer Science,12,T-CS-10,Wing-12-04 (+4 session overrides),8,350,350,8
-605,Personal Growth,12,T-PG-4,Wing-12-08 (+2 session overrides),8,80,80,2
-606,CAS,12,T-CAS-8,Wing-12-15 (+2 session overrides),8,80,80,2
+52,PE,11,T-PE-1,PE-01,20,240,240,6
+53,PE,11,T-PE-2,PE-02,20,240,240,6
+54,PE,11,T-PE-3,PE-03,20,240,240,6
+55,PE,11,T-PE-4,PE-04,20,240,240,6
+56,PE,11,T-PE-5,PE-05,20,240,240,6
+57,PE,11,T-PE-6,PE-06,20,240,240,6
+58,PE,11,T-PE-7,PE-07,20,240,240,6
+59,PE,11,T-PE-8,PE-08,20,240,240,6
+60,PE,11,T-PE-9,PE-09,4,240,240,6
+61,Optional,12,T-OPTIONAL-1,Wing-12-01,20,110,110,2
+62,Optional,12,T-OPTIONAL-2,Wing-12-02,20,110,110,2
+63,Optional,12,T-OPTIONAL-3,Wing-12-03,20,110,110,2
+64,Optional,12,T-OPTIONAL-4,Wing-12-04,20,110,110,2
+65,Optional,12,T-OPTIONAL-5,Wing-12-05,20,110,110,2
+66,Optional,12,T-OPTIONAL-6,Wing-12-06,20,110,110,2
+67,Optional,12,T-OPTIONAL-7,Wing-12-15,20,110,110,2
+68,Optional,12,T-OPTIONAL-8,Wing-12-08,20,110,110,2
+69,Optional,12,T-OPTIONAL-9,Wing-12-09,20,110,110,2
+70,Optional,12,T-OPTIONAL-10,Wing-12-10,4,110,110,2
+71,PE,12,T-PE-10,PE-10,20,240,240,6
+72,PE,12,T-PE-11,PE-11,20,240,240,6
+73,PE,12,T-PE-12,PE-12,20,240,240,6
+74,PE,12,T-PE-13,PE-13,20,240,240,6
+75,PE,12,T-PE-14,PE-14,20,240,240,6
+76,PE,12,T-PE-15,PE-15,20,240,240,6
+77,PE,12,T-PE-16,PE-16,20,240,240,6
+78,PE,12,T-PE-17,PE-01,20,240,240,6
+79,PE,12,T-PE-18,PE-02,18,240,240,6
+80,Mathematics (Geometry),9,T-MATH-27,Wing-9-08,20,435,435,10
+81,English,9,T-ENGLISH-19,Wing-9-14,20,460,460,8
+82,Chinese,9,T-CHINESE-9,Wing-9-11,20,240,240,6
+83,World Language,9,T-WORLD_LANGUAGE-5,Wing-9-08,20,80,80,2
+84,Physics + Chemistry,9,T-SCIENCE-20,LAB-16,20,640,640,15
+85,History,9,T-HISTORY-1,Wing-9-08,20,320,320,7
+86,Module 2,9,T-MODULE_2-13,Wing-9-08,20,310,310,7
+87,Module 3,9,T-MODULE_3-1,Wing-9-14,20,165,165,3
+88,CAS,9,T-CAS-2,Wing-9-08,20,80,80,2
+89,Mathematics (Geometry),9,T-MATH-27,Wing-9-13,20,435,435,9
+90,English,9,T-ENGLISH-20,Wing-9-09,20,460,460,8
+91,Chinese,9,T-CHINESE-14,Wing-9-14,20,240,240,6
+92,World Language,9,T-WORLD_LANGUAGE-2,Wing-9-04,20,80,80,2
+93,Physics + Chemistry,9,T-SCIENCE-23,LAB-03,20,640,640,15
+94,History,9,T-HISTORY-1,Wing-9-16,20,320,320,8
+95,Module 2,9,T-MODULE_2-13,Wing-9-12,20,310,310,7
+96,Module 3,9,T-MODULE_3-2,Wing-9-03,20,165,165,3
+97,CAS,9,T-CAS-1,Wing-9-02,20,80,80,2
+98,Mathematics (Geometry),9,T-MATH-28,Wing-9-09 (+4 session overrides),20,435,435,9
+99,English,9,T-ENGLISH-21,Wing-9-16,20,460,460,9
+100,Chinese,9,T-CHINESE-9,Wing-9-03,20,240,240,6
+101,World Language,9,T-WORLD_LANGUAGE-1,Wing-9-12 (+2 session overrides),20,80,80,2
+102,Physics + Chemistry,9,T-SCIENCE-23,LAB-06,20,640,640,14
+103,History,9,T-HISTORY-1,Wing-9-03,20,320,320,8
+104,Module 2,9,T-MODULE_2-13,Wing-9-06,20,310,310,6
+105,Module 3,9,T-MODULE_3-1,Wing-9-04,20,165,165,4
+106,CAS,9,T-CAS-1,Wing-9-04,20,80,80,2
+107,Mathematics (Geometry),9,T-MATH-28,Wing-9-11,20,435,435,10
+108,English,9,T-ENGLISH-22,Wing-9-02,20,460,460,9
+109,Chinese,9,T-CHINESE-15,Wing-9-01,20,240,240,6
+110,World Language,9,T-WORLD_LANGUAGE-1,Wing-9-10,20,80,80,2
+111,Physics + Chemistry,9,T-SCIENCE-24,LAB-22,20,640,640,15
+112,History,9,T-HISTORY-2,Wing-9-06,20,320,320,6
+113,Module 2,9,T-MODULE_2-14,Wing-9-01,20,310,310,7
+114,Module 3,9,T-MODULE_3-3,Wing-9-11,20,165,165,3
+115,CAS,9,T-CAS-1,Wing-9-01,20,80,80,2
+116,Mathematics (Geometry),9,T-MATH-29,Wing-9-15,20,435,435,10
+117,English,9,T-ENGLISH-22,Wing-9-01 (+2 session overrides),20,460,460,10
+118,Chinese,9,T-CHINESE-10,Wing-9-02 (+2 session overrides),20,240,240,5
+119,World Language,9,T-WORLD_LANGUAGE-1,Wing-9-14 (+1 session overrides),20,80,80,2
+120,Physics + Chemistry,9,T-SCIENCE-22,LAB-19,20,640,640,15
+121,History,9,T-HISTORY-3,Wing-9-05,20,320,320,6
+122,Module 2,9,T-MODULE_2-14,Wing-9-05,20,310,310,7
+123,Module 3,9,T-MODULE_3-4,Wing-9-08 (+2 session overrides),20,165,165,3
+124,CAS,9,T-CAS-1,Wing-9-15,20,80,80,2
+125,Mathematics (Geometry),9,T-MATH-29,Wing-9-03 (+6 session overrides),20,435,435,10
+126,English,9,T-ENGLISH-23,Wing-9-03,20,460,460,8
+127,Chinese,9,T-CHINESE-10,Wing-9-12 (+2 session overrides),20,240,240,6
+128,World Language,9,T-WORLD_LANGUAGE-5,Wing-9-16,20,80,80,2
+129,Physics + Chemistry,9,T-SCIENCE-25,LAB-24,20,640,640,14
+130,History,9,T-HISTORY-2,Wing-9-13 (+2 session overrides),20,320,320,8
+131,Module 2,9,T-MODULE_2-15,Wing-9-06 (+4 session overrides),20,310,310,6
+132,Module 3,9,T-MODULE_3-2,Wing-9-11 (+3 session overrides),20,165,165,4
+133,CAS,9,T-CAS-1,Wing-9-01,20,80,80,2
+134,Mathematics (Geometry),9,T-MATH-27,Wing-9-04 (+2 session overrides),20,435,435,10
+135,English,9,T-ENGLISH-24,Wing-9-05,20,460,460,9
+136,Chinese,9,T-CHINESE-13,Wing-9-02 (+1 session overrides),20,240,240,6
+137,World Language,9,T-WORLD_LANGUAGE-2,Wing-9-12,20,80,80,2
+138,Physics + Chemistry,9,T-SCIENCE-25,LAB-03 (+2 session overrides),20,640,640,15
+139,History,9,T-HISTORY-4,Wing-9-04,20,320,320,6
+140,Module 2,9,T-MODULE_2-15,Wing-9-06,20,310,310,7
+141,Module 3,9,T-MODULE_3-5,Wing-9-04,20,165,165,3
+142,CAS,9,T-CAS-2,Wing-9-06,20,80,80,2
+143,Mathematics (Geometry),9,T-MATH-30,Wing-9-09 (+3 session overrides),20,435,435,9
+144,English,9,T-ENGLISH-19,Wing-9-09,20,460,460,11
+145,Chinese,9,T-CHINESE-9,Wing-9-10,20,240,240,5
+146,World Language,9,T-WORLD_LANGUAGE-2,Wing-9-16 (+1 session overrides),20,80,80,2
+147,Physics + Chemistry,9,T-SCIENCE-26,LAB-23,20,640,640,15
+148,History,9,T-HISTORY-3,Wing-9-12,20,320,320,6
+149,Module 2,9,T-MODULE_2-16,Wing-9-09 (+2 session overrides),20,310,310,7
+150,Module 3,9,T-MODULE_3-3,Wing-9-10,20,165,165,3
+151,CAS,9,T-CAS-1,Wing-9-01,20,80,80,2
+152,Mathematics (Geometry),9,T-MATH-30,Wing-9-02 (+4 session overrides),20,435,435,9
+153,English,9,T-ENGLISH-25,Wing-9-13 (+1 session overrides),20,460,460,9
+154,Chinese,9,T-CHINESE-11,Wing-9-07,20,240,240,6
+155,World Language,9,T-WORLD_LANGUAGE-1,Wing-9-12,20,80,80,2
+156,Physics + Chemistry,9,T-SCIENCE-26,LAB-23,20,640,640,15
+157,History,9,T-HISTORY-5,Wing-9-06 (+2 session overrides),20,320,320,7
+158,Module 2,9,T-MODULE_2-16,Wing-9-04 (+3 session overrides),20,310,310,7
+159,Module 3,9,T-MODULE_3-4,Wing-9-01,20,165,165,3
+160,CAS,9,T-CAS-10,Wing-9-05,20,80,80,2
+161,Mathematics (Geometry),9,T-MATH-31,Wing-9-02,20,435,435,9
+162,English,9,T-ENGLISH-24,Wing-9-15,20,460,460,10
+163,Chinese,9,T-CHINESE-11,Wing-9-14 (+2 session overrides),20,240,240,6
+164,World Language,9,T-WORLD_LANGUAGE-5,Wing-9-09,20,80,80,2
+165,Physics + Chemistry,9,T-SCIENCE-27,LAB-20,20,640,640,15
+166,History,9,T-HISTORY-6,Wing-9-15,20,320,320,6
+167,Module 2,9,T-MODULE_2-17,Wing-9-15 (+1 session overrides),20,310,310,7
+168,Module 3,9,T-MODULE_3-6,Wing-9-15,20,165,165,3
+169,CAS,9,T-CAS-1,Wing-9-05,20,80,80,2
+170,Mathematics (Geometry),9,T-MATH-31,Wing-9-05 (+6 session overrides),20,435,435,10
+171,English,9,T-ENGLISH-26,Wing-9-10 (+2 session overrides),20,460,460,9
+172,Chinese,9,T-CHINESE-14,Wing-9-06 (+5 session overrides),20,240,240,6
+173,World Language,9,T-WORLD_LANGUAGE-1,Wing-9-16,20,80,80,2
+174,Physics + Chemistry,9,T-SCIENCE-27,LAB-17,20,640,640,14
+175,History,9,T-HISTORY-4,Wing-9-05 (+2 session overrides),20,320,320,8
+176,Module 2,9,T-MODULE_2-17,Wing-9-07,20,310,310,6
+177,Module 3,9,T-MODULE_3-5,Wing-9-11 (+1 session overrides),20,165,165,3
+178,CAS,9,T-CAS-1,Wing-9-08 (+1 session overrides),20,80,80,2
+179,Mathematics (Geometry),9,T-MATH-32,Wing-9-10 (+3 session overrides),20,435,435,10
+180,English,9,T-ENGLISH-20,Wing-9-12 (+3 session overrides),20,460,460,11
+181,Chinese,9,T-CHINESE-11,Wing-9-13 (+2 session overrides),20,240,240,4
+182,World Language,9,T-WORLD_LANGUAGE-2,Wing-9-10,20,80,80,2
+183,Physics + Chemistry,9,T-SCIENCE-28,LAB-01,20,640,640,14
+184,History,9,T-HISTORY-5,Wing-9-12 (+2 session overrides),20,320,320,7
+185,Module 2,9,T-MODULE_2-18,Wing-9-11 (+2 session overrides),20,310,310,6
+186,Module 3,9,T-MODULE_3-6,Wing-9-14 (+1 session overrides),20,165,165,4
+187,CAS,9,T-CAS-2,Wing-9-07,20,80,80,2
+188,Mathematics (Geometry),9,T-MATH-32,Wing-9-13 (+6 session overrides),10,435,435,10
+189,English,9,T-ENGLISH-27,Wing-9-07 (+1 session overrides),10,460,460,8
+190,Chinese,9,T-CHINESE-12,Wing-9-16 (+2 session overrides),10,240,240,6
+191,World Language,9,T-WORLD_LANGUAGE-2,Wing-9-14,10,80,80,2
+192,Physics + Chemistry,9,T-SCIENCE-29,LAB-18,10,640,640,15
+193,History,9,T-HISTORY-7,Wing-9-16 (+2 session overrides),10,320,320,7
+194,Module 2,9,T-MODULE_2-18,Wing-9-07,10,310,310,7
+195,Module 3,9,T-MODULE_3-7,Wing-9-01,10,165,165,3
+196,CAS,9,T-CAS-2,Wing-9-15,10,80,80,2
+197,Mathematics,10,T-MATH-19,Wing-10-14,20,450,450,10
+198,English,10,T-ENGLISH-28,Wing-10-09,20,440,440,11
+199,Chinese,10,T-CHINESE-1,Wing-10-04,20,250,250,6
+200,World Language,10,T-WORLD_LANGUAGE-3,Wing-10-04,20,80,80,2
+201,Module 1: Physics + Chemistry,10,T-SCIENCE-15,LAB-15,20,650,650,14
+202,Module 2,10,T-MODULE_2-8,Wing-10-16,20,320,320,6
+203,History,10,T-HISTORY-8,Wing-10-09,20,300,300,6
+204,CAS,10,T-CAS-3,Wing-10-12,20,80,80,2
+205,Mathematics,10,T-MATH-20,Wing-10-09 (+4 session overrides),20,450,450,10
+206,English,10,T-ENGLISH-28,Wing-10-03,20,440,440,8
+207,Chinese,10,T-CHINESE-1,Wing-10-12,20,250,250,5
+208,World Language,10,T-WORLD_LANGUAGE-3,Wing-10-15,20,80,80,2
+209,Module 1: Physics + Chemistry,10,T-SCIENCE-16,LAB-14,20,650,650,15
+210,Module 2,10,T-MODULE_2-8,Wing-10-11,20,320,320,8
+211,History,10,T-HISTORY-8,Wing-10-13,20,300,300,6
+212,CAS,10,T-CAS-3,Wing-10-08,20,80,80,2
+213,Mathematics,10,T-MATH-19,Wing-10-02,20,450,450,10
+214,English,10,T-ENGLISH-28,Wing-10-16,20,440,440,10
+215,Chinese,10,T-CHINESE-1,Wing-10-15,20,250,250,5
+216,World Language,10,T-WORLD_LANGUAGE-4,Wing-10-03,20,80,80,2
+217,Module 1: Physics + Chemistry,10,T-SCIENCE-15,LAB-17 (+4 session overrides),20,650,650,15
+218,Module 2,10,T-MODULE_2-9,Wing-10-15,20,320,320,6
+219,History,10,T-HISTORY-9,Wing-10-16,20,300,300,6
+220,CAS,10,T-CAS-3,Wing-10-07,20,80,80,2
+221,Mathematics,10,T-MATH-20,Wing-10-01,20,450,450,11
+222,English,10,T-ENGLISH-29,Wing-10-05,20,440,440,11
+223,Chinese,10,T-CHINESE-2,Wing-10-12,20,250,250,5
+224,World Language,10,T-WORLD_LANGUAGE-3,Wing-10-14 (+2 session overrides),20,80,80,2
+225,Module 1: Physics + Chemistry,10,T-SCIENCE-17,LAB-21,20,650,650,13
+226,Module 2,10,T-MODULE_2-10,Wing-10-14 (+2 session overrides),20,320,320,6
+227,History,10,T-HISTORY-9,Wing-10-05,20,300,300,6
+228,CAS,10,T-CAS-3,Wing-10-01,20,80,80,2
+229,Mathematics,10,T-MATH-20,Wing-10-10,20,450,450,10
+230,English,10,T-ENGLISH-30,Wing-10-15 (+3 session overrides),20,440,440,8
+231,Chinese,10,T-CHINESE-2,Wing-10-04,20,250,250,5
+232,World Language,10,T-WORLD_LANGUAGE-3,Wing-10-11,20,80,80,2
+233,Module 1: Physics + Chemistry,10,T-SCIENCE-18,LAB-08,20,650,650,14
+234,Module 2,10,T-MODULE_2-9,Wing-10-03,20,320,320,8
+235,History,10,T-HISTORY-8,Wing-10-03 (+1 session overrides),20,300,300,7
+236,CAS,10,T-CAS-4,Wing-10-07 (+1 session overrides),20,80,80,2
+237,Mathematics,10,T-MATH-21,Wing-10-05 (+4 session overrides),20,450,450,10
+238,English,10,T-ENGLISH-37,Wing-10-02 (+2 session overrides),20,440,440,10
+239,Chinese,10,T-CHINESE-3,Wing-10-14,20,250,250,5
+240,World Language,10,T-WORLD_LANGUAGE-3,Wing-10-03,20,80,80,2
+241,Module 1: Physics + Chemistry,10,T-SCIENCE-18,LAB-15 (+4 session overrides),20,650,650,15
+242,Module 2,10,T-MODULE_2-11,Wing-10-01,20,320,320,6
+243,History,10,T-HISTORY-10,Wing-10-11,20,300,300,6
+244,CAS,10,T-CAS-3,Wing-10-15,20,80,80,2
+245,Mathematics,10,T-MATH-21,Wing-10-09 (+4 session overrides),20,450,450,9
+246,English,10,T-ENGLISH-31,Wing-10-09 (+2 session overrides),20,440,440,9
+247,Chinese,10,T-CHINESE-4,Wing-10-09,20,250,250,5
+248,World Language,10,T-WORLD_LANGUAGE-3,Wing-10-10,20,80,80,2
+249,Module 1: Physics + Chemistry,10,T-SCIENCE-16,LAB-20 (+1 session overrides),20,650,650,15
+250,Module 2,10,T-MODULE_2-10,Wing-10-16 (+6 session overrides),20,320,320,8
+251,History,10,T-HISTORY-11,Wing-10-03 (+2 session overrides),20,300,300,6
+252,CAS,10,T-CAS-3,Wing-10-02 (+1 session overrides),20,80,80,2
+253,Mathematics,10,T-MATH-22,Wing-10-01 (+2 session overrides),20,450,450,8
+254,English,10,T-ENGLISH-31,Wing-10-13,20,440,440,10
+255,Chinese,10,T-CHINESE-5,Wing-10-12 (+2 session overrides),20,250,250,5
+256,World Language,10,T-WORLD_LANGUAGE-6,Wing-10-06,20,80,80,2
+257,Module 1: Physics + Chemistry,10,T-SCIENCE-19,LAB-11,20,650,650,15
+258,Module 2,10,T-MODULE_2-11,Wing-10-06,20,320,320,8
+259,History,10,T-HISTORY-10,Wing-10-02 (+2 session overrides),20,300,300,7
+260,CAS,10,T-CAS-3,Wing-10-11,20,80,80,2
+261,Mathematics,10,T-MATH-23,Wing-10-02 (+1 session overrides),20,450,450,9
+262,English,10,T-ENGLISH-32,Wing-10-06 (+2 session overrides),20,440,440,9
+263,Chinese,10,T-CHINESE-5,Wing-10-04,20,250,250,5
+264,World Language,10,T-WORLD_LANGUAGE-3,Wing-10-12 (+2 session overrides),20,80,80,2
+265,Module 1: Physics + Chemistry,10,T-SCIENCE-19,LAB-18 (+2 session overrides),20,650,650,15
+266,Module 2,10,T-MODULE_2-8,Wing-10-12,20,320,320,8
+267,History,10,T-HISTORY-11,Wing-10-01,20,300,300,7
+268,CAS,10,T-CAS-9,Wing-10-10 (+1 session overrides),20,80,80,2
+269,Mathematics,10,T-MATH-24,Wing-10-11 (+2 session overrides),20,450,450,10
+270,English,10,T-ENGLISH-33,Wing-10-11 (+2 session overrides),20,440,440,9
+271,Chinese,10,T-CHINESE-6,Wing-10-13 (+2 session overrides),20,250,250,5
+272,World Language,10,T-WORLD_LANGUAGE-3,Wing-10-04,20,80,80,2
+273,Module 1: Physics + Chemistry,10,T-SCIENCE-20,LAB-16,20,650,650,15
+274,Module 2,10,T-MODULE_2-9,Wing-10-13 (+3 session overrides),20,320,320,8
+275,History,10,T-HISTORY-12,Wing-10-16 (+6 session overrides),20,300,300,6
+276,CAS,10,T-CAS-3,Wing-10-07,20,80,80,2
+277,Mathematics,10,T-MATH-24,Wing-10-07,20,450,450,10
+278,English,10,T-ENGLISH-34,Wing-10-04 (+4 session overrides),20,440,440,9
+279,Chinese,10,T-CHINESE-7,Wing-10-05 (+3 session overrides),20,250,250,5
+280,World Language,10,T-WORLD_LANGUAGE-4,Wing-10-07 (+1 session overrides),20,80,80,2
+281,Module 1: Physics + Chemistry,10,T-SCIENCE-30,LAB-01 (+1 session overrides),20,650,650,15
+282,Module 2,10,T-MODULE_2-10,Wing-10-08,20,320,320,8
+283,History,10,T-HISTORY-13,Wing-10-11 (+2 session overrides),20,300,300,6
+284,CAS,10,T-CAS-3,Wing-10-13,20,80,80,2
+285,Mathematics,10,T-MATH-25,Wing-10-08,20,450,450,8
+286,English,10,T-ENGLISH-35,Wing-10-10 (+1 session overrides),20,440,440,9
+287,Chinese,10,T-CHINESE-7,Wing-10-06 (+1 session overrides),20,250,250,5
+288,World Language,10,T-WORLD_LANGUAGE-4,Wing-10-12,20,80,80,2
+289,Module 1: Physics + Chemistry,10,T-SCIENCE-21,LAB-22 (+2 session overrides),20,650,650,15
+290,Module 2,10,T-MODULE_2-11,Wing-10-08 (+1 session overrides),20,320,320,8
+291,History,10,T-HISTORY-14,Wing-10-15,20,300,300,7
+292,CAS,10,T-CAS-4,Wing-10-08,20,80,80,2
+293,Mathematics,10,T-MATH-26,Wing-10-10 (+2 session overrides),10,450,450,9
+294,English,10,T-ENGLISH-36,Wing-10-07 (+1 session overrides),10,440,440,9
+295,Chinese,10,T-CHINESE-8,Wing-10-15 (+5 session overrides),10,250,250,5
+296,World Language,10,T-WORLD_LANGUAGE-4,Wing-10-14,10,80,80,2
+297,Module 1: Physics + Chemistry,10,T-SCIENCE-22,LAB-19,10,650,650,15
+298,Module 2,10,T-MODULE_2-12,Wing-10-06 (+4 session overrides),10,320,320,8
+299,History,10,T-HISTORY-14,Wing-10-06 (+3 session overrides),10,300,300,7
+300,CAS,10,T-CAS-9,Wing-10-10,10,80,80,2
+301,Mathematics,11,T-MATH-1,Wing-11-06,20,490,490,11
+302,English,11,T-ENGLISH-10,Wing-11-08,20,480,480,10
+303,Language,11,T-LANGUAGE-9,Wing-11-06,20,235,235,5
+304,Module 1: Science,11,T-MODULE_1_SCIENCE-9,LAB-16 (+5 session overrides),20,490,490,12
+305,Module 2: Electives,11,T-MODULE_2_ELECTIVES-1,Wing-11-06,20,355,355,7
+306,Module 3: Electives,11,T-MODULE_3_ELECTIVES-1,Wing-11-06,20,230,230,5
+307,Module 4: Electives,11,T-MODULE_4_ELECTIVES-1,Wing-11-12,20,360,360,7
+308,Personal Growth,11,T-PG-1,Wing-11-11,20,80,80,2
+309,CAS,11,T-CAS-5,Wing-11-01,20,80,80,2
+310,Mathematics,11,T-MATH-2,Wing-11-02,20,490,490,11
+311,English,11,T-ENGLISH-11,Wing-11-02,20,480,480,10
+312,Language,11,T-LANGUAGE-9,Wing-11-12,20,235,235,5
+313,Module 1: Science,11,T-MODULE_1_SCIENCE-1,LAB-24 (+4 session overrides),20,490,490,11
+314,Module 2: Electives,11,T-MODULE_2_ELECTIVES-2,Wing-11-13,20,355,355,8
+315,Module 3: Electives,11,T-MODULE_3_ELECTIVES-1,Wing-11-05,20,230,230,4
+316,Module 4: Electives,11,T-MODULE_4_ELECTIVES-1,Wing-11-12,20,360,360,8
+317,Personal Growth,11,T-PG-1,Wing-11-01 (+1 session overrides),20,80,80,2
+318,CAS,11,T-CAS-5,Wing-11-15,20,80,80,2
+319,Mathematics,11,T-MATH-3,Wing-11-11,20,490,490,10
+320,English,11,T-ENGLISH-10,Wing-11-03,20,480,480,10
+321,Language,11,T-LANGUAGE-10,Wing-11-05,20,235,235,5
+322,Module 1: Science,11,T-MODULE_1_SCIENCE-2,LAB-10,20,490,490,12
+323,Module 2: Electives,11,T-MODULE_2_ELECTIVES-2,Wing-11-03,20,355,355,7
+324,Module 3: Electives,11,T-MODULE_3_ELECTIVES-2,Wing-11-03,20,230,230,5
+325,Module 4: Electives,11,T-MODULE_4_ELECTIVES-1,Wing-11-09,20,360,360,8
+326,Personal Growth,11,T-PG-1,Wing-11-11,20,80,80,2
+327,CAS,11,T-CAS-5,Wing-11-01,20,80,80,2
+328,Mathematics,11,T-MATH-4,Wing-11-16,20,490,490,10
+329,English,11,T-ENGLISH-12,Wing-11-05 (+2 session overrides),20,480,480,10
+330,Language,11,T-LANGUAGE-11,Wing-11-04,20,235,235,5
+331,Module 1: Science,11,T-MODULE_1_SCIENCE-2,LAB-14 (+2 session overrides),20,490,490,11
+332,Module 2: Electives,11,T-MODULE_2_ELECTIVES-3,Wing-11-13 (+1 session overrides),20,355,355,8
+333,Module 3: Electives,11,T-MODULE_3_ELECTIVES-2,Wing-11-16,20,230,230,5
+334,Module 4: Electives,11,T-MODULE_4_ELECTIVES-2,Wing-11-16,20,360,360,8
+335,Personal Growth,11,T-PG-1,Wing-11-10,20,80,80,2
+336,CAS,11,T-CAS-5,Wing-11-14,20,80,80,2
+337,Mathematics,11,T-MATH-5,Wing-11-15,20,490,490,10
+338,English,11,T-ENGLISH-11,Wing-11-03 (+2 session overrides),20,480,480,11
+339,Language,11,T-LANGUAGE-12,Wing-11-15,20,235,235,5
+340,Module 1: Science,11,T-MODULE_1_SCIENCE-8,LAB-21,20,490,490,12
+341,Module 2: Electives,11,T-MODULE_2_ELECTIVES-4,Wing-11-11,20,355,355,7
+342,Module 3: Electives,11,T-MODULE_3_ELECTIVES-3,Wing-11-11,20,230,230,4
+343,Module 4: Electives,11,T-MODULE_4_ELECTIVES-2,Wing-11-02 (+4 session overrides),20,360,360,8
+344,Personal Growth,11,T-PG-2,Wing-11-10,20,80,80,2
+345,CAS,11,T-CAS-6,Wing-11-15,20,80,80,2
+346,Mathematics,11,T-MATH-3,Wing-11-04,20,490,490,11
+347,English,11,T-ENGLISH-13,Wing-11-10 (+1 session overrides),20,480,480,10
+348,Language,11,T-LANGUAGE-13,Wing-11-08,20,235,235,5
+349,Module 1: Science,11,T-MODULE_1_SCIENCE-3,LAB-14 (+6 session overrides),20,490,490,12
+350,Module 2: Electives,11,T-MODULE_2_ELECTIVES-5,Wing-11-08,20,355,355,7
+351,Module 3: Electives,11,T-MODULE_3_ELECTIVES-3,Wing-11-08,20,230,230,4
+352,Module 4: Electives,11,T-MODULE_4_ELECTIVES-3,Wing-11-06 (+1 session overrides),20,360,360,8
+353,Personal Growth,11,T-PG-1,Wing-11-12 (+1 session overrides),20,80,80,2
+354,CAS,11,T-CAS-5,Wing-11-14,20,80,80,2
+355,Mathematics,11,T-MATH-6,Wing-11-09 (+3 session overrides),20,490,490,11
+356,English,11,T-ENGLISH-14,Wing-11-13 (+3 session overrides),20,480,480,9
+357,Language,11,T-LANGUAGE-14,Wing-11-14,20,235,235,5
+358,Module 1: Science,11,T-MODULE_1_SCIENCE-4,LAB-05,20,490,490,12
+359,Module 2: Electives,11,T-MODULE_2_ELECTIVES-6,Wing-11-07,20,355,355,7
+360,Module 3: Electives,11,T-MODULE_3_ELECTIVES-4,Wing-11-13,20,230,230,5
+361,Module 4: Electives,11,T-MODULE_4_ELECTIVES-3,Wing-11-09,20,360,360,8
+362,Personal Growth,11,T-PG-1,Wing-11-15,20,80,80,2
+363,CAS,11,T-CAS-5,Wing-11-08 (+2 session overrides),20,80,80,2
+364,Mathematics,11,T-MATH-7,Wing-11-13 (+7 session overrides),20,490,490,10
+365,English,11,T-ENGLISH-15,Wing-11-07,20,480,480,10
+366,Language,11,T-LANGUAGE-15,Wing-11-09 (+2 session overrides),20,235,235,5
+367,Module 1: Science,11,T-MODULE_1_SCIENCE-4,LAB-09,20,490,490,12
+368,Module 2: Electives,11,T-MODULE_2_ELECTIVES-3,Wing-11-07,20,355,355,8
+369,Module 3: Electives,11,T-MODULE_3_ELECTIVES-4,Wing-11-12 (+3 session overrides),20,230,230,5
+370,Module 4: Electives,11,T-MODULE_4_ELECTIVES-2,Wing-11-10 (+2 session overrides),20,360,360,7
+371,Personal Growth,11,T-PG-1,Wing-11-15,20,80,80,2
+372,CAS,11,T-CAS-5,Wing-11-06 (+2 session overrides),20,80,80,2
+373,Mathematics,11,T-MATH-6,Wing-11-10 (+2 session overrides),4,490,490,11
+374,English,11,T-ENGLISH-16,Wing-11-14 (+1 session overrides),4,480,480,10
+375,Language,11,T-LANGUAGE-16,Wing-11-16 (+2 session overrides),4,235,235,5
+376,Module 1: Science,11,T-MODULE_1_SCIENCE-5,LAB-01 (+5 session overrides),4,490,490,12
+377,Module 2: Electives,11,T-MODULE_2_ELECTIVES-7,Wing-11-16 (+4 session overrides),4,355,355,7
+378,Module 3: Electives,11,T-MODULE_3_ELECTIVES-5,Wing-11-16 (+2 session overrides),4,230,230,5
+379,Module 4: Electives,11,T-MODULE_4_ELECTIVES-3,Wing-11-15 (+1 session overrides),4,360,360,7
+380,Personal Growth,11,T-PG-1,Wing-11-09 (+2 session overrides),4,80,80,2
+381,CAS,11,T-CAS-5,Wing-11-07,4,80,80,2
+382,Mathematics,11,T-MATH-8,Wing-11-11 (+8 session overrides),20,490,490,11
+383,English,11,T-ENGLISH-17,Wing-11-04,20,480,480,10
+384,Language,11,T-LANGUAGE-14,Wing-11-14,20,235,235,5
+385,Module 1: Science,11,T-MODULE_1_SCIENCE-5,LAB-18 (+4 session overrides),20,490,490,12
+386,Module 2: Electives,11,T-MODULE_2_ELECTIVES-8,Wing-11-14 (+2 session overrides),20,355,355,7
+387,Module 3: Electives,11,T-MODULE_3_ELECTIVES-5,Wing-11-07,20,230,230,5
+388,Module 4: Electives,11,T-MODULE_4_ELECTIVES-4,Wing-11-14 (+2 session overrides),20,360,360,7
+389,Personal Growth,11,T-PG-5,Wing-11-09 (+2 session overrides),20,80,80,2
+390,CAS,11,T-CAS-5,Wing-11-01,20,80,80,2
+391,Mathematics,11,T-MATH-5,Wing-11-02 (+1 session overrides),20,490,490,11
+392,English,11,T-ENGLISH-14,Wing-11-08 (+8 session overrides),20,480,480,11
+393,Language,11,T-LANGUAGE-17,Wing-11-04 (+1 session overrides),20,235,235,5
+394,Module 1: Science,11,T-MODULE_1_SCIENCE-6,LAB-04,20,490,490,12
+395,Module 2: Electives,11,T-MODULE_2_ELECTIVES-7,Wing-11-03 (+7 session overrides),20,355,355,7
+396,Module 3: Electives,11,T-MODULE_3_ELECTIVES-6,Wing-11-10 (+2 session overrides),20,230,230,4
+397,Module 4: Electives,11,T-MODULE_4_ELECTIVES-4,Wing-11-15 (+1 session overrides),20,360,360,8
+398,Personal Growth,11,T-PG-2,Wing-11-14,20,80,80,2
+399,CAS,11,T-CAS-5,Wing-11-15,20,80,80,2
+400,Mathematics,11,T-MATH-9,Wing-11-09 (+3 session overrides),20,490,490,9
+401,English,11,T-ENGLISH-18,Wing-11-01,20,480,480,10
+402,Language,11,T-LANGUAGE-18,Wing-11-10 (+2 session overrides),20,235,235,5
+403,Module 1: Science,11,T-MODULE_1_SCIENCE-6,LAB-21 (+4 session overrides),20,490,490,12
+404,Module 2: Electives,11,T-MODULE_2_ELECTIVES-1,Wing-11-09 (+3 session overrides),20,355,355,8
+405,Module 3: Electives,11,T-MODULE_3_ELECTIVES-6,Wing-11-04 (+3 session overrides),20,230,230,5
+406,Module 4: Electives,11,T-MODULE_4_ELECTIVES-4,Wing-11-02 (+4 session overrides),20,360,360,8
+407,Personal Growth,11,T-PG-2,Wing-11-14,20,80,80,2
+408,CAS,11,T-CAS-6,Wing-11-13,20,80,80,2
+409,Mathematics,11,T-MATH-10,Wing-11-05 (+4 session overrides),20,490,490,10
+410,English,11,T-ENGLISH-12,Wing-11-05,20,480,480,12
+411,Language,11,T-LANGUAGE-10,Wing-11-07 (+2 session overrides),20,235,235,5
+412,Module 1: Science,11,T-MODULE_1_SCIENCE-7,LAB-02,20,490,490,12
+413,Module 2: Electives,11,T-MODULE_2_ELECTIVES-9,Wing-11-02 (+3 session overrides),20,355,355,7
+414,Module 3: Electives,11,T-MODULE_3_ELECTIVES-7,Wing-11-01,20,230,230,4
+415,Module 4: Electives,11,T-MODULE_4_ELECTIVES-5,Wing-11-05 (+2 session overrides),20,360,360,8
+416,Personal Growth,11,T-PG-2,Wing-11-04,20,80,80,2
+417,CAS,11,T-CAS-6,Wing-11-05,20,80,80,2
+418,Mathematics,11,T-MATH-11,Wing-11-01 (+1 session overrides),6,490,490,10
+419,English,11,T-ENGLISH-13,Wing-11-06 (+2 session overrides),6,480,480,11
+420,Language,11,T-LANGUAGE-19,Wing-11-12,6,235,235,5
+421,Module 1: Science,11,T-MODULE_1_SCIENCE-7,LAB-02,6,490,490,12
+422,Module 2: Electives,11,T-MODULE_2_ELECTIVES-6,Wing-11-07 (+3 session overrides),6,355,355,7
+423,Module 3: Electives,11,T-MODULE_3_ELECTIVES-7,Wing-11-01 (+2 session overrides),6,230,230,4
+424,Module 4: Electives,11,T-MODULE_4_ELECTIVES-5,Wing-11-08,6,360,360,8
+425,Personal Growth,11,T-PG-2,Wing-11-11,6,80,80,2
+426,CAS,11,T-CAS-6,Wing-11-11,6,80,80,2
+427,Mathematics,12,T-MATH-12,Wing-12-04,20,480,480,10
+428,English,12,T-ENGLISH-1,Wing-12-13,20,490,490,10
+429,Language,12,T-LANGUAGE-1,Wing-12-16,20,245,245,5
+430,Module 1: AP Physics 2 + Honors Organic Chemistry,12,T-SCIENCE-1,LAB-08 (+3 session overrides),20,965,965,23
+431,Module 2,12,T-MODULE_2-1,Wing-12-05,20,350,350,6
+432,Personal Growth,12,T-PG-3,Wing-12-16,20,80,80,2
+433,CAS,12,T-CAS-7,Wing-12-13,20,80,80,2
+434,Mathematics,12,T-MATH-12,Wing-12-12,20,480,480,11
+435,English,12,T-ENGLISH-2,Wing-12-08,20,490,490,10
+436,Language,12,T-LANGUAGE-1,Wing-12-08,20,245,245,6
+437,Module 1: AP Physics 2 + Honors Organic Chemistry,12,T-SCIENCE-2,LAB-02 (+2 session overrides),20,965,965,20
+438,Module 2,12,T-MODULE_2-2,Wing-12-03,20,350,350,7
+439,Personal Growth,12,T-PG-6,Wing-12-15,20,80,80,2
+440,CAS,12,T-CAS-8,Wing-12-15,20,80,80,2
+441,Mathematics,12,T-MATH-13,Wing-12-11,7,480,480,10
+442,English,12,T-ENGLISH-3,Wing-12-06,7,490,490,10
+443,Language,12,T-LANGUAGE-2,Wing-12-07,7,245,245,5
+444,Module 1: AP Physics 2 + Honors Organic Chemistry,12,T-SCIENCE-3,LAB-13,7,965,965,21
+445,Module 2,12,T-MODULE_2-1,Wing-12-05,7,350,350,8
+446,Personal Growth,12,T-PG-3,Wing-12-03,7,80,80,2
+447,CAS,12,T-CAS-7,Wing-12-07,7,80,80,2
+448,Mathematics,12,T-MATH-13,Wing-12-15,20,480,480,10
+449,English,12,T-ENGLISH-2,Wing-12-05 (+2 session overrides),20,490,490,12
+450,Language,12,T-LANGUAGE-3,Wing-12-03,20,245,245,5
+451,Module 1: AP Physics 2 + Honors Organic Chemistry,12,T-SCIENCE-4,LAB-04 (+4 session overrides),20,965,965,21
+452,Module 2,12,T-MODULE_2-3,Wing-12-09,20,350,350,7
+453,Personal Growth,12,T-PG-3,Wing-12-04,20,80,80,2
+454,CAS,12,T-CAS-7,Wing-12-12,20,80,80,2
+455,Mathematics,12,T-MATH-14,Wing-12-08 (+2 session overrides),20,480,480,10
+456,English,12,T-ENGLISH-4,Wing-12-07,20,490,490,10
+457,Language,12,T-LANGUAGE-2,Wing-12-15 (+1 session overrides),20,245,245,5
+458,Module 1: AP Physics 2 + Honors Organic Chemistry,12,T-SCIENCE-5,LAB-10 (+3 session overrides),20,965,965,22
+459,Module 2,12,T-MODULE_2-2,Wing-12-15 (+3 session overrides),20,350,350,8
+460,Personal Growth,12,T-PG-3,Wing-12-12,20,80,80,2
+461,CAS,12,T-CAS-7,Wing-12-05 (+1 session overrides),20,80,80,2
+462,Mathematics,12,T-MATH-14,Wing-12-11,20,480,480,10
+463,English,12,T-ENGLISH-5,Wing-12-05 (+3 session overrides),20,490,490,11
+464,Language,12,T-LANGUAGE-4,Wing-12-03 (+2 session overrides),20,245,245,5
+465,Module 1: AP Physics 2 + Honors Organic Chemistry,12,T-SCIENCE-6,LAB-23 (+8 session overrides),20,965,965,21
+466,Module 2,12,T-MODULE_2-1,Wing-12-03,20,350,350,8
+467,Personal Growth,12,T-PG-3,Wing-12-14,20,80,80,2
+468,CAS,12,T-CAS-7,Wing-12-02,20,80,80,2
+469,Mathematics,12,T-MATH-15,Wing-12-01,20,480,480,10
+470,English,12,T-ENGLISH-6,Wing-12-01,20,490,490,9
+471,Language,12,T-LANGUAGE-3,Wing-12-04 (+2 session overrides),20,245,245,5
+472,Module 1: AP Physics 2 + Honors Organic Chemistry,12,T-SCIENCE-7,LAB-07,20,965,965,23
+473,Module 2,12,T-MODULE_2-3,Wing-12-01,20,350,350,8
+474,Personal Growth,12,T-PG-6,Wing-12-14,20,80,80,2
+475,CAS,12,T-CAS-7,Wing-12-10,20,80,80,2
+476,Mathematics,12,T-MATH-16,Wing-12-16,20,480,480,10
+477,English,12,T-ENGLISH-7,Wing-12-16 (+1 session overrides),20,490,490,11
+478,Language,12,T-LANGUAGE-5,Wing-12-12 (+2 session overrides),20,245,245,5
+479,Module 1: AP Physics 2 + Honors Organic Chemistry,12,T-SCIENCE-8,LAB-12,20,965,965,22
+480,Module 2,12,T-MODULE_2-4,Wing-12-12 (+2 session overrides),20,350,350,7
+481,Personal Growth,12,T-PG-4,Wing-12-16,20,80,80,2
+482,CAS,12,T-CAS-7,Wing-12-14 (+2 session overrides),20,80,80,2
+483,Mathematics,12,T-MATH-15,Wing-12-01,20,480,480,11
+484,English,12,T-ENGLISH-7,Wing-12-11 (+4 session overrides),20,490,490,11
+485,Language,12,T-LANGUAGE-6,Wing-12-06,20,245,245,5
+486,Module 1: AP Physics 2 + Honors Organic Chemistry,12,T-SCIENCE-9,LAB-09 (+3 session overrides),20,965,965,21
+487,Module 2,12,T-MODULE_2-4,Wing-12-04 (+2 session overrides),20,350,350,7
+488,Personal Growth,12,T-PG-3,Wing-12-14,20,80,80,2
+489,CAS,12,T-CAS-7,Wing-12-12 (+2 session overrides),20,80,80,2
+490,Mathematics,12,T-MATH-16,Wing-12-13,11,480,480,11
+491,English,12,T-ENGLISH-3,Wing-12-07 (+2 session overrides),11,490,490,11
+492,Language,12,T-LANGUAGE-4,Wing-12-13,11,245,245,5
+493,Module 1: AP Physics 2 + Honors Organic Chemistry,12,T-SCIENCE-10,LAB-22 (+12 session overrides),11,965,965,21
+494,Module 2,12,T-MODULE_2-5,Wing-12-04 (+1 session overrides),11,350,350,7
+495,Personal Growth,12,T-PG-3,Wing-12-13,11,80,80,2
+496,CAS,12,T-CAS-7,Wing-12-10,11,80,80,2
+497,Mathematics,12,T-MATH-12,Wing-12-09,19,480,480,11
+498,English,12,T-ENGLISH-4,Wing-12-07 (+4 session overrides),19,490,490,11
+499,Language,12,T-LANGUAGE-5,Wing-12-07,19,245,245,5
+500,Module 1: AP Physics 2 + Honors Organic Chemistry,12,T-SCIENCE-11,LAB-11 (+2 session overrides),19,965,965,22
+501,Module 2,12,T-MODULE_2-6,Wing-12-15 (+4 session overrides),19,350,350,6
+502,Personal Growth,12,T-PG-3,Wing-12-08 (+1 session overrides),19,80,80,2
+503,CAS,12,T-CAS-7,Wing-12-12,19,80,80,2
+504,Mathematics,12,T-MATH-17,Wing-12-02,20,480,480,11
+505,English,12,T-ENGLISH-8,Wing-12-06 (+3 session overrides),20,490,490,11
+506,Language,12,T-LANGUAGE-7,Wing-12-15 (+2 session overrides),20,245,245,5
+507,Module 1: AP Physics 2 + Honors Organic Chemistry,12,T-SCIENCE-12,LAB-13 (+9 session overrides),20,965,965,21
+508,Module 2,12,T-MODULE_2-6,Wing-12-09,20,350,350,8
+509,Personal Growth,12,T-PG-4,Wing-12-02,20,80,80,2
+510,CAS,12,T-CAS-8,Wing-12-14,20,80,80,2
+511,Mathematics,12,T-MATH-18,Wing-12-02 (+3 session overrides),20,480,480,11
+512,English,12,T-ENGLISH-5,Wing-12-14,20,490,490,11
+513,Language,12,T-LANGUAGE-6,Wing-12-08 (+2 session overrides),20,245,245,5
+514,Module 1: AP Physics 2 + Honors Organic Chemistry,12,T-SCIENCE-13,LAB-05 (+4 session overrides),20,965,965,21
+515,Module 2,12,T-MODULE_2-7,Wing-12-14 (+1 session overrides),20,350,350,7
+516,Personal Growth,12,T-PG-4,Wing-12-08,20,80,80,2
+517,CAS,12,T-CAS-8,Wing-12-12,20,80,80,2
+518,Mathematics,12,T-MATH-17,Wing-12-09 (+5 session overrides),13,480,480,11
+519,English,12,T-ENGLISH-9,Wing-12-10,13,490,490,10
+520,Language,12,T-LANGUAGE-8,Wing-12-10,13,245,245,5
+521,Module 1: AP Physics 2 + Honors Organic Chemistry,12,T-SCIENCE-14,LAB-06 (+3 session overrides),13,965,965,21
+522,Module 2,12,T-MODULE_2-5,Wing-12-10,13,350,350,8
+523,Personal Growth,12,T-PG-4,Wing-12-05 (+2 session overrides),13,80,80,2
+524,CAS,12,T-CAS-8,Wing-12-04,13,80,80,2

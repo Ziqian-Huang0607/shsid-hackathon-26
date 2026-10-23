@@ -1,6 +1,6 @@
 """Core domain model: courses, teachers, rooms, students, sections.
 
-A *Course* is an enrolment unit for one grade (e.g. "G11 AP Physics 1").
+A *Course* is an enrolment unit for one grade (e.g. "G11 Module 1: Science").
 A *Section* is a taught instance of a course: one teacher, one room,
 <= 25 students, and a set of time slots whose minutes must sum to at
 least the course's required two-week minutes.

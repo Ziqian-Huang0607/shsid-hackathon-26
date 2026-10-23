@@ -1,5 +1,5 @@
 {
-  "comment": "School-wide parameters. penalty_weights tune the soft-cost landscape; hard_weight converts any hard-constraint violation into a dominating cost so the optimiser treats it as forbidden. No assumption is made about the total number of teachers: they are hired on demand under per-duration load caps. Facilities follow the school's guidance: ~16 classrooms per grade wing, plus shared labs / PE venues / studios.",
+  "comment": "School-wide parameters. penalty_weights tune the soft-cost landscape; hard_weight converts any hard-constraint violation into a dominating cost so the optimiser treats it as forbidden. No assumption is made about the total number of teachers: they are hired on demand under per-duration load caps. Facilities follow the school's guidance: ~16 classrooms per grade wing, plus shared labs and PE venues.",
   "hard_weight": 100000,
   "section_capacity": 20,
   "student_minute_budget": 3040,
@@ -37,7 +37,7 @@
     "max_building_moves_per_day": 1
   },
   "facilities": {
-    "comment": "One wing per grade with ~16 classrooms each; labs, PE venues and studios are shared across grades. PE must host a whole grade at once (grade-synchronised: 13 sections of <=20), hence 16 venues. Lab/studio counts follow the science/arts load (~1050 lab and ~200 studio sessions per cycle) with ~30% scheduling slack.",
+    "comment": "One wing per grade with ~16 classrooms each; labs and PE venues are shared across grades. PE must host a whole grade at once (grade-synchronised: 13 sections of <=20), hence 16 venues. Lab count follows the science load (~1050 lab sessions per cycle) with ~30% scheduling slack. No course in modules.xlsx needs a studio, so none are built.",
     "wings": [
       "Wing-9",
       "Wing-10",
@@ -47,6 +47,6 @@
     "classrooms_per_wing": 16,
     "labs": 24,
     "pe_venues": 16,
-    "studios": 8
+    "studios": 0
   }
 }
