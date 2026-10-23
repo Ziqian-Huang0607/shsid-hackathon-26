@@ -11,60 +11,60 @@
   "baseline": {
     "hard_violations": 6,
     "soft_components": {
-      "subject_alternation": 93950.0,
+      "subject_alternation": 98250.0,
       "pe_timing": 0.0,
-      "subject_time_diversity": 37128.0,
-      "self_study": 6425.0,
-      "workload": 50490.0,
-      "odd_even_stability": 184976.0,
+      "subject_time_diversity": 38752.0,
+      "self_study": 6160.0,
+      "workload": 47300.0,
+      "odd_even_stability": 166344.0,
       "teacher_mobility": 0.0,
-      "cognitive_load": 23616.85,
-      "same_day_repeat": 1232.0,
+      "cognitive_load": 26311.33,
+      "same_day_repeat": 1624.0,
       "overshoot": 0.0,
       "student_overload": 0.0,
-      "prime_time_reward": -16073.49
+      "prime_time_reward": -15969.77
     },
-    "soft_total": 397817.85,
-    "soft_per_student": 397.818,
+    "soft_total": 384741.33,
+    "soft_per_student": 384.741,
     "raw_detail": {
-      "same_day_repeat": 1232.0,
-      "cognitive_load": 23616.85,
-      "subject_alternation": 93950.0,
-      "prime_time_reward": -16073.49,
-      "workload": 50490.0,
-      "odd_even_stability": 184976.0,
-      "subject_time_diversity": 37128.0,
-      "self_study": 6425.0,
+      "same_day_repeat": 1624.0,
+      "subject_alternation": 98250.0,
+      "cognitive_load": 26311.33,
+      "prime_time_reward": -15969.77,
+      "workload": 47300.0,
+      "subject_time_diversity": 38752.0,
+      "odd_even_stability": 166344.0,
+      "self_study": 6160.0,
       "hard_room_conflict": 600000.0
     }
   },
   "optimised": {
     "hard_violations": 0,
     "soft_components": {
-      "subject_alternation": 59970.0,
+      "subject_alternation": 78690.0,
       "pe_timing": 0.0,
-      "subject_time_diversity": 10633.0,
-      "self_study": 5395.0,
-      "workload": 48370.0,
-      "odd_even_stability": 35288.0,
+      "subject_time_diversity": 15099.0,
+      "self_study": 5140.0,
+      "workload": 48400.0,
+      "odd_even_stability": 14576.0,
       "teacher_mobility": 0.0,
-      "cognitive_load": 21602.56,
-      "same_day_repeat": 1372.0,
+      "cognitive_load": 27106.22,
+      "same_day_repeat": 1840.0,
       "overshoot": 0.0,
       "student_overload": 0.0,
-      "prime_time_reward": -16159.37
+      "prime_time_reward": -15907.62
     },
-    "soft_total": 182630.56,
-    "soft_per_student": 182.631,
+    "soft_total": 190851.22,
+    "soft_per_student": 190.851,
     "raw_detail": {
-      "same_day_repeat": 1372.0,
-      "prime_time_reward": -16159.37,
-      "cognitive_load": 21602.56,
-      "subject_alternation": 59970.0,
-      "workload": 48370.0,
-      "subject_time_diversity": 10633.0,
-      "odd_even_stability": 35288.0,
-      "self_study": 5395.0
+      "same_day_repeat": 1840.0,
+      "cognitive_load": 27106.22,
+      "prime_time_reward": -15907.62,
+      "subject_alternation": 78690.0,
+      "workload": 48400.0,
+      "subject_time_diversity": 15099.0,
+      "odd_even_stability": 14576.0,
+      "self_study": 5140.0
     }
   },
   "hard_constraint_check": {
@@ -78,6 +78,7 @@
     "H8": 0,
     "H9": 0,
     "H10": 0,
-    "H11": 0
+    "H11": 0,
+    "H12": 0
   }
 }

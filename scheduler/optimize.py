@@ -43,6 +43,10 @@ def _expand_sync(inst: Instance, lesson: Lesson) -> List[int]:
     return [lesson.id]
 
 
+def _is_cas_block(inst: Instance, lesson: Lesson) -> bool:
+    return lesson.grade_wide and inst.courses[lesson.course_id].subject == "cas"
+
+
 # Rooms are fungible within (building, room_type) and assigned PER
 # SESSION at the end (solve_rooms_per_slot), so the search never tracks
 # individual rooms -- only the demand-vs-supply invariant per
@@ -283,6 +287,31 @@ def greedy_init(inst: Instance, rng: random.Random,
         plan = les.plan or tg.decompose_minutes(course.minutes)
         preferred_period = rng.randrange(tg.PERIODS_PER_DAY)
 
+        if _is_cas_block(inst, les):
+            # CAS is one grade-paired double period per two-week cycle.
+            # Place the two slots together before ordinary cluster lessons,
+            # then keep the block intact during repair and annealing.
+            pairs = []
+            for week in range(tg.WEEKS):
+                for day in range(tg.DAYS_PER_WEEK):
+                    for period in range(tg.PERIODS_BY_DAY[day] - 1):
+                        a = tg.slot_index(week, day, period)
+                        b = tg.slot_index(week, day, period + 1)
+                        if tg.SLOT_MINUTES[a] != 40 or tg.SLOT_MINUTES[b] != 40:
+                            continue
+                        if (_group_conflicts_at(inst, les, a) == 0
+                                and _group_conflicts_at(inst, les, b) == 0):
+                            pairs.append((score_slot(les, course, a, preferred_period)
+                                          + score_slot(les, course, b, preferred_period),
+                                          a, b))
+            if not pairs:
+                raise ValueError(f"No feasible 80-minute CAS double period for G{course.grade}")
+            _, a, b = min(pairs)
+            for slot in (a, b):
+                _slots_add(inst, les, slot)
+                mark(les, course.category, slot)
+            continue
+
         # group plan into (duration -> count)
         counts: Dict[int, int] = {}
         for d in plan:
@@ -490,11 +519,14 @@ def repair(inst: Instance, rng: random.Random,
             grade = inst.courses[les.course_id].grade
             pool = [m for m in cluster_lessons[-1]
                     if inst.courses[m.course_id].grade == grade]
-        return [m for m in pool if m.id not in own_group]
+        return [m for m in pool
+                if m.id not in own_group and not _is_cas_block(inst, m)]
 
     for _ in range(max_passes):
         moved = False
         for les in inst.lessons:
+            if _is_cas_block(inst, les):
+                continue
             for old in [s for s in les.slots
                         if _group_conflicts_at(inst, les, s) > 0]:
                 best_slot, best_conf = None, _group_conflicts_at(inst, les, old)
@@ -533,6 +565,7 @@ def repair(inst: Instance, rng: random.Random,
                 dur = tg.SLOT_MINUTES[old]
                 pool = [m for m in inst.lessons
                         if m.id != les.id and m.slots is not les.slots
+                        and not _is_cas_block(inst, m)
                         and any(tg.SLOT_MINUTES[s] == dur
                                 and s not in les.slots and s != old
                                 for s in m.slots)]
@@ -911,7 +944,7 @@ def anneal(inst: Instance, rng: random.Random, iterations: int = 20000,
             les = rng.choice(hot)     # focus on fixing hard violations
         else:
             les = rng.choice(lessons)
-        if not les.slots:
+        if not les.slots or _is_cas_block(inst, les):
             continue
 
         roll = rng.random()
@@ -979,7 +1012,8 @@ def anneal(inst: Instance, rng: random.Random, iterations: int = 20000,
         elif roll < pair_prob + match_prob + swap_prob:    # ---- swap
             other = rng.choice(lessons)
             if (other.id == les.id or not other.slots
-                    or other.slots is les.slots):
+                    or other.slots is les.slots
+                    or _is_cas_block(inst, other)):
                 continue
             a = rng.choice(tuple(les.slots))
             b = rng.choice(tuple(other.slots))

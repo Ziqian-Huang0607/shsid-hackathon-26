@@ -120,11 +120,52 @@ def export_sections_csv(inst: Instance, path: Path) -> None:
                            len(sec.slots)])
 
 
+def export_sample_timetables(inst: Instance, path: Path) -> None:
+    """One complete Week A/B timetable for the first student in each grade."""
+    samples = {}
+    for st in inst.students:
+        samples.setdefault(st.grade, st)
+    lines = [
+        "# Sample student timetables",
+        "",
+        "One student per grade. Each table covers one week of the two-week cycle.",
+        "The full student CSV includes teachers and rooms for every session.",
+        "",
+    ]
+    for grade, st in sorted(samples.items()):
+        occupied = {}
+        for sid in st.section_ids:
+            for slot in inst.sections[sid].slots:
+                occupied[slot] = inst.courses[inst.sections[sid].course_id].name
+        lines.extend([f"## Grade {grade} — {st.name}", ""])
+        for week in range(tg.WEEKS):
+            lines.extend([
+                f"### Week {'AB'[week]}",
+                "",
+                "| Period | Mon | Tue | Wed | Thu | Fri |",
+                "|---|---|---|---|---|---|",
+            ])
+            for period, minutes in enumerate(tg.PERIOD_MINUTES):
+                cells = []
+                for day in range(tg.DAYS_PER_WEEK):
+                    if period >= tg.PERIODS_BY_DAY[day]:
+                        cells.append("—")
+                        continue
+                    slot = tg.slot_index(week, day, period)
+                    course = occupied.get(slot, "Self-study")
+                    cells.append(course.replace("|", r"\|"))
+                lines.append(
+                    f"| P{period + 1} ({minutes} min) | " + " | ".join(cells) + " |")
+            lines.append("")
+    path.write_text("\n".join(lines), encoding="utf-8")
+
+
 def export_all(inst: Instance, outdir: Path, metrics: Dict,
                comparison_md: str) -> None:
     outdir.mkdir(parents=True, exist_ok=True)
     export_student_csv(inst, outdir / "timetable_students.csv")
     export_teacher_csv(inst, outdir / "timetable_teachers.csv")
     export_sections_csv(inst, outdir / "sections.csv")
+    export_sample_timetables(inst, outdir / "sample_timetables.md")
     (outdir / "metrics.json").write_text(json.dumps(metrics, indent=2))
     (outdir / "report.md").write_text(comparison_md)

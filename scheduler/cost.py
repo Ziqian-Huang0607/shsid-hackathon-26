@@ -13,7 +13,8 @@ the school's published penalty list:
                              isolated ("fragmented") free period.
   5. workload              - >=4 demanding classes in a day, on >2 days
                              of the same week.
-  6. odd_even_stability    - Week-A vs Week-B pattern changes >3 per week.
+  6. odd_even_stability    - Week-A vs Week-B pattern changes >3, excluding
+                             positions occupied by mandatory CAS in either week.
   7. teacher_mobility      - teacher switches buildings >=2 times in a day.
 
 Plus two modelling extras: same_day_repeat (two sessions of one course on
@@ -44,6 +45,8 @@ def section_detail(inst: Instance, sid: int) -> Dict[str, float]:
     if got < course.minutes:                      # Hard constraint 2
         missing_sessions = -(-(course.minutes - got) // 40)
         d["hard_minutes_shortfall"] = missing_sessions * inst.hard_weight
+    if course.subject == "cas" and not tg.is_adjacent_80_block(sec.slots):
+        d["hard_cas_double_block"] = inst.hard_weight
     over = got - course.minutes
     if over > 0:
         d["overshoot"] = over * w["overshoot_per_minute"]
@@ -183,6 +186,12 @@ def student_detail(inst: Instance, st_id: int) -> Dict[str, float]:
         for p in range(tg.PERIODS_BY_DAY[day]):   # Friday ends at P5
             a = week_period_course.get((0, day, p))
             b = week_period_course.get((1, day, p))
+            # CAS happens only once in the two-week cycle.  Its two slots
+            # necessarily differ across weeks and must not consume the
+            # allowance intended for avoidable timetable changes.
+            if ((a is not None and inst.courses[a].subject == "cas")
+                    or (b is not None and inst.courses[b].subject == "cas")):
+                continue
             if a != b:
                 changes += 1
     if changes > max_changes:
@@ -277,6 +286,8 @@ def hard_violation_count(inst: Instance) -> int:
     for sec in inst.sections:
         course = inst.courses[sec.course_id]
         if sec.minutes() < course.minutes:
+            n += 1
+        if course.subject == "cas" and not tg.is_adjacent_80_block(sec.slots):
             n += 1
     for st in inst.students:
         seen = set()

@@ -9,9 +9,10 @@ Pipeline:
   2. consolidate undersubscribed signatures (only within the same
      grade/IB/optional track, so exemptions are never lost);
   3. cluster students by signature into cohort blocks of <= capacity;
-  4. GRADE-WIDE lessons: PE and Optional are attended by the whole grade
-     at the same time (one lesson per grade, sections of <= capacity;
-     option variants of one module share the same slot set);
+  4. GRADE-WIDE lessons: PE, Optional, and CAS are attended by the whole
+     grade at the same time (one lesson per grade, sections of <= capacity;
+     option variants of one module share the same slot set).  CAS also
+     shares a slot set across G9/G10 and across G11/G12;
   5. session-shape planning per cluster, with cluster caps reduced by
      whatever the grade-wide blocks occupy;
   6. duration-aware teacher/room assignment (teachers hired on demand --
@@ -182,8 +183,12 @@ def build_instance(students_per_grade: int, seed: int,
 
     # ---- lessons -------------------------------------------------------
     # grade-wide components: one lesson per (grade, component, option);
-    # option variants of the same component share one slot set (synced).
+    # option variants share one slot set.  CAS also shares its slot set
+    # across the G9/G10 and G11/G12 grade pairs.
     gradewide_done: Dict[Tuple[int, str], List[int]] = defaultdict(list)
+    cas_pair_slots: Dict[Tuple[int, int], set] = {}
+    cas_pair_gid: Dict[Tuple[int, int], int] = {}
+    cas_partner = {9: 10, 10: 9, 11: 12, 12: 11}
 
     def make_sections(lesson: Lesson, members: List[int],
                       course: Course) -> None:
@@ -219,9 +224,19 @@ def build_instance(students_per_grade: int, seed: int,
                 lesson.sync_group = sync_gid[comp_key]
                 sync_groups[lesson.sync_group].append(lesson.id)
             else:
-                sync_gid[comp_key] = len(sync_groups)
-                lesson.sync_group = sync_gid[comp_key]
-                sync_groups[lesson.sync_group] = [lesson.id]
+                pair = (min(grade, cas_partner[grade]),
+                        max(grade, cas_partner[grade])) if courses[cid_].subject == "cas" else None
+                if pair is not None and pair in cas_pair_gid:
+                    lesson.slots = cas_pair_slots[pair]
+                    lesson.sync_group = cas_pair_gid[pair]
+                    sync_groups[lesson.sync_group].append(lesson.id)
+                else:
+                    lesson.sync_group = len(sync_groups)
+                    sync_groups[lesson.sync_group] = [lesson.id]
+                    if pair is not None:
+                        cas_pair_slots[pair] = lesson.slots
+                        cas_pair_gid[pair] = lesson.sync_group
+                sync_gid[comp_key] = lesson.sync_group
                 sync_slots[comp_key] = lesson.slots
             make_sections(lesson, members, courses[cid_])
             lessons.append(lesson)

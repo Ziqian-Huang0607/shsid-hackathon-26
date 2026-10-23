@@ -143,6 +143,64 @@ def test_minutes_shortfall_is_hard():
     assert d.get("hard_minutes_shortfall", 0) >= inst.hard_weight
 
 
+def test_grade_wide_cas_is_one_double_period():
+    """CAS is an adjacent pair, shared within and across grade pairs."""
+    curriculum, _ = load_config(DATA)
+    inst = small_instance(students=20)
+    optimize.optimize(inst, random.Random(5), iterations=1000)
+    assert validate.validate(inst, curriculum)["H12"] == []
+    cas_by_grade = {}
+    for grade in (9, 10, 11, 12):
+        cas = [sec for sec in inst.sections
+               if inst.courses[sec.course_id].grade == grade
+               and inst.courses[sec.course_id].subject == "cas"]
+        assert cas
+        assert len({frozenset(sec.slots) for sec in cas}) == 1
+        assert tg.is_adjacent_80_block(cas[0].slots)
+        cas_by_grade[grade] = cas
+    assert cas_by_grade[9][0].slots is cas_by_grade[10][0].slots
+    assert cas_by_grade[11][0].slots is cas_by_grade[12][0].slots
+
+    # The independent validator catches a cross-grade mismatch even if
+    # both grades still have individually valid adjacent double periods.
+    original = cas_by_grade[10][0].slots
+    alternate = {tg.slot_index(0, 0, 1), tg.slot_index(0, 0, 2)}
+    if alternate == original:
+        alternate = {tg.slot_index(0, 1, 1), tg.slot_index(0, 1, 2)}
+    for sec in cas_by_grade[10]:
+        sec.slots = alternate
+    assert any("not simultaneous" in msg
+               for msg in validate.validate(inst, curriculum)["H12"])
+    for sec in cas_by_grade[10]:
+        sec.slots = original
+
+    # A non-adjacent pair still totals 80 minutes but must be rejected.
+    lesson = next(les for les in inst.lessons
+                  if inst.courses[les.course_id].grade == 9
+                  and inst.courses[les.course_id].subject == "cas")
+    lesson.slots.clear()
+    lesson.slots.update((tg.slot_index(0, 0, 1), tg.slot_index(0, 1, 1)))
+    assert validate.validate(inst, curriculum)["H12"]
+    assert hard_violation_count(inst) > 0
+
+
+def test_cas_does_not_use_odd_even_change_allowance():
+    """The mandatory CAS pair is excluded, even opposite another class."""
+    inst = small_instance()
+    student = inst.students[0]
+    cas_sec = next(inst.sections[sid] for sid in student.section_ids
+                   if inst.courses[inst.sections[sid].course_id].subject == "cas")
+    other_sec = next(inst.sections[sid] for sid in student.section_ids
+                     if inst.courses[inst.sections[sid].course_id].subject != "cas")
+    cas_sec.slots.update((tg.slot_index(1, 0, 1), tg.slot_index(1, 0, 2)))
+    other_sec.slots.update((tg.slot_index(0, 0, 1), tg.slot_index(0, 0, 2),
+                            tg.slot_index(0, 1, 0), tg.slot_index(0, 1, 1),
+                            tg.slot_index(0, 1, 2)))
+    assert student_detail(inst, student.id).get("odd_even_stability", 0) == 0
+    other_sec.slots.add(tg.slot_index(0, 1, 3))
+    assert student_detail(inst, student.id)["odd_even_stability"] == inst.weights["odd_even_stability"]
+
+
 def test_validator_catches_planted_conflict():
     curriculum, _ = load_config(DATA)
     inst = small_instance()

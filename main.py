@@ -10,7 +10,7 @@ Pipeline:
     2. build a "current-style" baseline timetable (rigid block schedule)
     3. optimise: greedy construction -> repair -> simulated annealing
     4. independently validate all hard constraints (H1-H10 from the brief,
-       plus the school's grade-synchronisation rule H11)
+       grade synchronisation H11, and the CAS double block H12)
     5. export timetables + metrics + comparison report
 """
 
@@ -87,7 +87,7 @@ def cmd_run(args) -> None:
     print(f"      done in {time.time() - t0:.1f}s: "
           f"hard={optimised['hard_violations']}  soft={optimised['soft_total']}")
 
-    print("[4/5] Validating hard constraints H1-H11 ...")
+    print("[4/5] Validating hard constraints H1-H12 ...")
     violations = validate.validate(inst, curriculum)
     summary = validate.violation_summary(violations)
     total = validate.total_violations(violations)
@@ -120,7 +120,7 @@ def cmd_run(args) -> None:
     report.export_all(inst, out_dir, metrics, header)
     print(f"      written to {out_dir}/ "
           "(timetable_students.csv, timetable_teachers.csv, sections.csv, "
-          "metrics.json, report.md)")
+          "metrics.json, report.md, sample_timetables.md)")
 
 
 def main() -> None:

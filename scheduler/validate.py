@@ -24,16 +24,21 @@ Mapping to the school's constraint sheet ("Constraints and Penalties"):
       building-loyal)
 
 H11 is an additional structural rule required by the school on top of the
-published sheet: PE and Optional components are grade-synchronised — all
+published sheet: grade-wide components are synchronised — all
 students of a grade who attend the component sit it at exactly the same
 slots.  Exempt students simply do not attend.
+
+H12 requires each grade's CAS to be one simultaneous double period:
+exactly two adjacent 40-minute slots on one day per two-week cycle.
+Grades 9/10 share the same block, as do Grades 11/12.
 """
 import json
 from collections import defaultdict
 from typing import Dict, List
 
 from .model import Instance
-from .timegrid import (NUM_SLOTS, SLOT_DAY, SLOT_MINUTES, SLOT_PERIOD)
+from .timegrid import (NUM_SLOTS, SLOT_ABS_DAY, SLOT_DAY, SLOT_MINUTES,
+                       SLOT_PERIOD)
 
 MANDATORY_NONACADEMIC = {"pe", "pg", "cas"}
 
@@ -41,6 +46,7 @@ MANDATORY_NONACADEMIC = {"pe", "pg", "cas"}
 def validate(inst: Instance, curriculum: dict) -> Dict[str, List[str]]:
     v: Dict[str, List[str]] = {f"H{i}": [] for i in range(1, 11)}
     v["H11"] = []
+    v["H12"] = []
 
     courses = {c.id: c for c in inst.courses}
     teachers = {t.id: t for t in inst.teachers}
@@ -184,7 +190,7 @@ def validate(inst: Instance, curriculum: dict) -> Dict[str, List[str]]:
                                     f"gap (day {day}, P{p1 + 1}->P{p2 + 1})")
 
     # ----------------------------------------------------------------- H11
-    # grade-synchronised PE / Optional blocks (only components the
+    # grade-synchronised blocks (only components the
     # curriculum flags as grade_wide)
     grade_wide_comps = set()
     for grade_str, prog in curriculum["grades"].items():
@@ -214,6 +220,43 @@ def validate(inst: Instance, curriculum: dict) -> Dict[str, List[str]]:
                 v["H11"].append(
                     f"G{grade} {comp}: {sid} slots differ from grade block")
 
+    # ----------------------------------------------------------------- H12
+    # Each grade attends CAS together for exactly one adjacent 40+40 block
+    # in one week of the two-week cycle.  G9/G10 and G11/G12 must also
+    # attend their respective blocks at the same time.
+    cas_by_grade = {}
+    for grade_str in curriculum["grades"]:
+        grade = int(grade_str)
+        cas_sections = [sec for sec in inst.sections
+                        if courses[sec.course_id].grade == grade
+                        and courses[sec.course_id].subject == "cas"]
+        if not cas_sections:
+            v["H12"].append(f"G{grade}: no CAS sections")
+            continue
+        reference = frozenset(cas_sections[0].slots)
+        cas_by_grade[grade] = reference
+        for sec in cas_sections:
+            slots = sorted(sec.slots)
+            valid_block = (
+                len(slots) == 2
+                and all(0 <= s < NUM_SLOTS for s in slots)
+                and SLOT_ABS_DAY[slots[0]] == SLOT_ABS_DAY[slots[1]]
+                and SLOT_PERIOD[slots[1]] == SLOT_PERIOD[slots[0]] + 1
+                and SLOT_MINUTES[slots[0]] == SLOT_MINUTES[slots[1]] == 40
+            )
+            if not valid_block:
+                v["H12"].append(
+                    f"G{grade} section {sec.id}: CAS is not one adjacent 40+40 block")
+            if frozenset(sec.slots) != reference:
+                v["H12"].append(
+                    f"G{grade} section {sec.id}: CAS differs from grade block")
+
+    for first, second in ((9, 10), (11, 12)):
+        if first in cas_by_grade and second in cas_by_grade:
+            if cas_by_grade[first] != cas_by_grade[second]:
+                v["H12"].append(
+                    f"G{first}/G{second}: CAS double periods are not simultaneous")
+
     return v
 
 
@@ -238,7 +281,8 @@ def print_report(viol: Dict[str, List[str]]) -> bool:
         "H8": "mandatory PE / PG / CAS",
         "H9": "official session shapes 60/40/45/55",
         "H10": "teacher travel time between buildings",
-        "H11": "grade-synchronised PE/Optional (school rule)",
+        "H11": "grade-synchronised blocks (PE/Optional/CAS)",
+        "H12": "grade-paired CAS in one adjacent 40+40 block",
     }
     for k in sorted(viol, key=lambda x: int(x[1:])):
         msgs = viol[k]

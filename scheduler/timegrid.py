@@ -12,7 +12,7 @@ That is EXACTLY the student minute budget (3040), so full programmes
 of any duration class, which the planner and repair ladder are built for.
 """
 
-from typing import List
+from typing import Iterable, List
 
 PERIOD_MINUTES = [60, 40, 40, 45, 55, 40, 40]          # P1..P7
 PERIOD_STARTS = ["08:30", "09:40", "10:30", "11:20",
@@ -95,6 +95,16 @@ def same_day(slot_a: int, slot_b: int) -> bool:
 def mirror_slot(slot: int) -> int:
     """The same (day, period) in the other week of the cycle."""
     return slot + WEEK_STRIDE if slot < WEEK_STRIDE else slot - WEEK_STRIDE
+
+
+def is_adjacent_80_block(slots: Iterable[int]) -> bool:
+    """Exactly two consecutive 40-minute periods on one day of the cycle."""
+    pair = sorted(slots)
+    return (len(pair) == 2
+            and all(0 <= s < NUM_SLOTS for s in pair)
+            and SLOT_ABS_DAY[pair[0]] == SLOT_ABS_DAY[pair[1]]
+            and SLOT_PERIOD[pair[1]] == SLOT_PERIOD[pair[0]] + 1
+            and SLOT_MINUTES[pair[0]] == SLOT_MINUTES[pair[1]] == 40)
 
 
 DURATIONS = sorted(set(PERIOD_MINUTES))            # [40, 45, 55, 60]
