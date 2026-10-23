@@ -1,5 +1,5 @@
 {
-  "comment": "Grade programmes distilled from modules.xlsx (minutes are per 2-week cycle). Only course names that appear in the sheet are used; modules the sheet leaves anonymous ('Module 2', 'Module 3: Electives', ...) are modelled as a single course named after the module - one option per choice component, so every student takes it. Combined total lines ('Module 1 Total 650 = Physics 320 + Chemistry 330', 'Module 1: Science Total 965') are modelled as ONE course so the academic-course counts match the constraint sheet: 7 for G9/G10, 6 for G11/G12 (H1); for the same reason G11 'Language' is flagged non-academic. Zero-minute module lines (G12 Module 3/4) are dropped. G11 has no Optional line in the sheet, so none is modelled; G12 Optional is skippable. 'difficulty' is the cognitive-load score (1-5); category STEM/HUM is only assigned where the sheet name makes it obvious.",
+  "comment": "Grade programmes distilled from modules.xlsx (minutes are per 2-week cycle). Only course names that appear in the sheet are used. Separate sheet lines are separate courses - Physics and Chemistry are NEVER combined; the 'Module 1 Total' / 'Module 1: Science Total' lines are subtotals of the courses above them, not courses themselves. Modules the sheet leaves anonymous ('Module 2', 'Module 3: Electives', ...) are modelled as one course named after the module (the school's course catalog shows a module is a group of courses; without the member courses' names/minutes we keep the block anonymous). Zero-minute module lines (G12 Module 3/4) are dropped; G11 has no Optional line so none is modelled; G12 Optional is skippable. To reconcile the sheet with the constraint doc's course counts (7 for G9/G10, 6 for G11/G12), the small language courses (World Language / Language) and G9's short Module 3 (165 min) are flagged non-academic - with those flags every grade counts exactly 7/7/6/6 academic courses. 'difficulty' is the cognitive-load score (1-5); STEM/HUM categories are only assigned where the sheet name makes it obvious.",
   "grades": {
     "9": {
       "academic_target": 7,
@@ -47,9 +47,19 @@
         },
         {
           "type": "fixed",
-          "name": "Physics + Chemistry",
-          "subject": "science",
-          "minutes": 640,
+          "name": "Physics",
+          "subject": "physics",
+          "minutes": 310,
+          "category": "STEM",
+          "demanding": true,
+          "difficulty": 4.5,
+          "room_type": "lab"
+        },
+        {
+          "type": "fixed",
+          "name": "Chemistry",
+          "subject": "chemistry",
+          "minutes": 330,
           "category": "STEM",
           "demanding": true,
           "difficulty": 4.5,
@@ -89,9 +99,10 @@
               "subject": "module_3",
               "minutes": 165,
               "category": "OTHER",
-              "demanding": true,
-              "difficulty": 3.0,
-              "room_type": "classroom"
+              "demanding": false,
+              "difficulty": 2.5,
+              "room_type": "classroom",
+              "academic": false
             }
           ]
         },
@@ -174,13 +185,24 @@
           "category": "HUM",
           "demanding": false,
           "difficulty": 2.5,
-          "room_type": "classroom"
+          "room_type": "classroom",
+          "academic": false
         },
         {
           "type": "fixed",
-          "name": "Module 1: Physics + Chemistry",
-          "subject": "science",
-          "minutes": 650,
+          "name": "Module 1: Physics",
+          "subject": "physics",
+          "minutes": 320,
+          "category": "STEM",
+          "demanding": true,
+          "difficulty": 4.5,
+          "room_type": "lab"
+        },
+        {
+          "type": "fixed",
+          "name": "Module 1: Chemistry",
+          "subject": "chemistry",
+          "minutes": 330,
           "category": "STEM",
           "demanding": true,
           "difficulty": 4.5,
@@ -412,13 +434,24 @@
           "category": "HUM",
           "demanding": false,
           "difficulty": 3.0,
-          "room_type": "classroom"
+          "room_type": "classroom",
+          "academic": false
         },
         {
           "type": "fixed",
-          "name": "Module 1: AP Physics 2 + Honors Organic Chemistry",
-          "subject": "science",
-          "minutes": 965,
+          "name": "Module 1: AP Physics 2",
+          "subject": "physics",
+          "minutes": 480,
+          "category": "STEM",
+          "demanding": true,
+          "difficulty": 4.5,
+          "room_type": "lab"
+        },
+        {
+          "type": "fixed",
+          "name": "Module 1: Honors Organic Chemistry",
+          "subject": "chemistry",
+          "minutes": 485,
           "category": "STEM",
           "demanding": true,
           "difficulty": 4.5,

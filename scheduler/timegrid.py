@@ -1,12 +1,15 @@
 """Time grid definition for the two-week (odd/even) timetable cycle.
 
-The school runs a 2-week cycle (Week A / Week B), 5 days each, 7 periods
-per day.  Period lengths are uneven (60/40/40/45/55/40/40 minutes), which
-is what makes "minutes accounting" the core of this problem: a course that
-needs 490 minutes per cycle cannot simply get "one period per day".
+The school runs a 2-week cycle (Week A / Week B), 5 days each.  Monday to
+Thursday have 7 periods; **Friday has 5** (no P6/P7 — school rule).
+Period lengths are uneven (60/40/40/45/55/40/40 minutes), which is what
+makes "minutes accounting" the core of this problem: a course that needs
+490 minutes per cycle cannot simply get "one period per day".
 
-Grid capacity: 10 days x 320 min/day = 3200 min per cycle.
-Student budget: 3040 min per cycle (the rest is empty / self-study time).
+Grid capacity: 8 days x 320 min + 2 Fridays x 240 min = 3040 min/cycle.
+That is EXACTLY the student minute budget (3040), so full programmes
+(G9/G11/G12) fill every teaching slot of the cycle — there is no slack
+of any duration class, which the planner and repair ladder are built for.
 """
 
 from typing import List
@@ -29,29 +32,56 @@ MIN_GAP_MINUTES = 10
 
 WEEKS = 2
 DAYS_PER_WEEK = 5
-PERIODS_PER_DAY = 7
-NUM_DAYS = WEEKS * DAYS_PER_WEEK               # 10
-NUM_SLOTS = NUM_DAYS * PERIODS_PER_DAY         # 70
+PERIODS_PER_DAY = 7                      # maximum (Mon-Thu)
+PERIODS_BY_DAY = [7, 7, 7, 7, 5]         # Friday ends after P5
+NUM_DAYS = WEEKS * DAYS_PER_WEEK         # 10
 
-CYCLE_MINUTES = sum(PERIOD_MINUTES) * NUM_DAYS                 # 3200
+WEEK_STRIDE = sum(PERIODS_BY_DAY)        # 33 slots per week
+NUM_SLOTS = WEEKS * WEEK_STRIDE          # 66
+
+# absolute day (0..9) -> index of its first slot
+_DAY_START = []
+_o = 0
+for _w in range(WEEKS):
+    for _d in range(DAYS_PER_WEEK):
+        _DAY_START.append(_o)
+        _o += PERIODS_BY_DAY[_d]
+
+CYCLE_MINUTES = (sum(PERIOD_MINUTES[:5]) * 2
+                 + sum(PERIOD_MINUTES) * 8)          # 3040
 STUDENT_MINUTE_BUDGET = 3040
 
 # Morning segment = P1..P4 (idx 0..3), afternoon = P5..P7 (idx 4..6).
 # Consecutiveness for the subject-alternation penalty resets at lunch.
+# (On Friday only period idx 4 of the afternoon segment exists.)
 SEGMENTS = [(0, 3), (4, 6)]
 
 DAY_NAMES = ["Mon", "Tue", "Wed", "Thu", "Fri"]
 
 
 def slot_index(week: int, day: int, period: int) -> int:
-    """period is 0-based (0 == P1)."""
-    return (week * DAYS_PER_WEEK + day) * PERIODS_PER_DAY + period
+    """period is 0-based (0 == P1).  Raises for a period the day lacks."""
+    if not (0 <= period < PERIODS_BY_DAY[day]):
+        raise ValueError(
+            f"{DAY_NAMES[day]} has {PERIODS_BY_DAY[day]} periods; "
+            f"P{period + 1} does not exist")
+    return _DAY_START[week * DAYS_PER_WEEK + day] + period
 
 
-SLOT_WEEK = [s // (DAYS_PER_WEEK * PERIODS_PER_DAY) for s in range(NUM_SLOTS)]
-SLOT_DAY = [(s // PERIODS_PER_DAY) % DAYS_PER_WEEK for s in range(NUM_SLOTS)]
-SLOT_PERIOD = [s % PERIODS_PER_DAY for s in range(NUM_SLOTS)]
-SLOT_MINUTES = [PERIOD_MINUTES[SLOT_PERIOD[s]] for s in range(NUM_SLOTS)]
+# slot -> attribute lookup tables (the ONLY way downstream code should
+# reason about slot positions; never arithmetic on raw slot ids)
+SLOT_WEEK: List[int] = []
+SLOT_DAY: List[int] = []
+SLOT_PERIOD: List[int] = []
+SLOT_ABS_DAY: List[int] = []             # 0..9, week-aware day index
+for _w in range(WEEKS):
+    for _d in range(DAYS_PER_WEEK):
+        for _p in range(PERIODS_BY_DAY[_d]):
+            SLOT_WEEK.append(_w)
+            SLOT_DAY.append(_d)
+            SLOT_PERIOD.append(_p)
+            SLOT_ABS_DAY.append(_w * DAYS_PER_WEEK + _d)
+SLOT_MINUTES = [PERIOD_MINUTES[p] for p in SLOT_PERIOD]
 
 
 def slot_label(slot: int) -> str:
@@ -59,10 +89,7 @@ def slot_label(slot: int) -> str:
 
 
 def same_day(slot_a: int, slot_b: int) -> bool:
-    return slot_a // PERIODS_PER_DAY == slot_b // PERIODS_PER_DAY
-
-
-WEEK_STRIDE = DAYS_PER_WEEK * PERIODS_PER_DAY      # 35
+    return SLOT_ABS_DAY[slot_a] == SLOT_ABS_DAY[slot_b]
 
 
 def mirror_slot(slot: int) -> int:
@@ -71,6 +98,10 @@ def mirror_slot(slot: int) -> int:
 
 
 DURATIONS = sorted(set(PERIOD_MINUTES))            # [40, 45, 55, 60]
+
+# how many slots of each duration exist per week (10/10/10/36 on this grid)
+SLOTS_PER_DURATION = {d: sum(1 for m in SLOT_MINUTES if m == d)
+                      for d in DURATIONS}
 
 
 def decompose_minutes(minutes: int) -> List[int]:

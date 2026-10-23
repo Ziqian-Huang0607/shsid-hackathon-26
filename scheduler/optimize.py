@@ -5,7 +5,7 @@
 Moves:
   * shift: move one session of a lesson to a new slot,
   * swap:  exchange one slot between two lessons (keeps both session
-    counts and global occupancy - essential in a ~95%-dense grid).
+    counts and global occupancy - essential in a zero-slack grid).
 
 All costs are sums over per-entity costs, so the exact delta of a move is
 obtained by re-evaluating only the affected entities: the lesson's
@@ -139,9 +139,11 @@ def _affected_cost(inst: Instance, lesson_ids: List[int],
 
 
 # -------------------------------------------------------- greedy building
-def _period_options(duration: int) -> List[int]:
-    """0-based periods that can host a session of `duration` minutes."""
-    return [p for p in range(tg.PERIODS_PER_DAY)
+def _period_options(duration: int, day: int) -> List[int]:
+    """0-based periods on `day` that can host a session of `duration`
+    minutes (Friday has no P6/P7, so 40-min sessions have fewer options
+    there)."""
+    return [p for p in range(tg.PERIODS_BY_DAY[day])
             if tg.PERIOD_MINUTES[p] == duration]
 
 
@@ -250,7 +252,7 @@ def greedy_init(inst: Instance, rng: random.Random,
         best_slot, best_score = None, None
         for _ in range(candidates):
             day = rng.randrange(tg.DAYS_PER_WEEK)
-            period = rng.choice(_period_options(duration))
+            period = rng.choice(_period_options(duration, day))
             week = rng.randrange(tg.WEEKS)
             slot = tg.slot_index(week, day, period)
             if slot in les.slots:
@@ -295,7 +297,7 @@ def greedy_init(inst: Instance, rng: random.Random,
                 best, best_score = None, None
                 for _ in range(candidates):
                     day = rng.randrange(tg.DAYS_PER_WEEK)
-                    period = rng.choice(_period_options(duration))
+                    period = rng.choice(_period_options(duration, day))
                     s0 = tg.slot_index(0, day, period)
                     s1 = tg.slot_index(1, day, period)
                     if s0 in les.slots or s1 in les.slots:
@@ -473,7 +475,7 @@ def repair(inst: Instance, rng: random.Random,
         same-duration session.  Same-cluster swaps can never create
         student conflicts (the cluster is busy at both slots either
         way), so they are the safe way to untangle teacher/room clashes
-        in a ~95%-dense grid.  Grade-wide lessons swap among the
+        in a zero-slack grid.  Grade-wide lessons swap among the
         grade-wide blocks of their own grade for the same reason.
     """
     cluster_lessons: Dict[int, List[Lesson]] = {}
@@ -925,7 +927,7 @@ def anneal(inst: Instance, rng: random.Random, iterations: int = 20000,
             old1 = tg.mirror_slot(old0)
             dur = tg.SLOT_MINUTES[old0]
             day = rng.randrange(tg.DAYS_PER_WEEK)
-            period = rng.choice(_period_options(dur))
+            period = rng.choice(_period_options(dur, day))
             new0 = tg.slot_index(0, day, period)
             new1 = tg.slot_index(1, day, period)
             if new0 in les.slots or new1 in les.slots:

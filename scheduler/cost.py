@@ -55,7 +55,7 @@ def section_detail(inst: Instance, sid: int) -> Dict[str, float]:
 
     days: Dict[int, int] = {}
     for s in sec.slots:
-        key = s // tg.PERIODS_PER_DAY
+        key = tg.SLOT_ABS_DAY[s]
         days[key] = days.get(key, 0) + 1
     extra = sum(v - 1 for v in days.values() if v > 1)
     if extra:
@@ -91,7 +91,7 @@ def student_detail(inst: Instance, st_id: int) -> Dict[str, float]:
     week_period_course: Dict[tuple, int] = {}
     for sl, sid in occ.items():
         c = inst.courses[inst.sections[sid].course_id]
-        day = sl // tg.PERIODS_PER_DAY
+        day = tg.SLOT_ABS_DAY[sl]
         day_seq[day].append((tg.SLOT_PERIOD[sl], c))
         week_period_course[(tg.SLOT_WEEK[sl], tg.SLOT_DAY[sl],
                             tg.SLOT_PERIOD[sl])] = c.id
@@ -180,7 +180,7 @@ def student_detail(inst: Instance, st_id: int) -> Dict[str, float]:
     max_changes = inst.cfg["odd_even"]["max_changes_per_week"]
     changes = 0
     for day in range(tg.DAYS_PER_WEEK):
-        for p in range(tg.PERIODS_PER_DAY):
+        for p in range(tg.PERIODS_BY_DAY[day]):   # Friday ends at P5
             a = week_period_course.get((0, day, p))
             b = week_period_course.get((1, day, p))
             if a != b:
@@ -216,7 +216,7 @@ def teacher_detail(inst: Instance, tid: int) -> Dict[str, float]:
     day_buildings: Dict[int, list] = {}
     for sl in occ:
         room = inst.rooms[inst.sections[occ[sl]].room_at(sl)]
-        day_buildings.setdefault(sl // tg.PERIODS_PER_DAY, []).append(
+        day_buildings.setdefault(tg.SLOT_ABS_DAY[sl], []).append(
             (tg.SLOT_PERIOD[sl], room.building))
     for day, items in day_buildings.items():
         items.sort()

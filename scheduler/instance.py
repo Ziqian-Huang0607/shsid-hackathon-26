@@ -29,6 +29,7 @@ from collections import defaultdict
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
+from . import timegrid as tg
 from .model import (Course, Instance, Lesson, Room, Section, Student,
                     Teacher)
 from .timegrid import SLOT_MINUTES
@@ -258,14 +259,46 @@ def build_instance(students_per_grade: int, seed: int,
             usage[d] += 1
 
     # cluster plans with caps reduced by grade-wide blocks that the
-    # cluster's students actually attend
+    # cluster's students actually attend, and by whatever empty-time
+    # slack the programme leaves (G9/G11/G12 have none: their caps equal
+    # the grid's full availability, so planning must saturate every
+    # duration class exactly; G10's 160 free minutes are held back as
+    # whole slots so placement leaves them empty)
     cluster_caps: Dict[int, Dict[int, int]] = {}
     for cid_, members in clusters.items():
         grade = students[members[0]].grade
         caps = dict(CLUSTER_CAPS)
-        usage = gradewide_usage.get(grade, {})
-        # a cluster attends a grade-wide block iff its students take it
         st0 = students[members[0]]
+        # hold back the student's empty time as whole slots.  The reserve
+        # must sum to the slack EXACTLY: residual caps then sum to the
+        # cluster-lesson total, so any plan under the caps saturates
+        # every duration class and placement is a perfect exact cover —
+        # a reserve that misses by 5 minutes makes the caps unsatisfiable
+        # and strands a session with no legal slot.  Prefer 40-min frees
+        # (end-of-day; free P1 would trigger the self-study penalty).
+        slack = tg.CYCLE_MINUTES - sum(courses[c].minutes
+                                       for c in st0.course_ids)
+        reserve = None
+        a_max = min(caps[40], slack // 40)
+        for a in range(a_max, -1, -1):
+            rem = slack - 40 * a
+            found = False
+            for b in range(min(caps[45], rem // 45), -1, -1):
+                rem2 = rem - 45 * b
+                for c in range(min(caps[55], rem2 // 55), -1, -1):
+                    rem3 = rem2 - 55 * c
+                    if rem3 % 60 == 0 and rem3 // 60 <= caps[60]:
+                        reserve = {40: a, 45: b, 55: c, 60: rem3 // 60}
+                        found = True
+                        break
+                if found:
+                    break
+            if found:
+                break
+        if reserve:
+            for d, n in reserve.items():
+                caps[d] -= n
+        # a cluster attends a grade-wide block iff its students take it
         for (g, comp_key), lids in gradewide_done.items():
             if g != grade:
                 continue
@@ -302,7 +335,7 @@ def build_instance(students_per_grade: int, seed: int,
         # Scarce long-period slots (P1/P4/P5) are always staffed: part-time
         # unavailability only ever lands on the plentiful 40-min periods,
         # where the repair loop has room to route around it.
-        flexible = [s for s in range(70) if SLOT_MINUTES[s] == 40]
+        flexible = [s for s in range(tg.NUM_SLOTS) if SLOT_MINUTES[s] == 40]
         unavailable = (set() if full_availability
                        else {s for s in flexible if rng.random() < 0.10})
         idx = len(teachers_by_subject.get(subject, [])) + 1

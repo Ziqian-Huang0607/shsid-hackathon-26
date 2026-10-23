@@ -4,18 +4,23 @@ split into period durations {60, 55, 45, 40} BEFORE any slot assignment.
 Why this matters (the subtle core of the problem):
 
   * Duration is bound to period: 60-min sessions can only live in P1,
-    55-min in P5, 45-min in P4, and 40-min sessions have P2/P3/P6/P7.
-  * A cohort cluster's programme totals ~3040 of the 3200 grid minutes,
-    i.e. the cluster must use nearly EVERY P1/P4/P5 slot of the cycle:
-        10x60 + 10x55 + 10x45 + 36x40 = 3040   (G9 / G12 programmes)
+    55-min in P5, 45-min in P4, and 40-min sessions have P2/P3/P6/P7
+    (only P2/P3 on Friday, which has no P6/P7).
+  * The grid holds exactly 3040 minutes — the same as a full G9/G11/G12
+    programme.  Such a cluster must use EVERY slot of the cycle:
+        10x60 + 10x55 + 10x45 + 36x40 = 3040
+    Because per-class availability sums to exactly the requirement, any
+    exact plan that fits under the caps saturates EVERY duration class —
+    caps and targets coincide.
   * But the diversity penalty forbids one course sitting at the same
     period more than twice a week, so the scarce long durations must be
     *shared* across the cluster's lessons (soft cap ~4 per lesson).
   * PE must avoid P1/P5 entirely, so PE lessons get 40/45-min shapes only.
 
 The planner enumerates per-lesson duration-multiset variants, then
-hill-climbs the cluster-level combination so per-cluster caps
-{60:10, 55:10, 45:10, 40:40} are respected.
+hill-climbs the cluster-level combination so the per-cluster caps are
+respected (callers deduct grade-wide usage and any slack the cluster's
+programme leaves: G10 totals 2880, so its caps hold back free slots).
 """
 
 from __future__ import annotations
@@ -23,12 +28,14 @@ from __future__ import annotations
 import random
 from typing import Dict, List, Sequence, Tuple
 
-# per-cluster slot caps (a cluster can occupy each period at most
-# once/day).  The 60/45/40 caps deliberately leave ONE slot of slack in
-# every duration class the cluster uses: without a free slot of the
-# right duration, the repair loop has nothing to move a trapped session
-# into (G9/G12 run at 95% grid occupancy, so slack is precious).
-CLUSTER_CAPS = {60: 9, 55: 10, 45: 9, 40: 39}
+from . import timegrid as tg
+
+# per-cluster slot caps = full per-duration availability of the grid
+# (a cluster can occupy each period at most once per day).  Callers
+# reduce these by grade-wide usage and by whatever slack the cluster's
+# programme leaves — with zero slack (G9/G11/G12) the caps ARE the
+# target, since availability and requirement both sum to 3040.
+CLUSTER_CAPS = dict(tg.SLOTS_PER_DURATION)   # {40: 36, 45: 10, 55: 10, 60: 10}
 # soft per-lesson caps: >2 sessions/week at the same period triggers the
 # diversity penalty, so >4 per cycle is discouraged
 SOFT_CAP = {60: 4, 55: 4, 45: 4, 40: 12}
@@ -144,8 +151,90 @@ def plan_cluster(lesson_specs: Sequence[Dict], rng: random.Random,
             cur_sel[li] = old
         if best_cost < 1000:             # all cluster caps satisfied
             break
+    if best_cost >= 1000:
+        # rare on zero-slack clusters (the aggregate must hit the caps
+        # EXACTLY, so few variant combinations qualify): fall back to an
+        # exact min-pref DP over aggregate usage.  Deterministic and
+        # RNG-free, so the search stream is untouched when it does not
+        # fire.  Returns None only if even the full variant lists admit
+        # no under-cap combination (then the hill-climb's best stands).
+        sel = _exact_plan(variants, long_pen, caps)
+        if sel is None:
+            sel = _exact_plan(variants, long_pen, caps, top_k=None)
+        if sel is not None:
+            best_sel = sel
     plans = []
     for li, vi in enumerate(best_sel):
         n40, n45, n55, n60 = variants[li][vi]
         plans.append([60] * n60 + [55] * n55 + [45] * n45 + [40] * n40)
     return plans
+
+
+def _exact_plan(variants: Sequence[List[Variant]],
+                long_pen: Sequence[float],
+                caps: Dict[int, int],
+                top_k: int | None = 80) -> List[int] | None:
+    """Min-pref variant assignment whose aggregate usage fits `caps`.
+
+    Sparse DP over aggregate per-duration usage with one layer per
+    lesson.  When the programme has zero slack, any under-cap plan must
+    saturate every duration class exactly, so states that cannot still
+    reach the caps with the remaining lessons are pruned via suffix
+    min/max bounds — that keeps the reachable set tiny precisely in the
+    tight cases where the hill-climb gets stuck.
+    """
+    vs = [v if top_k is None else v[:top_k] for v in variants]
+    n_lessons = len(vs)
+    durs = (40, 45, 55, 60)
+    total_min = sum(sum(d * n for d, n in zip(durs, vs[i][0]))
+                    for i in range(n_lessons))
+    exact = sum(caps[d] for d in durs) == total_min
+
+    # suffix bounds: from lesson i onward, min/max addable per duration
+    sfx_min = [[0] * 4 for _ in range(n_lessons + 1)]
+    sfx_max = [[0] * 4 for _ in range(n_lessons + 1)]
+    for i in range(n_lessons - 1, -1, -1):
+        for k in range(4):
+            sfx_min[i][k] = sfx_min[i + 1][k] + min(v[k] for v in vs[i])
+            sfx_max[i][k] = sfx_max[i + 1][k] + max(v[k] for v in vs[i])
+
+    cap_t = tuple(caps[d] for d in durs)
+    dp: Dict[Tuple[int, int, int, int], float] = {(0, 0, 0, 0): 0.0}
+    parents: List[Dict[Tuple[int, int, int, int],
+                       Tuple[Tuple[int, int, int, int], int]]] = []
+    for i in range(n_lessons):
+        lp = long_pen[i]
+        ndp: Dict[Tuple[int, int, int, int], float] = {}
+        par: Dict[Tuple[int, int, int, int],
+                  Tuple[Tuple[int, int, int, int], int]] = {}
+        for state, c0 in dp.items():
+            for vi, v in enumerate(vs[i]):
+                u = (state[0] + v[0], state[1] + v[1],
+                     state[2] + v[2], state[3] + v[3])
+                if (u[0] > cap_t[0] or u[1] > cap_t[1]
+                        or u[2] > cap_t[2] or u[3] > cap_t[3]):
+                    continue
+                if exact:               # must still be able to hit caps
+                    ok = True
+                    for k in range(4):
+                        if (u[k] + sfx_max[i + 1][k] < cap_t[k]
+                                or u[k] + sfx_min[i + 1][k] > cap_t[k]):
+                            ok = False
+                            break
+                    if not ok:
+                        continue
+                c = c0 + _pref(v) + lp * (v[2] + v[3])
+                if u not in ndp or c < ndp[u]:
+                    ndp[u] = c
+                    par[u] = (state, vi)
+        if not ndp:
+            return None
+        dp = ndp
+        parents.append(par)
+    state = min(dp, key=lambda s: dp[s])
+    sel = [0] * n_lessons
+    for i in range(n_lessons - 1, -1, -1):
+        prev, vi = parents[i][state]
+        sel[i] = vi
+        state = prev
+    return sel
