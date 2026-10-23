@@ -1,0 +1,52 @@
+{
+  "comment": "School-wide parameters. penalty_weights tune the soft-cost landscape; hard_weight converts any hard-constraint violation into a dominating cost so the optimiser treats it as forbidden. No assumption is made about the total number of teachers: they are hired on demand under per-duration load caps. Facilities follow the school's guidance: ~16 classrooms per grade wing, plus shared labs / PE venues / studios.",
+  "hard_weight": 100000,
+  "section_capacity": 20,
+  "student_minute_budget": 3040,
+  "ib_pe_exempt_fraction": 0.3,
+  "optional_skip_fraction": 0.3,
+  "penalty_weights": {
+    "subject_alternation": 10.0,
+    "pe_timing": 14.0,
+    "subject_time_diversity": 7.0,
+    "self_study": 5.0,
+    "workload": 10.0,
+    "odd_even_stability": 8.0,
+    "teacher_mobility": 9.0,
+    "same_day_repeat": 4.0,
+    "overshoot_per_minute": 0.25,
+    "prime_time_reward": 3.0,
+    "cognitive_load": 2.0
+  },
+  "energy": {
+    "comment": "Cognitive-load model (low priority). hard_adjacency: two classes with difficulty >= threshold back-to-back in one segment. day_overload_factor: a day whose difficulty-weighted minutes exceed factor x the week average is a 'brutal day'.",
+    "hard_adjacency_min_difficulty": 4.0,
+    "day_overload_factor": 1.25
+  },
+  "workload": {
+    "demanding_per_day_threshold": 4,
+    "heavy_days_per_week_threshold": 2
+  },
+  "odd_even": {
+    "max_changes_per_week": 3
+  },
+  "diversity": {
+    "max_same_period_per_week": 2
+  },
+  "teacher_mobility": {
+    "max_building_moves_per_day": 1
+  },
+  "facilities": {
+    "comment": "One wing per grade with ~16 classrooms each; labs, PE venues and studios are shared across grades. PE must host a whole grade at once (grade-synchronised: 13 sections of <=20), hence 16 venues. Lab/studio counts follow the science/arts load (~1050 lab and ~200 studio sessions per cycle) with ~30% scheduling slack.",
+    "wings": [
+      "Wing-9",
+      "Wing-10",
+      "Wing-11",
+      "Wing-12"
+    ],
+    "classrooms_per_wing": 16,
+    "labs": 24,
+    "pe_venues": 16,
+    "studios": 8
+  }
+}

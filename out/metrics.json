@@ -1,0 +1,82 @@
+{
+  "config": {
+    "command": "run",
+    "students": 250,
+    "iters": 8000,
+    "seed": 7,
+    "attempts": 3,
+    "data": "data",
+    "out": "out"
+  },
+  "baseline": {
+    "hard_violations": 0,
+    "soft_components": {
+      "subject_alternation": 116040.0,
+      "pe_timing": 0.0,
+      "subject_time_diversity": 45059.0,
+      "self_study": 17680.0,
+      "workload": 41740.0,
+      "odd_even_stability": 201160.0,
+      "teacher_mobility": 0.0,
+      "cognitive_load": 30828.45,
+      "same_day_repeat": 2380.0,
+      "overshoot": 0.0,
+      "student_overload": 0.0,
+      "prime_time_reward": -14428.02
+    },
+    "soft_total": 454887.45,
+    "soft_per_student": 454.887,
+    "raw_detail": {
+      "same_day_repeat": 2380.0,
+      "subject_alternation": 116040.0,
+      "prime_time_reward": -14428.02,
+      "cognitive_load": 30828.45,
+      "self_study": 17680.0,
+      "workload": 41740.0,
+      "subject_time_diversity": 45059.0,
+      "odd_even_stability": 201160.0
+    }
+  },
+  "optimised": {
+    "hard_violations": 0,
+    "soft_components": {
+      "subject_alternation": 63130.0,
+      "pe_timing": 0.0,
+      "subject_time_diversity": 17829.0,
+      "self_study": 16130.0,
+      "workload": 37360.0,
+      "odd_even_stability": 28800.0,
+      "teacher_mobility": 0.0,
+      "cognitive_load": 26922.6,
+      "same_day_repeat": 2708.0,
+      "overshoot": 0.0,
+      "student_overload": 0.0,
+      "prime_time_reward": -14485.9
+    },
+    "soft_total": 192879.6,
+    "soft_per_student": 192.88,
+    "raw_detail": {
+      "same_day_repeat": 2708.0,
+      "prime_time_reward": -14485.9,
+      "cognitive_load": 26922.6,
+      "subject_alternation": 63130.0,
+      "self_study": 16130.0,
+      "workload": 37360.0,
+      "subject_time_diversity": 17829.0,
+      "odd_even_stability": 28800.0
+    }
+  },
+  "hard_constraint_check": {
+    "H1": 0,
+    "H2": 0,
+    "H3": 0,
+    "H4": 0,
+    "H5": 0,
+    "H6": 0,
+    "H7": 0,
+    "H8": 0,
+    "H9": 0,
+    "H10": 0,
+    "H11": 0
+  }
+}

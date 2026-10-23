@@ -1,0 +1,5 @@
+# Runtime: pure Python 3.10+ standard library -- no dependencies needed.
+# Development / data-import extras:
+pytest>=7.0          # tests
+pandas>=2.0          # scripts/import_modules.py only
+openpyxl>=3.1        # scripts/import_modules.py only

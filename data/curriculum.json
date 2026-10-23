@@ -1,0 +1,645 @@
+{
+  "comment": "Grade programmes distilled from modules.xlsx (minutes are per 2-week cycle). Modules that the sheet lists as combined totals (e.g. 'Module 1 Total 650') are modelled as ONE course so the academic-course counts match the constraint sheet: 7 courses for G9/G10, 6 for G11/G12. 'fixed' components are taken by everyone; 'choice' components let each student pick one option from the module pool. 'difficulty' is the cognitive-load score (1-5, 5 = most brain-burning) used by the low-priority energy penalties.",
+  "grades": {
+    "9": {
+      "academic_target": 7,
+      "components": [
+        {
+          "type": "fixed",
+          "name": "Mathematics (Geometry)",
+          "subject": "math",
+          "minutes": 435,
+          "category": "STEM",
+          "demanding": true,
+          "difficulty": 4.5,
+          "room_type": "classroom"
+        },
+        {
+          "type": "fixed",
+          "name": "English",
+          "subject": "english",
+          "minutes": 460,
+          "category": "HUM",
+          "demanding": true,
+          "difficulty": 4.0,
+          "room_type": "classroom"
+        },
+        {
+          "type": "fixed",
+          "name": "Chinese",
+          "subject": "chinese",
+          "minutes": 240,
+          "category": "HUM",
+          "demanding": false,
+          "difficulty": 3.0,
+          "room_type": "classroom"
+        },
+        {
+          "type": "fixed",
+          "name": "History",
+          "subject": "history",
+          "minutes": 320,
+          "category": "HUM",
+          "demanding": true,
+          "difficulty": 3.5,
+          "room_type": "classroom"
+        },
+        {
+          "type": "fixed",
+          "name": "Integrated Science (Physics+Chemistry)",
+          "subject": "science",
+          "minutes": 640,
+          "category": "STEM",
+          "demanding": true,
+          "difficulty": 4.5,
+          "room_type": "lab"
+        },
+        {
+          "type": "choice",
+          "module": "Module 2",
+          "options": [
+            {
+              "name": "Visual Art",
+              "subject": "art",
+              "minutes": 310,
+              "category": "OTHER",
+              "demanding": false,
+              "difficulty": 2.0,
+              "room_type": "studio"
+            },
+            {
+              "name": "Music",
+              "subject": "music",
+              "minutes": 310,
+              "category": "OTHER",
+              "demanding": false,
+              "difficulty": 2.0,
+              "room_type": "studio"
+            },
+            {
+              "name": "Drama",
+              "subject": "drama",
+              "minutes": 310,
+              "category": "OTHER",
+              "demanding": false,
+              "difficulty": 2.0,
+              "room_type": "studio"
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "module": "Module 3",
+          "options": [
+            {
+              "name": "Computer Science",
+              "subject": "cs",
+              "minutes": 165,
+              "category": "STEM",
+              "demanding": true,
+              "difficulty": 4.0,
+              "room_type": "classroom"
+            },
+            {
+              "name": "Economics",
+              "subject": "econ",
+              "minutes": 165,
+              "category": "HUM",
+              "demanding": true,
+              "difficulty": 4.0,
+              "room_type": "classroom"
+            },
+            {
+              "name": "Psychology",
+              "subject": "psych",
+              "minutes": 165,
+              "category": "HUM",
+              "demanding": false,
+              "difficulty": 3.0,
+              "room_type": "classroom"
+            }
+          ]
+        },
+        {
+          "type": "fixed",
+          "name": "World Language",
+          "subject": "language",
+          "minutes": 80,
+          "category": "HUM",
+          "demanding": false,
+          "difficulty": 2.5,
+          "room_type": "classroom",
+          "academic": false
+        },
+        {
+          "type": "fixed",
+          "name": "PE",
+          "subject": "pe",
+          "minutes": 220,
+          "category": "OTHER",
+          "demanding": false,
+          "difficulty": 1.0,
+          "room_type": "gym",
+          "is_pe": true,
+          "academic": false,
+          "grade_wide": true
+        },
+        {
+          "type": "fixed",
+          "name": "CAS",
+          "subject": "cas",
+          "minutes": 80,
+          "category": "OTHER",
+          "demanding": false,
+          "difficulty": 1.0,
+          "room_type": "classroom",
+          "academic": false
+        },
+        {
+          "type": "fixed",
+          "name": "Optional",
+          "subject": "optional",
+          "minutes": 90,
+          "category": "OTHER",
+          "demanding": false,
+          "difficulty": 1.0,
+          "room_type": "classroom",
+          "academic": false,
+          "grade_wide": true
+        }
+      ]
+    },
+    "10": {
+      "academic_target": 7,
+      "components": [
+        {
+          "type": "fixed",
+          "name": "Mathematics",
+          "subject": "math",
+          "minutes": 450,
+          "category": "STEM",
+          "demanding": true,
+          "difficulty": 4.5,
+          "room_type": "classroom"
+        },
+        {
+          "type": "fixed",
+          "name": "English",
+          "subject": "english",
+          "minutes": 440,
+          "category": "HUM",
+          "demanding": true,
+          "difficulty": 4.0,
+          "room_type": "classroom"
+        },
+        {
+          "type": "fixed",
+          "name": "Chinese",
+          "subject": "chinese",
+          "minutes": 250,
+          "category": "HUM",
+          "demanding": false,
+          "difficulty": 3.0,
+          "room_type": "classroom"
+        },
+        {
+          "type": "fixed",
+          "name": "World Language",
+          "subject": "language",
+          "minutes": 80,
+          "category": "HUM",
+          "demanding": false,
+          "difficulty": 2.5,
+          "room_type": "classroom"
+        },
+        {
+          "type": "fixed",
+          "name": "Module 1 Science (Physics+Chemistry)",
+          "subject": "science",
+          "minutes": 650,
+          "category": "STEM",
+          "demanding": true,
+          "difficulty": 4.5,
+          "room_type": "lab"
+        },
+        {
+          "type": "choice",
+          "module": "Module 2",
+          "options": [
+            {
+              "name": "Visual Art",
+              "subject": "art",
+              "minutes": 320,
+              "category": "OTHER",
+              "demanding": false,
+              "difficulty": 2.0,
+              "room_type": "studio"
+            },
+            {
+              "name": "Music",
+              "subject": "music",
+              "minutes": 320,
+              "category": "OTHER",
+              "demanding": false,
+              "difficulty": 2.0,
+              "room_type": "studio"
+            },
+            {
+              "name": "Design & Technology",
+              "subject": "dt",
+              "minutes": 320,
+              "category": "STEM",
+              "demanding": false,
+              "difficulty": 3.0,
+              "room_type": "studio"
+            }
+          ]
+        },
+        {
+          "type": "fixed",
+          "name": "History",
+          "subject": "history",
+          "minutes": 300,
+          "category": "HUM",
+          "demanding": true,
+          "difficulty": 3.5,
+          "room_type": "classroom"
+        },
+        {
+          "type": "fixed",
+          "name": "PE",
+          "subject": "pe",
+          "minutes": 220,
+          "category": "OTHER",
+          "demanding": false,
+          "difficulty": 1.0,
+          "room_type": "gym",
+          "is_pe": true,
+          "academic": false,
+          "grade_wide": true
+        },
+        {
+          "type": "fixed",
+          "name": "CAS",
+          "subject": "cas",
+          "minutes": 80,
+          "category": "OTHER",
+          "demanding": false,
+          "difficulty": 1.0,
+          "room_type": "classroom",
+          "academic": false
+        },
+        {
+          "type": "fixed",
+          "name": "Optional",
+          "subject": "optional",
+          "minutes": 90,
+          "category": "OTHER",
+          "demanding": false,
+          "difficulty": 1.0,
+          "room_type": "classroom",
+          "academic": false,
+          "grade_wide": true
+        }
+      ]
+    },
+    "11": {
+      "academic_target": 6,
+      "components": [
+        {
+          "type": "fixed",
+          "name": "Mathematics",
+          "subject": "math",
+          "minutes": 490,
+          "category": "STEM",
+          "demanding": true,
+          "difficulty": 4.5,
+          "room_type": "classroom"
+        },
+        {
+          "type": "fixed",
+          "name": "English",
+          "subject": "english",
+          "minutes": 480,
+          "category": "HUM",
+          "demanding": true,
+          "difficulty": 4.0,
+          "room_type": "classroom"
+        },
+        {
+          "type": "fixed",
+          "name": "Language",
+          "subject": "language",
+          "minutes": 235,
+          "category": "HUM",
+          "demanding": false,
+          "difficulty": 2.5,
+          "room_type": "classroom"
+        },
+        {
+          "type": "choice",
+          "module": "Module 1: Science",
+          "options": [
+            {
+              "name": "AP Physics 1",
+              "subject": "physics",
+              "minutes": 490,
+              "category": "STEM",
+              "demanding": true,
+              "difficulty": 5.0,
+              "room_type": "lab"
+            },
+            {
+              "name": "AP Chemistry",
+              "subject": "chemistry",
+              "minutes": 490,
+              "category": "STEM",
+              "demanding": true,
+              "difficulty": 5.0,
+              "room_type": "lab"
+            },
+            {
+              "name": "AP Biology",
+              "subject": "biology",
+              "minutes": 490,
+              "category": "STEM",
+              "demanding": true,
+              "difficulty": 4.5,
+              "room_type": "lab"
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "module": "Module 2",
+          "options": [
+            {
+              "name": "Economics",
+              "subject": "econ",
+              "minutes": 355,
+              "category": "HUM",
+              "demanding": true,
+              "difficulty": 4.0,
+              "room_type": "classroom"
+            },
+            {
+              "name": "Computer Science",
+              "subject": "cs",
+              "minutes": 355,
+              "category": "STEM",
+              "demanding": true,
+              "difficulty": 4.0,
+              "room_type": "classroom"
+            },
+            {
+              "name": "World History",
+              "subject": "history",
+              "minutes": 355,
+              "category": "HUM",
+              "demanding": true,
+              "difficulty": 3.5,
+              "room_type": "classroom"
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "module": "Module 3/4 Elective Track",
+          "options": [
+            {
+              "name": "Psychology",
+              "subject": "psych",
+              "minutes": 230,
+              "category": "HUM",
+              "demanding": false,
+              "difficulty": 3.0,
+              "room_type": "classroom"
+            },
+            {
+              "name": "Statistics",
+              "subject": "stats",
+              "minutes": 360,
+              "category": "STEM",
+              "demanding": true,
+              "difficulty": 4.5,
+              "room_type": "classroom"
+            },
+            {
+              "name": "Fine Art",
+              "subject": "art",
+              "minutes": 230,
+              "category": "OTHER",
+              "demanding": false,
+              "difficulty": 2.0,
+              "room_type": "studio"
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "module": "Optional",
+          "options": [
+            {
+              "name": "Independent Study",
+              "subject": "optional",
+              "minutes": 90,
+              "category": "OTHER",
+              "demanding": false,
+              "difficulty": 1.0,
+              "room_type": "classroom",
+              "academic": false
+            },
+            {
+              "name": "Club Activities",
+              "subject": "club",
+              "minutes": 90,
+              "category": "OTHER",
+              "demanding": false,
+              "difficulty": 1.0,
+              "room_type": "classroom",
+              "academic": false
+            }
+          ],
+          "grade_wide": true,
+          "skippable": true
+        },
+        {
+          "type": "fixed",
+          "name": "PE",
+          "subject": "pe",
+          "minutes": 240,
+          "category": "OTHER",
+          "demanding": false,
+          "difficulty": 1.0,
+          "room_type": "gym",
+          "is_pe": true,
+          "academic": false,
+          "grade_wide": true,
+          "ib_exempt": true
+        },
+        {
+          "type": "fixed",
+          "name": "Personal Growth",
+          "subject": "pg",
+          "minutes": 80,
+          "category": "OTHER",
+          "demanding": false,
+          "difficulty": 1.0,
+          "room_type": "classroom",
+          "academic": false
+        },
+        {
+          "type": "fixed",
+          "name": "CAS",
+          "subject": "cas",
+          "minutes": 80,
+          "category": "OTHER",
+          "demanding": false,
+          "difficulty": 1.0,
+          "room_type": "classroom",
+          "academic": false
+        }
+      ]
+    },
+    "12": {
+      "academic_target": 6,
+      "components": [
+        {
+          "type": "fixed",
+          "name": "Mathematics",
+          "subject": "math",
+          "minutes": 480,
+          "category": "STEM",
+          "demanding": true,
+          "difficulty": 4.5,
+          "room_type": "classroom"
+        },
+        {
+          "type": "fixed",
+          "name": "English",
+          "subject": "english",
+          "minutes": 490,
+          "category": "HUM",
+          "demanding": true,
+          "difficulty": 4.0,
+          "room_type": "classroom"
+        },
+        {
+          "type": "fixed",
+          "name": "Language",
+          "subject": "language",
+          "minutes": 245,
+          "category": "HUM",
+          "demanding": false,
+          "difficulty": 2.5,
+          "room_type": "classroom"
+        },
+        {
+          "type": "fixed",
+          "name": "Module 1 Advanced Science (AP Phys2 + Hnr OrgChem)",
+          "subject": "science",
+          "minutes": 965,
+          "category": "STEM",
+          "demanding": true,
+          "difficulty": 5.0,
+          "room_type": "lab"
+        },
+        {
+          "type": "choice",
+          "module": "Module 2",
+          "options": [
+            {
+              "name": "Economics",
+              "subject": "econ",
+              "minutes": 350,
+              "category": "HUM",
+              "demanding": true,
+              "difficulty": 4.0,
+              "room_type": "classroom"
+            },
+            {
+              "name": "Computer Science",
+              "subject": "cs",
+              "minutes": 350,
+              "category": "STEM",
+              "demanding": true,
+              "difficulty": 4.0,
+              "room_type": "classroom"
+            },
+            {
+              "name": "Comparative Government",
+              "subject": "gov",
+              "minutes": 350,
+              "category": "HUM",
+              "demanding": true,
+              "difficulty": 3.5,
+              "room_type": "classroom"
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "module": "Optional",
+          "options": [
+            {
+              "name": "Research Seminar",
+              "subject": "seminar",
+              "minutes": 110,
+              "category": "OTHER",
+              "demanding": false,
+              "difficulty": 2.5,
+              "room_type": "classroom"
+            },
+            {
+              "name": "Creative Writing",
+              "subject": "writing",
+              "minutes": 110,
+              "category": "HUM",
+              "demanding": false,
+              "difficulty": 2.5,
+              "room_type": "classroom"
+            }
+          ],
+          "grade_wide": true,
+          "skippable": true
+        },
+        {
+          "type": "fixed",
+          "name": "PE",
+          "subject": "pe",
+          "minutes": 240,
+          "category": "OTHER",
+          "demanding": false,
+          "difficulty": 1.0,
+          "room_type": "gym",
+          "is_pe": true,
+          "academic": false,
+          "grade_wide": true,
+          "ib_exempt": true
+        },
+        {
+          "type": "fixed",
+          "name": "Personal Growth",
+          "subject": "pg",
+          "minutes": 80,
+          "category": "OTHER",
+          "demanding": false,
+          "difficulty": 1.0,
+          "room_type": "classroom",
+          "academic": false
+        },
+        {
+          "type": "fixed",
+          "name": "CAS",
+          "subject": "cas",
+          "minutes": 80,
+          "category": "OTHER",
+          "demanding": false,
+          "difficulty": 1.0,
+          "room_type": "classroom",
+          "academic": false
+        }
+      ]
+    }
+  }
+}
