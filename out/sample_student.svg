@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1450" height="1010" viewBox="0 0 1450 1010">
+<style>text{font-family:Arial,Helvetica,sans-serif}</style>
+<rect x="0" y="0" width="1450" height="1010" rx="0" fill="#ffffff" stroke="#ffffff"/>
+<text x="54" y="61" font-size="30" fill="#19344a" font-weight="700" text-anchor="start">Grade 9 · representative student timetable</text>
+<text x="54" y="93" font-size="17" fill="#526879" font-weight="400" text-anchor="start">G9-S001  |  optimized two-week cycle shown in one weekly grid</text>
+<rect x="55" y="112" width="21" height="21" rx="3" fill="#e9edf0" stroke="#e9edf0"/>
+<text x="85" y="128" font-size="15" fill="#526879" font-weight="400" text-anchor="start">Gray cells show different Week A / Week B classes</text>
+<rect x="153" y="135" width="246" height="33" rx="4" fill="#173b54" stroke="#173b54"/>
+<text x="276" y="157" font-size="17" fill="#ffffff" font-weight="700" text-anchor="middle">Mon</text>
+<rect x="404" y="135" width="246" height="33" rx="4" fill="#173b54" stroke="#173b54"/>
+<text x="527" y="157" font-size="17" fill="#ffffff" font-weight="700" text-anchor="middle">Tue</text>
+<rect x="655" y="135" width="246" height="33" rx="4" fill="#173b54" stroke="#173b54"/>
+<text x="778" y="157" font-size="17" fill="#ffffff" font-weight="700" text-anchor="middle">Wed</text>
+<rect x="906" y="135" width="246" height="33" rx="4" fill="#173b54" stroke="#173b54"/>
+<text x="1029" y="157" font-size="17" fill="#ffffff" font-weight="700" text-anchor="middle">Thu</text>
+<rect x="1157" y="135" width="246" height="33" rx="4" fill="#173b54" stroke="#173b54"/>
+<text x="1280" y="157" font-size="17" fill="#ffffff" font-weight="700" text-anchor="middle">Fri</text>
+<text x="55" y="215" font-size="19" fill="#19344a" font-weight="700" text-anchor="start">P1</text>
+<text x="55" y="239" font-size="14" fill="#63788a" font-weight="400" text-anchor="start">60 min</text>
+<rect x="153" y="172" width="246" height="105" rx="5" fill="#e9edf0" stroke="#d7e0e7"/>
+<text x="166" y="201" font-size="14" fill="#19344a" font-weight="600" text-anchor="start">A · English</text>
+<text x="166" y="250" font-size="14" fill="#19344a" font-weight="600" text-anchor="start">B · Chinese</text>
+<rect x="404" y="172" width="246" height="105" rx="5" fill="#e1f1e8" stroke="#d7e0e7"/>
+<text x="417" y="215" font-size="15" fill="#19344a" font-weight="600" text-anchor="start">Chinese</text>
+<rect x="655" y="172" width="246" height="105" rx="5" fill="#fcebdc" stroke="#d7e0e7"/>
+<text x="668" y="215" font-size="15" fill="#19344a" font-weight="600" text-anchor="start">History</text>
+<rect x="906" y="172" width="246" height="105" rx="5" fill="#e9edf0" stroke="#d7e0e7"/>
+<text x="919" y="201" font-size="14" fill="#19344a" font-weight="600" text-anchor="start">A · Mathematics (Geometry)</text>
+<text x="919" y="250" font-size="14" fill="#19344a" font-weight="600" text-anchor="start">B · Chinese</text>
+<rect x="1157" y="172" width="246" height="105" rx="5" fill="#e9edf0" stroke="#d7e0e7"/>
+<text x="1170" y="201" font-size="14" fill="#19344a" font-weight="600" text-anchor="start">A · Physics</text>
+<text x="1170" y="250" font-size="14" fill="#19344a" font-weight="600" text-anchor="start">B · Chemistry</text>
+<text x="55" y="325" font-size="19" fill="#19344a" font-weight="700" text-anchor="start">P2</text>
+<text x="55" y="349" font-size="14" fill="#63788a" font-weight="400" text-anchor="start">40 min</text>
+<rect x="153" y="282" width="246" height="105" rx="5" fill="#dcecf7" stroke="#d7e0e7"/>
+<text x="166" y="325" font-size="15" fill="#19344a" font-weight="600" text-anchor="start">Physics</text>
+<rect x="404" y="282" width="246" height="105" rx="5" fill="#edf0dc" stroke="#d7e0e7"/>
+<text x="417" y="325" font-size="15" fill="#19344a" font-weight="600" text-anchor="start">Module 2</text>
+<rect x="655" y="282" width="246" height="105" rx="5" fill="#dcecf7" stroke="#d7e0e7"/>
+<text x="668" y="325" font-size="15" fill="#19344a" font-weight="600" text-anchor="start">Physics</text>
+<rect x="906" y="282" width="246" height="105" rx="5" fill="#e9edf0" stroke="#d7e0e7"/>
+<text x="919" y="311" font-size="14" fill="#19344a" font-weight="600" text-anchor="start">A · English</text>
+<text x="919" y="360" font-size="14" fill="#19344a" font-weight="600" text-anchor="start">B · CAS</text>
+<rect x="1157" y="282" width="246" height="105" rx="5" fill="#e9edf0" stroke="#d7e0e7"/>
+<text x="1170" y="311" font-size="14" fill="#19344a" font-weight="600" text-anchor="start">A · History</text>
+<text x="1170" y="360" font-size="14" fill="#19344a" font-weight="600" text-anchor="start">B · PE</text>
+<text x="55" y="435" font-size="19" fill="#19344a" font-weight="700" text-anchor="start">P3</text>
+<text x="55" y="459" font-size="14" fill="#63788a" font-weight="400" text-anchor="start">40 min</text>
+<rect x="153" y="392" width="246" height="105" rx="5" fill="#fcebdc" stroke="#d7e0e7"/>
+<text x="166" y="435" font-size="15" fill="#19344a" font-weight="600" text-anchor="start">History</text>
+<rect x="404" y="392" width="246" height="105" rx="5" fill="#dcecf7" stroke="#d7e0e7"/>
+<text x="417" y="435" font-size="15" fill="#19344a" font-weight="600" text-anchor="start">Chemistry</text>
+<rect x="655" y="392" width="246" height="105" rx="5" fill="#e6e3f7" stroke="#d7e0e7"/>
+<text x="668" y="435" font-size="15" fill="#19344a" font-weight="600" text-anchor="start">Mathematics (Geometry)</text>
+<rect x="906" y="392" width="246" height="105" rx="5" fill="#e9edf0" stroke="#d7e0e7"/>
+<text x="919" y="421" font-size="14" fill="#19344a" font-weight="600" text-anchor="start">A · Module 2</text>
+<text x="919" y="470" font-size="14" fill="#19344a" font-weight="600" text-anchor="start">B · CAS</text>
+<rect x="1157" y="392" width="246" height="105" rx="5" fill="#e6e3f7" stroke="#d7e0e7"/>
+<text x="1170" y="435" font-size="15" fill="#19344a" font-weight="600" text-anchor="start">Mathematics (Geometry)</text>
+<text x="55" y="545" font-size="19" fill="#19344a" font-weight="700" text-anchor="start">P4</text>
+<text x="55" y="569" font-size="14" fill="#63788a" font-weight="400" text-anchor="start">45 min</text>
+<rect x="153" y="502" width="246" height="105" rx="5" fill="#f7e1e5" stroke="#d7e0e7"/>
+<text x="166" y="545" font-size="15" fill="#19344a" font-weight="600" text-anchor="start">PE</text>
+<rect x="404" y="502" width="246" height="105" rx="5" fill="#e1f1e8" stroke="#d7e0e7"/>
+<text x="417" y="545" font-size="15" fill="#19344a" font-weight="600" text-anchor="start">English</text>
+<rect x="655" y="502" width="246" height="105" rx="5" fill="#f7e1e5" stroke="#d7e0e7"/>
+<text x="668" y="545" font-size="15" fill="#19344a" font-weight="600" text-anchor="start">PE</text>
+<rect x="906" y="502" width="246" height="105" rx="5" fill="#edf0dc" stroke="#d7e0e7"/>
+<text x="919" y="545" font-size="15" fill="#19344a" font-weight="600" text-anchor="start">Optional</text>
+<rect x="1157" y="502" width="246" height="105" rx="5" fill="#dcecf7" stroke="#d7e0e7"/>
+<text x="1170" y="545" font-size="15" fill="#19344a" font-weight="600" text-anchor="start">Physics</text>
+<text x="55" y="655" font-size="19" fill="#19344a" font-weight="700" text-anchor="start">P5</text>
+<text x="55" y="679" font-size="14" fill="#63788a" font-weight="400" text-anchor="start">55 min</text>
+<rect x="153" y="612" width="246" height="105" rx="5" fill="#dcecf7" stroke="#d7e0e7"/>
+<text x="166" y="655" font-size="15" fill="#19344a" font-weight="600" text-anchor="start">Chemistry</text>
+<rect x="404" y="612" width="246" height="105" rx="5" fill="#edf0dc" stroke="#d7e0e7"/>
+<text x="417" y="655" font-size="15" fill="#19344a" font-weight="600" text-anchor="start">Module 3</text>
+<rect x="655" y="612" width="246" height="105" rx="5" fill="#e9edf0" stroke="#d7e0e7"/>
+<text x="668" y="641" font-size="14" fill="#19344a" font-weight="600" text-anchor="start">A · Module 3</text>
+<text x="668" y="690" font-size="14" fill="#19344a" font-weight="600" text-anchor="start">B · Mathematics (Geometry)</text>
+<rect x="906" y="612" width="246" height="105" rx="5" fill="#edf0dc" stroke="#d7e0e7"/>
+<text x="919" y="655" font-size="15" fill="#19344a" font-weight="600" text-anchor="start">Module 2</text>
+<rect x="1157" y="612" width="246" height="105" rx="5" fill="#e1f1e8" stroke="#d7e0e7"/>
+<text x="1170" y="655" font-size="15" fill="#19344a" font-weight="600" text-anchor="start">English</text>
+<text x="55" y="765" font-size="19" fill="#19344a" font-weight="700" text-anchor="start">P6</text>
+<text x="55" y="789" font-size="14" fill="#63788a" font-weight="400" text-anchor="start">40 min</text>
+<rect x="153" y="722" width="246" height="105" rx="5" fill="#e1f1e8" stroke="#d7e0e7"/>
+<text x="166" y="765" font-size="15" fill="#19344a" font-weight="600" text-anchor="start">English</text>
+<rect x="404" y="722" width="246" height="105" rx="5" fill="#fcebdc" stroke="#d7e0e7"/>
+<text x="417" y="765" font-size="15" fill="#19344a" font-weight="600" text-anchor="start">History</text>
+<rect x="655" y="722" width="246" height="105" rx="5" fill="#e1f1e8" stroke="#d7e0e7"/>
+<text x="668" y="765" font-size="15" fill="#19344a" font-weight="600" text-anchor="start">English</text>
+<rect x="906" y="722" width="246" height="105" rx="5" fill="#e1f1e8" stroke="#d7e0e7"/>
+<text x="919" y="765" font-size="15" fill="#19344a" font-weight="600" text-anchor="start">World Language</text>
+<rect x="1157" y="722" width="246" height="105" rx="5" fill="#f5f7f8" stroke="#d7e0e7"/>
+<text x="1280" y="780" font-size="20" fill="#8fa0ad" font-weight="400" text-anchor="middle">—</text>
+<text x="55" y="875" font-size="19" fill="#19344a" font-weight="700" text-anchor="start">P7</text>
+<text x="55" y="899" font-size="14" fill="#63788a" font-weight="400" text-anchor="start">40 min</text>
+<rect x="153" y="832" width="246" height="105" rx="5" fill="#edf0dc" stroke="#d7e0e7"/>
+<text x="166" y="875" font-size="15" fill="#19344a" font-weight="600" text-anchor="start">Module 2</text>
+<rect x="404" y="832" width="246" height="105" rx="5" fill="#e6e3f7" stroke="#d7e0e7"/>
+<text x="417" y="875" font-size="15" fill="#19344a" font-weight="600" text-anchor="start">Mathematics (Geometry)</text>
+<rect x="655" y="832" width="246" height="105" rx="5" fill="#dcecf7" stroke="#d7e0e7"/>
+<text x="668" y="875" font-size="15" fill="#19344a" font-weight="600" text-anchor="start">Chemistry</text>
+<rect x="906" y="832" width="246" height="105" rx="5" fill="#e6e3f7" stroke="#d7e0e7"/>
+<text x="919" y="875" font-size="15" fill="#19344a" font-weight="600" text-anchor="start">Mathematics (Geometry)</text>
+<rect x="1157" y="832" width="246" height="105" rx="5" fill="#f5f7f8" stroke="#d7e0e7"/>
+<text x="1280" y="890" font-size="20" fill="#8fa0ad" font-weight="400" text-anchor="middle">—</text>
+<text x="54" y="978" font-size="15" fill="#63788a" font-weight="400" text-anchor="start">Source: out/timetable_students.csv · CAS uses the same styling as other courses.</text>
+</svg>

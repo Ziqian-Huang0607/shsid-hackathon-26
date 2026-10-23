@@ -1,0 +1,943 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1560" height="1240" viewBox="0 0 1560 1240">
+<style>text{font-family:Arial,Helvetica,sans-serif}</style>
+<rect x="0" y="0" width="1560" height="1240" rx="0" fill="#ffffff" stroke="#ffffff"/>
+<text x="48" y="61" font-size="31" fill="#19344a" font-weight="700" text-anchor="start">Room-pool utilization · optimized timetable</text>
+<text x="48" y="94" font-size="17" fill="#526879" font-weight="400" text-anchor="start">Occupied rooms / configured rooms in each teaching period; Week A and Week B shown separately.</text>
+<rect x="48" y="145" width="744" height="351" rx="8" fill="#fbfcfd" stroke="#d7e0e7"/>
+<text x="66" y="175" font-size="20" fill="#19344a" font-weight="700" text-anchor="start">Wing-9  ·  16 rooms</text>
+<text x="772" y="175" font-size="15" fill="#526879" font-weight="400" text-anchor="end">Peak 13/16</text>
+<text x="178" y="205" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">A Mon</text>
+<rect x="153" y="218" width="56" height="31" rx="2" fill="#4487a9" stroke="#d7e0e7"/>
+<text x="180" y="239" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">13/16</text>
+<rect x="153" y="252" width="56" height="31" rx="2" fill="#78a9c2" stroke="#d7e0e7"/>
+<text x="180" y="273" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">9/16</text>
+<rect x="153" y="286" width="56" height="31" rx="2" fill="#a0c3d4" stroke="#d7e0e7"/>
+<text x="180" y="307" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">6/16</text>
+<rect x="153" y="320" width="56" height="31" rx="2" fill="#eff6f9" stroke="#d7e0e7"/>
+<text x="180" y="341" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">0/16</text>
+<rect x="153" y="354" width="56" height="31" rx="2" fill="#5e98b6" stroke="#d7e0e7"/>
+<text x="180" y="375" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">11/16</text>
+<rect x="153" y="388" width="56" height="31" rx="2" fill="#5e98b6" stroke="#d7e0e7"/>
+<text x="180" y="409" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">11/16</text>
+<rect x="153" y="422" width="56" height="31" rx="2" fill="#78a9c2" stroke="#d7e0e7"/>
+<text x="180" y="443" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">9/16</text>
+<text x="237" y="205" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">A Tue</text>
+<rect x="212" y="218" width="56" height="31" rx="2" fill="#5e98b6" stroke="#d7e0e7"/>
+<text x="239" y="239" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">11/16</text>
+<rect x="212" y="252" width="56" height="31" rx="2" fill="#6ba0bc" stroke="#d7e0e7"/>
+<text x="239" y="273" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">10/16</text>
+<rect x="212" y="286" width="56" height="31" rx="2" fill="#5e98b6" stroke="#d7e0e7"/>
+<text x="239" y="307" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">11/16</text>
+<rect x="212" y="320" width="56" height="31" rx="2" fill="#bad4e0" stroke="#d7e0e7"/>
+<text x="239" y="341" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">4/16</text>
+<rect x="212" y="354" width="56" height="31" rx="2" fill="#5e98b6" stroke="#d7e0e7"/>
+<text x="239" y="375" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">11/16</text>
+<rect x="212" y="388" width="56" height="31" rx="2" fill="#93bace" stroke="#d7e0e7"/>
+<text x="239" y="409" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">7/16</text>
+<rect x="212" y="422" width="56" height="31" rx="2" fill="#86b2c8" stroke="#d7e0e7"/>
+<text x="239" y="443" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">8/16</text>
+<text x="296" y="205" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">A Wed</text>
+<rect x="271" y="218" width="56" height="31" rx="2" fill="#5e98b6" stroke="#d7e0e7"/>
+<text x="298" y="239" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">11/16</text>
+<rect x="271" y="252" width="56" height="31" rx="2" fill="#5e98b6" stroke="#d7e0e7"/>
+<text x="298" y="273" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">11/16</text>
+<rect x="271" y="286" width="56" height="31" rx="2" fill="#86b2c8" stroke="#d7e0e7"/>
+<text x="298" y="307" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">8/16</text>
+<rect x="271" y="320" width="56" height="31" rx="2" fill="#eff6f9" stroke="#d7e0e7"/>
+<text x="298" y="341" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">0/16</text>
+<rect x="271" y="354" width="56" height="31" rx="2" fill="#5e98b6" stroke="#d7e0e7"/>
+<text x="298" y="375" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">11/16</text>
+<rect x="271" y="388" width="56" height="31" rx="2" fill="#6ba0bc" stroke="#d7e0e7"/>
+<text x="298" y="409" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">10/16</text>
+<rect x="271" y="422" width="56" height="31" rx="2" fill="#93bace" stroke="#d7e0e7"/>
+<text x="298" y="443" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">7/16</text>
+<text x="355" y="205" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">A Thu</text>
+<rect x="330" y="218" width="56" height="31" rx="2" fill="#5e98b6" stroke="#d7e0e7"/>
+<text x="357" y="239" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">11/16</text>
+<rect x="330" y="252" width="56" height="31" rx="2" fill="#518fb0" stroke="#d7e0e7"/>
+<text x="357" y="273" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">12/16</text>
+<rect x="330" y="286" width="56" height="31" rx="2" fill="#6ba0bc" stroke="#d7e0e7"/>
+<text x="357" y="307" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">10/16</text>
+<rect x="330" y="320" width="56" height="31" rx="2" fill="#4487a9" stroke="#d7e0e7"/>
+<text x="357" y="341" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">13/16</text>
+<rect x="330" y="354" width="56" height="31" rx="2" fill="#518fb0" stroke="#d7e0e7"/>
+<text x="357" y="375" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">12/16</text>
+<rect x="330" y="388" width="56" height="31" rx="2" fill="#86b2c8" stroke="#d7e0e7"/>
+<text x="357" y="409" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">8/16</text>
+<rect x="330" y="422" width="56" height="31" rx="2" fill="#6ba0bc" stroke="#d7e0e7"/>
+<text x="357" y="443" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">10/16</text>
+<text x="414" y="205" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">A Fri</text>
+<rect x="389" y="218" width="56" height="31" rx="2" fill="#518fb0" stroke="#d7e0e7"/>
+<text x="416" y="239" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">12/16</text>
+<rect x="389" y="252" width="56" height="31" rx="2" fill="#518fb0" stroke="#d7e0e7"/>
+<text x="416" y="273" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">12/16</text>
+<rect x="389" y="286" width="56" height="31" rx="2" fill="#6ba0bc" stroke="#d7e0e7"/>
+<text x="416" y="307" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">10/16</text>
+<rect x="389" y="320" width="56" height="31" rx="2" fill="#adcbda" stroke="#d7e0e7"/>
+<text x="416" y="341" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">5/16</text>
+<rect x="389" y="354" width="56" height="31" rx="2" fill="#6ba0bc" stroke="#d7e0e7"/>
+<text x="416" y="375" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">10/16</text>
+<rect x="389" y="388" width="56" height="31" rx="2" fill="#eff2f4" stroke="#d7e0e7"/>
+<rect x="389" y="422" width="56" height="31" rx="2" fill="#eff2f4" stroke="#d7e0e7"/>
+<text x="473" y="205" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">B Mon</text>
+<rect x="448" y="218" width="56" height="31" rx="2" fill="#4487a9" stroke="#d7e0e7"/>
+<text x="475" y="239" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">13/16</text>
+<rect x="448" y="252" width="56" height="31" rx="2" fill="#86b2c8" stroke="#d7e0e7"/>
+<text x="475" y="273" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">8/16</text>
+<rect x="448" y="286" width="56" height="31" rx="2" fill="#a0c3d4" stroke="#d7e0e7"/>
+<text x="475" y="307" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">6/16</text>
+<rect x="448" y="320" width="56" height="31" rx="2" fill="#eff6f9" stroke="#d7e0e7"/>
+<text x="475" y="341" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">0/16</text>
+<rect x="448" y="354" width="56" height="31" rx="2" fill="#5e98b6" stroke="#d7e0e7"/>
+<text x="475" y="375" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">11/16</text>
+<rect x="448" y="388" width="56" height="31" rx="2" fill="#5e98b6" stroke="#d7e0e7"/>
+<text x="475" y="409" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">11/16</text>
+<rect x="448" y="422" width="56" height="31" rx="2" fill="#86b2c8" stroke="#d7e0e7"/>
+<text x="475" y="443" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">8/16</text>
+<text x="532" y="205" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">B Tue</text>
+<rect x="507" y="218" width="56" height="31" rx="2" fill="#5e98b6" stroke="#d7e0e7"/>
+<text x="534" y="239" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">11/16</text>
+<rect x="507" y="252" width="56" height="31" rx="2" fill="#5e98b6" stroke="#d7e0e7"/>
+<text x="534" y="273" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">11/16</text>
+<rect x="507" y="286" width="56" height="31" rx="2" fill="#5e98b6" stroke="#d7e0e7"/>
+<text x="534" y="307" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">11/16</text>
+<rect x="507" y="320" width="56" height="31" rx="2" fill="#bad4e0" stroke="#d7e0e7"/>
+<text x="534" y="341" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">4/16</text>
+<rect x="507" y="354" width="56" height="31" rx="2" fill="#6ba0bc" stroke="#d7e0e7"/>
+<text x="534" y="375" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">10/16</text>
+<rect x="507" y="388" width="56" height="31" rx="2" fill="#86b2c8" stroke="#d7e0e7"/>
+<text x="534" y="409" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">8/16</text>
+<rect x="507" y="422" width="56" height="31" rx="2" fill="#86b2c8" stroke="#d7e0e7"/>
+<text x="534" y="443" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">8/16</text>
+<text x="591" y="205" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">B Wed</text>
+<rect x="566" y="218" width="56" height="31" rx="2" fill="#518fb0" stroke="#d7e0e7"/>
+<text x="593" y="239" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">12/16</text>
+<rect x="566" y="252" width="56" height="31" rx="2" fill="#6ba0bc" stroke="#d7e0e7"/>
+<text x="593" y="273" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">10/16</text>
+<rect x="566" y="286" width="56" height="31" rx="2" fill="#86b2c8" stroke="#d7e0e7"/>
+<text x="593" y="307" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">8/16</text>
+<rect x="566" y="320" width="56" height="31" rx="2" fill="#eff6f9" stroke="#d7e0e7"/>
+<text x="593" y="341" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">0/16</text>
+<rect x="566" y="354" width="56" height="31" rx="2" fill="#5e98b6" stroke="#d7e0e7"/>
+<text x="593" y="375" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">11/16</text>
+<rect x="566" y="388" width="56" height="31" rx="2" fill="#5e98b6" stroke="#d7e0e7"/>
+<text x="593" y="409" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">11/16</text>
+<rect x="566" y="422" width="56" height="31" rx="2" fill="#93bace" stroke="#d7e0e7"/>
+<text x="593" y="443" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">7/16</text>
+<text x="650" y="205" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">B Thu</text>
+<rect x="625" y="218" width="56" height="31" rx="2" fill="#518fb0" stroke="#d7e0e7"/>
+<text x="652" y="239" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">12/16</text>
+<rect x="625" y="252" width="56" height="31" rx="2" fill="#4487a9" stroke="#d7e0e7"/>
+<text x="652" y="273" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">13/16</text>
+<rect x="625" y="286" width="56" height="31" rx="2" fill="#4487a9" stroke="#d7e0e7"/>
+<text x="652" y="307" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">13/16</text>
+<rect x="625" y="320" width="56" height="31" rx="2" fill="#4487a9" stroke="#d7e0e7"/>
+<text x="652" y="341" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">13/16</text>
+<rect x="625" y="354" width="56" height="31" rx="2" fill="#518fb0" stroke="#d7e0e7"/>
+<text x="652" y="375" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">12/16</text>
+<rect x="625" y="388" width="56" height="31" rx="2" fill="#93bace" stroke="#d7e0e7"/>
+<text x="652" y="409" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">7/16</text>
+<rect x="625" y="422" width="56" height="31" rx="2" fill="#5e98b6" stroke="#d7e0e7"/>
+<text x="652" y="443" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">11/16</text>
+<text x="709" y="205" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">B Fri</text>
+<rect x="684" y="218" width="56" height="31" rx="2" fill="#518fb0" stroke="#d7e0e7"/>
+<text x="711" y="239" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">12/16</text>
+<rect x="684" y="252" width="56" height="31" rx="2" fill="#eff6f9" stroke="#d7e0e7"/>
+<text x="711" y="273" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">0/16</text>
+<rect x="684" y="286" width="56" height="31" rx="2" fill="#5e98b6" stroke="#d7e0e7"/>
+<text x="711" y="307" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">11/16</text>
+<rect x="684" y="320" width="56" height="31" rx="2" fill="#a0c3d4" stroke="#d7e0e7"/>
+<text x="711" y="341" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">6/16</text>
+<rect x="684" y="354" width="56" height="31" rx="2" fill="#6ba0bc" stroke="#d7e0e7"/>
+<text x="711" y="375" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">10/16</text>
+<rect x="684" y="388" width="56" height="31" rx="2" fill="#eff2f4" stroke="#d7e0e7"/>
+<rect x="684" y="422" width="56" height="31" rx="2" fill="#eff2f4" stroke="#d7e0e7"/>
+<text x="136" y="240" font-size="13" fill="#526879" font-weight="400" text-anchor="end">P1</text>
+<text x="136" y="274" font-size="13" fill="#526879" font-weight="400" text-anchor="end">P2</text>
+<text x="136" y="308" font-size="13" fill="#526879" font-weight="400" text-anchor="end">P3</text>
+<text x="136" y="342" font-size="13" fill="#526879" font-weight="400" text-anchor="end">P4</text>
+<text x="136" y="376" font-size="13" fill="#526879" font-weight="400" text-anchor="end">P5</text>
+<text x="136" y="410" font-size="13" fill="#526879" font-weight="400" text-anchor="end">P6</text>
+<text x="136" y="444" font-size="13" fill="#526879" font-weight="400" text-anchor="end">P7</text>
+<rect x="816" y="145" width="744" height="351" rx="8" fill="#fbfcfd" stroke="#d7e0e7"/>
+<text x="834" y="175" font-size="20" fill="#19344a" font-weight="700" text-anchor="start">Wing-10  ·  16 rooms</text>
+<text x="1540" y="175" font-size="15" fill="#526879" font-weight="400" text-anchor="end">Peak 13/16</text>
+<text x="946" y="205" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">A Mon</text>
+<rect x="921" y="218" width="56" height="31" rx="2" fill="#4487a9" stroke="#d7e0e7"/>
+<text x="948" y="239" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">13/16</text>
+<rect x="921" y="252" width="56" height="31" rx="2" fill="#a0c3d4" stroke="#d7e0e7"/>
+<text x="948" y="273" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">6/16</text>
+<rect x="921" y="286" width="56" height="31" rx="2" fill="#adcbda" stroke="#d7e0e7"/>
+<text x="948" y="307" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">5/16</text>
+<rect x="921" y="320" width="56" height="31" rx="2" fill="#518fb0" stroke="#d7e0e7"/>
+<text x="948" y="341" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">12/16</text>
+<rect x="921" y="354" width="56" height="31" rx="2" fill="#6ba0bc" stroke="#d7e0e7"/>
+<text x="948" y="375" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">10/16</text>
+<rect x="921" y="388" width="56" height="31" rx="2" fill="#86b2c8" stroke="#d7e0e7"/>
+<text x="948" y="409" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">8/16</text>
+<rect x="921" y="422" width="56" height="31" rx="2" fill="#86b2c8" stroke="#d7e0e7"/>
+<text x="948" y="443" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">8/16</text>
+<text x="1005" y="205" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">A Tue</text>
+<rect x="980" y="218" width="56" height="31" rx="2" fill="#518fb0" stroke="#d7e0e7"/>
+<text x="1007" y="239" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">12/16</text>
+<rect x="980" y="252" width="56" height="31" rx="2" fill="#6ba0bc" stroke="#d7e0e7"/>
+<text x="1007" y="273" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">10/16</text>
+<rect x="980" y="286" width="56" height="31" rx="2" fill="#93bace" stroke="#d7e0e7"/>
+<text x="1007" y="307" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">7/16</text>
+<rect x="980" y="320" width="56" height="31" rx="2" fill="#eff6f9" stroke="#d7e0e7"/>
+<text x="1007" y="341" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">0/16</text>
+<rect x="980" y="354" width="56" height="31" rx="2" fill="#93bace" stroke="#d7e0e7"/>
+<text x="1007" y="375" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">7/16</text>
+<rect x="980" y="388" width="56" height="31" rx="2" fill="#bad4e0" stroke="#d7e0e7"/>
+<text x="1007" y="409" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">4/16</text>
+<rect x="980" y="422" width="56" height="31" rx="2" fill="#6ba0bc" stroke="#d7e0e7"/>
+<text x="1007" y="443" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">10/16</text>
+<text x="1064" y="205" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">A Wed</text>
+<rect x="1039" y="218" width="56" height="31" rx="2" fill="#4487a9" stroke="#d7e0e7"/>
+<text x="1066" y="239" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">13/16</text>
+<rect x="1039" y="252" width="56" height="31" rx="2" fill="#93bace" stroke="#d7e0e7"/>
+<text x="1066" y="273" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">7/16</text>
+<rect x="1039" y="286" width="56" height="31" rx="2" fill="#86b2c8" stroke="#d7e0e7"/>
+<text x="1066" y="307" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">8/16</text>
+<rect x="1039" y="320" width="56" height="31" rx="2" fill="#5e98b6" stroke="#d7e0e7"/>
+<text x="1066" y="341" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">11/16</text>
+<rect x="1039" y="354" width="56" height="31" rx="2" fill="#5e98b6" stroke="#d7e0e7"/>
+<text x="1066" y="375" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">11/16</text>
+<rect x="1039" y="388" width="56" height="31" rx="2" fill="#86b2c8" stroke="#d7e0e7"/>
+<text x="1066" y="409" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">8/16</text>
+<rect x="1039" y="422" width="56" height="31" rx="2" fill="#c7dce7" stroke="#d7e0e7"/>
+<text x="1066" y="443" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">3/16</text>
+<text x="1123" y="205" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">A Thu</text>
+<rect x="1098" y="218" width="56" height="31" rx="2" fill="#518fb0" stroke="#d7e0e7"/>
+<text x="1125" y="239" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">12/16</text>
+<rect x="1098" y="252" width="56" height="31" rx="2" fill="#adcbda" stroke="#d7e0e7"/>
+<text x="1125" y="273" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">5/16</text>
+<rect x="1098" y="286" width="56" height="31" rx="2" fill="#adcbda" stroke="#d7e0e7"/>
+<text x="1125" y="307" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">5/16</text>
+<rect x="1098" y="320" width="56" height="31" rx="2" fill="#4487a9" stroke="#d7e0e7"/>
+<text x="1125" y="341" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">13/16</text>
+<rect x="1098" y="354" width="56" height="31" rx="2" fill="#6ba0bc" stroke="#d7e0e7"/>
+<text x="1125" y="375" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">10/16</text>
+<rect x="1098" y="388" width="56" height="31" rx="2" fill="#a0c3d4" stroke="#d7e0e7"/>
+<text x="1125" y="409" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">6/16</text>
+<rect x="1098" y="422" width="56" height="31" rx="2" fill="#93bace" stroke="#d7e0e7"/>
+<text x="1125" y="443" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">7/16</text>
+<text x="1182" y="205" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">A Fri</text>
+<rect x="1157" y="218" width="56" height="31" rx="2" fill="#518fb0" stroke="#d7e0e7"/>
+<text x="1184" y="239" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">12/16</text>
+<rect x="1157" y="252" width="56" height="31" rx="2" fill="#78a9c2" stroke="#d7e0e7"/>
+<text x="1184" y="273" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">9/16</text>
+<rect x="1157" y="286" width="56" height="31" rx="2" fill="#93bace" stroke="#d7e0e7"/>
+<text x="1184" y="307" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">7/16</text>
+<rect x="1157" y="320" width="56" height="31" rx="2" fill="#eff6f9" stroke="#d7e0e7"/>
+<text x="1184" y="341" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">0/16</text>
+<rect x="1157" y="354" width="56" height="31" rx="2" fill="#86b2c8" stroke="#d7e0e7"/>
+<text x="1184" y="375" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">8/16</text>
+<rect x="1157" y="388" width="56" height="31" rx="2" fill="#eff2f4" stroke="#d7e0e7"/>
+<rect x="1157" y="422" width="56" height="31" rx="2" fill="#eff2f4" stroke="#d7e0e7"/>
+<text x="1241" y="205" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">B Mon</text>
+<rect x="1216" y="218" width="56" height="31" rx="2" fill="#4487a9" stroke="#d7e0e7"/>
+<text x="1243" y="239" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">13/16</text>
+<rect x="1216" y="252" width="56" height="31" rx="2" fill="#adcbda" stroke="#d7e0e7"/>
+<text x="1243" y="273" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">5/16</text>
+<rect x="1216" y="286" width="56" height="31" rx="2" fill="#a0c3d4" stroke="#d7e0e7"/>
+<text x="1243" y="307" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">6/16</text>
+<rect x="1216" y="320" width="56" height="31" rx="2" fill="#518fb0" stroke="#d7e0e7"/>
+<text x="1243" y="341" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">12/16</text>
+<rect x="1216" y="354" width="56" height="31" rx="2" fill="#6ba0bc" stroke="#d7e0e7"/>
+<text x="1243" y="375" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">10/16</text>
+<rect x="1216" y="388" width="56" height="31" rx="2" fill="#a0c3d4" stroke="#d7e0e7"/>
+<text x="1243" y="409" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">6/16</text>
+<rect x="1216" y="422" width="56" height="31" rx="2" fill="#78a9c2" stroke="#d7e0e7"/>
+<text x="1243" y="443" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">9/16</text>
+<text x="1300" y="205" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">B Tue</text>
+<rect x="1275" y="218" width="56" height="31" rx="2" fill="#5e98b6" stroke="#d7e0e7"/>
+<text x="1302" y="239" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">11/16</text>
+<rect x="1275" y="252" width="56" height="31" rx="2" fill="#6ba0bc" stroke="#d7e0e7"/>
+<text x="1302" y="273" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">10/16</text>
+<rect x="1275" y="286" width="56" height="31" rx="2" fill="#93bace" stroke="#d7e0e7"/>
+<text x="1302" y="307" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">7/16</text>
+<rect x="1275" y="320" width="56" height="31" rx="2" fill="#eff6f9" stroke="#d7e0e7"/>
+<text x="1302" y="341" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">0/16</text>
+<rect x="1275" y="354" width="56" height="31" rx="2" fill="#86b2c8" stroke="#d7e0e7"/>
+<text x="1302" y="375" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">8/16</text>
+<rect x="1275" y="388" width="56" height="31" rx="2" fill="#c7dce7" stroke="#d7e0e7"/>
+<text x="1302" y="409" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">3/16</text>
+<rect x="1275" y="422" width="56" height="31" rx="2" fill="#78a9c2" stroke="#d7e0e7"/>
+<text x="1302" y="443" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">9/16</text>
+<text x="1359" y="205" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">B Wed</text>
+<rect x="1334" y="218" width="56" height="31" rx="2" fill="#518fb0" stroke="#d7e0e7"/>
+<text x="1361" y="239" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">12/16</text>
+<rect x="1334" y="252" width="56" height="31" rx="2" fill="#93bace" stroke="#d7e0e7"/>
+<text x="1361" y="273" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">7/16</text>
+<rect x="1334" y="286" width="56" height="31" rx="2" fill="#78a9c2" stroke="#d7e0e7"/>
+<text x="1361" y="307" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">9/16</text>
+<rect x="1334" y="320" width="56" height="31" rx="2" fill="#6ba0bc" stroke="#d7e0e7"/>
+<text x="1361" y="341" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">10/16</text>
+<rect x="1334" y="354" width="56" height="31" rx="2" fill="#5e98b6" stroke="#d7e0e7"/>
+<text x="1361" y="375" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">11/16</text>
+<rect x="1334" y="388" width="56" height="31" rx="2" fill="#78a9c2" stroke="#d7e0e7"/>
+<text x="1361" y="409" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">9/16</text>
+<rect x="1334" y="422" width="56" height="31" rx="2" fill="#eff6f9" stroke="#d7e0e7"/>
+<text x="1361" y="443" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">0/16</text>
+<text x="1418" y="205" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">B Thu</text>
+<rect x="1393" y="218" width="56" height="31" rx="2" fill="#518fb0" stroke="#d7e0e7"/>
+<text x="1420" y="239" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">12/16</text>
+<rect x="1393" y="252" width="56" height="31" rx="2" fill="#4487a9" stroke="#d7e0e7"/>
+<text x="1420" y="273" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">13/16</text>
+<rect x="1393" y="286" width="56" height="31" rx="2" fill="#4487a9" stroke="#d7e0e7"/>
+<text x="1420" y="307" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">13/16</text>
+<rect x="1393" y="320" width="56" height="31" rx="2" fill="#4487a9" stroke="#d7e0e7"/>
+<text x="1420" y="341" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">13/16</text>
+<rect x="1393" y="354" width="56" height="31" rx="2" fill="#6ba0bc" stroke="#d7e0e7"/>
+<text x="1420" y="375" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">10/16</text>
+<rect x="1393" y="388" width="56" height="31" rx="2" fill="#93bace" stroke="#d7e0e7"/>
+<text x="1420" y="409" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">7/16</text>
+<rect x="1393" y="422" width="56" height="31" rx="2" fill="#86b2c8" stroke="#d7e0e7"/>
+<text x="1420" y="443" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">8/16</text>
+<text x="1477" y="205" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">B Fri</text>
+<rect x="1452" y="218" width="56" height="31" rx="2" fill="#4487a9" stroke="#d7e0e7"/>
+<text x="1479" y="239" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">13/16</text>
+<rect x="1452" y="252" width="56" height="31" rx="2" fill="#78a9c2" stroke="#d7e0e7"/>
+<text x="1479" y="273" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">9/16</text>
+<rect x="1452" y="286" width="56" height="31" rx="2" fill="#86b2c8" stroke="#d7e0e7"/>
+<text x="1479" y="307" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">8/16</text>
+<rect x="1452" y="320" width="56" height="31" rx="2" fill="#eff6f9" stroke="#d7e0e7"/>
+<text x="1479" y="341" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">0/16</text>
+<rect x="1452" y="354" width="56" height="31" rx="2" fill="#86b2c8" stroke="#d7e0e7"/>
+<text x="1479" y="375" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">8/16</text>
+<rect x="1452" y="388" width="56" height="31" rx="2" fill="#eff2f4" stroke="#d7e0e7"/>
+<rect x="1452" y="422" width="56" height="31" rx="2" fill="#eff2f4" stroke="#d7e0e7"/>
+<text x="904" y="240" font-size="13" fill="#526879" font-weight="400" text-anchor="end">P1</text>
+<text x="904" y="274" font-size="13" fill="#526879" font-weight="400" text-anchor="end">P2</text>
+<text x="904" y="308" font-size="13" fill="#526879" font-weight="400" text-anchor="end">P3</text>
+<text x="904" y="342" font-size="13" fill="#526879" font-weight="400" text-anchor="end">P4</text>
+<text x="904" y="376" font-size="13" fill="#526879" font-weight="400" text-anchor="end">P5</text>
+<text x="904" y="410" font-size="13" fill="#526879" font-weight="400" text-anchor="end">P6</text>
+<text x="904" y="444" font-size="13" fill="#526879" font-weight="400" text-anchor="end">P7</text>
+<rect x="48" y="501" width="744" height="351" rx="8" fill="#fbfcfd" stroke="#d7e0e7"/>
+<text x="66" y="531" font-size="20" fill="#19344a" font-weight="700" text-anchor="start">Wing-11  ·  16 rooms</text>
+<text x="772" y="531" font-size="15" fill="#526879" font-weight="400" text-anchor="end">Peak 14/16</text>
+<text x="178" y="561" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">A Mon</text>
+<rect x="153" y="574" width="56" height="31" rx="2" fill="#367ea3" stroke="#d7e0e7"/>
+<text x="180" y="595" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">14/16</text>
+<rect x="153" y="608" width="56" height="31" rx="2" fill="#78a9c2" stroke="#d7e0e7"/>
+<text x="180" y="629" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">9/16</text>
+<rect x="153" y="642" width="56" height="31" rx="2" fill="#86b2c8" stroke="#d7e0e7"/>
+<text x="180" y="663" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">8/16</text>
+<rect x="153" y="676" width="56" height="31" rx="2" fill="#367ea3" stroke="#d7e0e7"/>
+<text x="180" y="697" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">14/16</text>
+<rect x="153" y="710" width="56" height="31" rx="2" fill="#4487a9" stroke="#d7e0e7"/>
+<text x="180" y="731" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">13/16</text>
+<rect x="153" y="744" width="56" height="31" rx="2" fill="#78a9c2" stroke="#d7e0e7"/>
+<text x="180" y="765" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">9/16</text>
+<rect x="153" y="778" width="56" height="31" rx="2" fill="#78a9c2" stroke="#d7e0e7"/>
+<text x="180" y="799" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">9/16</text>
+<text x="237" y="561" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">A Tue</text>
+<rect x="212" y="574" width="56" height="31" rx="2" fill="#367ea3" stroke="#d7e0e7"/>
+<text x="239" y="595" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">14/16</text>
+<rect x="212" y="608" width="56" height="31" rx="2" fill="#78a9c2" stroke="#d7e0e7"/>
+<text x="239" y="629" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">9/16</text>
+<rect x="212" y="642" width="56" height="31" rx="2" fill="#c7dce7" stroke="#d7e0e7"/>
+<text x="239" y="663" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">3/16</text>
+<rect x="212" y="676" width="56" height="31" rx="2" fill="#518fb0" stroke="#d7e0e7"/>
+<text x="239" y="697" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">12/16</text>
+<rect x="212" y="710" width="56" height="31" rx="2" fill="#367ea3" stroke="#d7e0e7"/>
+<text x="239" y="731" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">14/16</text>
+<rect x="212" y="744" width="56" height="31" rx="2" fill="#86b2c8" stroke="#d7e0e7"/>
+<text x="239" y="765" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">8/16</text>
+<rect x="212" y="778" width="56" height="31" rx="2" fill="#a0c3d4" stroke="#d7e0e7"/>
+<text x="239" y="799" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">6/16</text>
+<text x="296" y="561" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">A Wed</text>
+<rect x="271" y="574" width="56" height="31" rx="2" fill="#367ea3" stroke="#d7e0e7"/>
+<text x="298" y="595" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">14/16</text>
+<rect x="271" y="608" width="56" height="31" rx="2" fill="#c7dce7" stroke="#d7e0e7"/>
+<text x="298" y="629" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">3/16</text>
+<rect x="271" y="642" width="56" height="31" rx="2" fill="#6ba0bc" stroke="#d7e0e7"/>
+<text x="298" y="663" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">10/16</text>
+<rect x="271" y="676" width="56" height="31" rx="2" fill="#518fb0" stroke="#d7e0e7"/>
+<text x="298" y="697" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">12/16</text>
+<rect x="271" y="710" width="56" height="31" rx="2" fill="#4487a9" stroke="#d7e0e7"/>
+<text x="298" y="731" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">13/16</text>
+<rect x="271" y="744" width="56" height="31" rx="2" fill="#6ba0bc" stroke="#d7e0e7"/>
+<text x="298" y="765" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">10/16</text>
+<rect x="271" y="778" width="56" height="31" rx="2" fill="#86b2c8" stroke="#d7e0e7"/>
+<text x="298" y="799" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">8/16</text>
+<text x="355" y="561" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">A Thu</text>
+<rect x="330" y="574" width="56" height="31" rx="2" fill="#367ea3" stroke="#d7e0e7"/>
+<text x="357" y="595" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">14/16</text>
+<rect x="330" y="608" width="56" height="31" rx="2" fill="#6ba0bc" stroke="#d7e0e7"/>
+<text x="357" y="629" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">10/16</text>
+<rect x="330" y="642" width="56" height="31" rx="2" fill="#bad4e0" stroke="#d7e0e7"/>
+<text x="357" y="663" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">4/16</text>
+<rect x="330" y="676" width="56" height="31" rx="2" fill="#5e98b6" stroke="#d7e0e7"/>
+<text x="357" y="697" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">11/16</text>
+<rect x="330" y="710" width="56" height="31" rx="2" fill="#367ea3" stroke="#d7e0e7"/>
+<text x="357" y="731" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">14/16</text>
+<rect x="330" y="744" width="56" height="31" rx="2" fill="#93bace" stroke="#d7e0e7"/>
+<text x="357" y="765" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">7/16</text>
+<rect x="330" y="778" width="56" height="31" rx="2" fill="#86b2c8" stroke="#d7e0e7"/>
+<text x="357" y="799" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">8/16</text>
+<text x="414" y="561" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">A Fri</text>
+<rect x="389" y="574" width="56" height="31" rx="2" fill="#367ea3" stroke="#d7e0e7"/>
+<text x="416" y="595" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">14/16</text>
+<rect x="389" y="608" width="56" height="31" rx="2" fill="#78a9c2" stroke="#d7e0e7"/>
+<text x="416" y="629" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">9/16</text>
+<rect x="389" y="642" width="56" height="31" rx="2" fill="#a0c3d4" stroke="#d7e0e7"/>
+<text x="416" y="663" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">6/16</text>
+<rect x="389" y="676" width="56" height="31" rx="2" fill="#78a9c2" stroke="#d7e0e7"/>
+<text x="416" y="697" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">9/16</text>
+<rect x="389" y="710" width="56" height="31" rx="2" fill="#367ea3" stroke="#d7e0e7"/>
+<text x="416" y="731" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">14/16</text>
+<rect x="389" y="744" width="56" height="31" rx="2" fill="#eff2f4" stroke="#d7e0e7"/>
+<rect x="389" y="778" width="56" height="31" rx="2" fill="#eff2f4" stroke="#d7e0e7"/>
+<text x="473" y="561" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">B Mon</text>
+<rect x="448" y="574" width="56" height="31" rx="2" fill="#367ea3" stroke="#d7e0e7"/>
+<text x="475" y="595" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">14/16</text>
+<rect x="448" y="608" width="56" height="31" rx="2" fill="#4487a9" stroke="#d7e0e7"/>
+<text x="475" y="629" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">13/16</text>
+<rect x="448" y="642" width="56" height="31" rx="2" fill="#4487a9" stroke="#d7e0e7"/>
+<text x="475" y="663" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">13/16</text>
+<rect x="448" y="676" width="56" height="31" rx="2" fill="#367ea3" stroke="#d7e0e7"/>
+<text x="475" y="697" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">14/16</text>
+<rect x="448" y="710" width="56" height="31" rx="2" fill="#4487a9" stroke="#d7e0e7"/>
+<text x="475" y="731" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">13/16</text>
+<rect x="448" y="744" width="56" height="31" rx="2" fill="#86b2c8" stroke="#d7e0e7"/>
+<text x="475" y="765" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">8/16</text>
+<rect x="448" y="778" width="56" height="31" rx="2" fill="#78a9c2" stroke="#d7e0e7"/>
+<text x="475" y="799" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">9/16</text>
+<text x="532" y="561" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">B Tue</text>
+<rect x="507" y="574" width="56" height="31" rx="2" fill="#518fb0" stroke="#d7e0e7"/>
+<text x="534" y="595" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">12/16</text>
+<rect x="507" y="608" width="56" height="31" rx="2" fill="#78a9c2" stroke="#d7e0e7"/>
+<text x="534" y="629" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">9/16</text>
+<rect x="507" y="642" width="56" height="31" rx="2" fill="#c7dce7" stroke="#d7e0e7"/>
+<text x="534" y="663" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">3/16</text>
+<rect x="507" y="676" width="56" height="31" rx="2" fill="#518fb0" stroke="#d7e0e7"/>
+<text x="534" y="697" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">12/16</text>
+<rect x="507" y="710" width="56" height="31" rx="2" fill="#367ea3" stroke="#d7e0e7"/>
+<text x="534" y="731" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">14/16</text>
+<rect x="507" y="744" width="56" height="31" rx="2" fill="#86b2c8" stroke="#d7e0e7"/>
+<text x="534" y="765" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">8/16</text>
+<rect x="507" y="778" width="56" height="31" rx="2" fill="#93bace" stroke="#d7e0e7"/>
+<text x="534" y="799" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">7/16</text>
+<text x="591" y="561" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">B Wed</text>
+<rect x="566" y="574" width="56" height="31" rx="2" fill="#367ea3" stroke="#d7e0e7"/>
+<text x="593" y="595" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">14/16</text>
+<rect x="566" y="608" width="56" height="31" rx="2" fill="#c7dce7" stroke="#d7e0e7"/>
+<text x="593" y="629" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">3/16</text>
+<rect x="566" y="642" width="56" height="31" rx="2" fill="#78a9c2" stroke="#d7e0e7"/>
+<text x="593" y="663" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">9/16</text>
+<rect x="566" y="676" width="56" height="31" rx="2" fill="#518fb0" stroke="#d7e0e7"/>
+<text x="593" y="697" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">12/16</text>
+<rect x="566" y="710" width="56" height="31" rx="2" fill="#4487a9" stroke="#d7e0e7"/>
+<text x="593" y="731" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">13/16</text>
+<rect x="566" y="744" width="56" height="31" rx="2" fill="#78a9c2" stroke="#d7e0e7"/>
+<text x="593" y="765" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">9/16</text>
+<rect x="566" y="778" width="56" height="31" rx="2" fill="#78a9c2" stroke="#d7e0e7"/>
+<text x="593" y="799" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">9/16</text>
+<text x="650" y="561" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">B Thu</text>
+<rect x="625" y="574" width="56" height="31" rx="2" fill="#367ea3" stroke="#d7e0e7"/>
+<text x="652" y="595" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">14/16</text>
+<rect x="625" y="608" width="56" height="31" rx="2" fill="#6ba0bc" stroke="#d7e0e7"/>
+<text x="652" y="629" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">10/16</text>
+<rect x="625" y="642" width="56" height="31" rx="2" fill="#bad4e0" stroke="#d7e0e7"/>
+<text x="652" y="663" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">4/16</text>
+<rect x="625" y="676" width="56" height="31" rx="2" fill="#5e98b6" stroke="#d7e0e7"/>
+<text x="652" y="697" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">11/16</text>
+<rect x="625" y="710" width="56" height="31" rx="2" fill="#367ea3" stroke="#d7e0e7"/>
+<text x="652" y="731" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">14/16</text>
+<rect x="625" y="744" width="56" height="31" rx="2" fill="#86b2c8" stroke="#d7e0e7"/>
+<text x="652" y="765" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">8/16</text>
+<rect x="625" y="778" width="56" height="31" rx="2" fill="#78a9c2" stroke="#d7e0e7"/>
+<text x="652" y="799" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">9/16</text>
+<text x="709" y="561" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">B Fri</text>
+<rect x="684" y="574" width="56" height="31" rx="2" fill="#367ea3" stroke="#d7e0e7"/>
+<text x="711" y="595" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">14/16</text>
+<rect x="684" y="608" width="56" height="31" rx="2" fill="#78a9c2" stroke="#d7e0e7"/>
+<text x="711" y="629" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">9/16</text>
+<rect x="684" y="642" width="56" height="31" rx="2" fill="#a0c3d4" stroke="#d7e0e7"/>
+<text x="711" y="663" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">6/16</text>
+<rect x="684" y="676" width="56" height="31" rx="2" fill="#78a9c2" stroke="#d7e0e7"/>
+<text x="711" y="697" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">9/16</text>
+<rect x="684" y="710" width="56" height="31" rx="2" fill="#367ea3" stroke="#d7e0e7"/>
+<text x="711" y="731" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">14/16</text>
+<rect x="684" y="744" width="56" height="31" rx="2" fill="#eff2f4" stroke="#d7e0e7"/>
+<rect x="684" y="778" width="56" height="31" rx="2" fill="#eff2f4" stroke="#d7e0e7"/>
+<text x="136" y="596" font-size="13" fill="#526879" font-weight="400" text-anchor="end">P1</text>
+<text x="136" y="630" font-size="13" fill="#526879" font-weight="400" text-anchor="end">P2</text>
+<text x="136" y="664" font-size="13" fill="#526879" font-weight="400" text-anchor="end">P3</text>
+<text x="136" y="698" font-size="13" fill="#526879" font-weight="400" text-anchor="end">P4</text>
+<text x="136" y="732" font-size="13" fill="#526879" font-weight="400" text-anchor="end">P5</text>
+<text x="136" y="766" font-size="13" fill="#526879" font-weight="400" text-anchor="end">P6</text>
+<text x="136" y="800" font-size="13" fill="#526879" font-weight="400" text-anchor="end">P7</text>
+<rect x="816" y="501" width="744" height="351" rx="8" fill="#fbfcfd" stroke="#d7e0e7"/>
+<text x="834" y="531" font-size="20" fill="#19344a" font-weight="700" text-anchor="start">Wing-12  ·  16 rooms</text>
+<text x="1540" y="531" font-size="15" fill="#526879" font-weight="400" text-anchor="end">Peak 14/16</text>
+<text x="946" y="561" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">A Mon</text>
+<rect x="921" y="574" width="56" height="31" rx="2" fill="#518fb0" stroke="#d7e0e7"/>
+<text x="948" y="595" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">12/16</text>
+<rect x="921" y="608" width="56" height="31" rx="2" fill="#93bace" stroke="#d7e0e7"/>
+<text x="948" y="629" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">7/16</text>
+<rect x="921" y="642" width="56" height="31" rx="2" fill="#86b2c8" stroke="#d7e0e7"/>
+<text x="948" y="663" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">8/16</text>
+<rect x="921" y="676" width="56" height="31" rx="2" fill="#5e98b6" stroke="#d7e0e7"/>
+<text x="948" y="697" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">11/16</text>
+<rect x="921" y="710" width="56" height="31" rx="2" fill="#5e98b6" stroke="#d7e0e7"/>
+<text x="948" y="731" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">11/16</text>
+<rect x="921" y="744" width="56" height="31" rx="2" fill="#bad4e0" stroke="#d7e0e7"/>
+<text x="948" y="765" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">4/16</text>
+<rect x="921" y="778" width="56" height="31" rx="2" fill="#adcbda" stroke="#d7e0e7"/>
+<text x="948" y="799" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">5/16</text>
+<text x="1005" y="561" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">A Tue</text>
+<rect x="980" y="574" width="56" height="31" rx="2" fill="#4487a9" stroke="#d7e0e7"/>
+<text x="1007" y="595" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">13/16</text>
+<rect x="980" y="608" width="56" height="31" rx="2" fill="#adcbda" stroke="#d7e0e7"/>
+<text x="1007" y="629" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">5/16</text>
+<rect x="980" y="642" width="56" height="31" rx="2" fill="#adcbda" stroke="#d7e0e7"/>
+<text x="1007" y="663" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">5/16</text>
+<rect x="980" y="676" width="56" height="31" rx="2" fill="#78a9c2" stroke="#d7e0e7"/>
+<text x="1007" y="697" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">9/16</text>
+<rect x="980" y="710" width="56" height="31" rx="2" fill="#78a9c2" stroke="#d7e0e7"/>
+<text x="1007" y="731" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">9/16</text>
+<rect x="980" y="744" width="56" height="31" rx="2" fill="#d5e5ed" stroke="#d7e0e7"/>
+<text x="1007" y="765" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">2/16</text>
+<rect x="980" y="778" width="56" height="31" rx="2" fill="#93bace" stroke="#d7e0e7"/>
+<text x="1007" y="799" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">7/16</text>
+<text x="1064" y="561" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">A Wed</text>
+<rect x="1039" y="574" width="56" height="31" rx="2" fill="#518fb0" stroke="#d7e0e7"/>
+<text x="1066" y="595" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">12/16</text>
+<rect x="1039" y="608" width="56" height="31" rx="2" fill="#a0c3d4" stroke="#d7e0e7"/>
+<text x="1066" y="629" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">6/16</text>
+<rect x="1039" y="642" width="56" height="31" rx="2" fill="#a0c3d4" stroke="#d7e0e7"/>
+<text x="1066" y="663" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">6/16</text>
+<rect x="1039" y="676" width="56" height="31" rx="2" fill="#78a9c2" stroke="#d7e0e7"/>
+<text x="1066" y="697" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">9/16</text>
+<rect x="1039" y="710" width="56" height="31" rx="2" fill="#6ba0bc" stroke="#d7e0e7"/>
+<text x="1066" y="731" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">10/16</text>
+<rect x="1039" y="744" width="56" height="31" rx="2" fill="#c7dce7" stroke="#d7e0e7"/>
+<text x="1066" y="765" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">3/16</text>
+<rect x="1039" y="778" width="56" height="31" rx="2" fill="#adcbda" stroke="#d7e0e7"/>
+<text x="1066" y="799" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">5/16</text>
+<text x="1123" y="561" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">A Thu</text>
+<rect x="1098" y="574" width="56" height="31" rx="2" fill="#367ea3" stroke="#d7e0e7"/>
+<text x="1125" y="595" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">14/16</text>
+<rect x="1098" y="608" width="56" height="31" rx="2" fill="#bad4e0" stroke="#d7e0e7"/>
+<text x="1125" y="629" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">4/16</text>
+<rect x="1098" y="642" width="56" height="31" rx="2" fill="#c7dce7" stroke="#d7e0e7"/>
+<text x="1125" y="663" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">3/16</text>
+<rect x="1098" y="676" width="56" height="31" rx="2" fill="#518fb0" stroke="#d7e0e7"/>
+<text x="1125" y="697" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">12/16</text>
+<rect x="1098" y="710" width="56" height="31" rx="2" fill="#4487a9" stroke="#d7e0e7"/>
+<text x="1125" y="731" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">13/16</text>
+<rect x="1098" y="744" width="56" height="31" rx="2" fill="#c7dce7" stroke="#d7e0e7"/>
+<text x="1125" y="765" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">3/16</text>
+<rect x="1098" y="778" width="56" height="31" rx="2" fill="#93bace" stroke="#d7e0e7"/>
+<text x="1125" y="799" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">7/16</text>
+<text x="1182" y="561" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">A Fri</text>
+<rect x="1157" y="574" width="56" height="31" rx="2" fill="#518fb0" stroke="#d7e0e7"/>
+<text x="1184" y="595" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">12/16</text>
+<rect x="1157" y="608" width="56" height="31" rx="2" fill="#bad4e0" stroke="#d7e0e7"/>
+<text x="1184" y="629" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">4/16</text>
+<rect x="1157" y="642" width="56" height="31" rx="2" fill="#c7dce7" stroke="#d7e0e7"/>
+<text x="1184" y="663" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">3/16</text>
+<rect x="1157" y="676" width="56" height="31" rx="2" fill="#518fb0" stroke="#d7e0e7"/>
+<text x="1184" y="697" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">12/16</text>
+<rect x="1157" y="710" width="56" height="31" rx="2" fill="#5e98b6" stroke="#d7e0e7"/>
+<text x="1184" y="731" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">11/16</text>
+<rect x="1157" y="744" width="56" height="31" rx="2" fill="#eff2f4" stroke="#d7e0e7"/>
+<rect x="1157" y="778" width="56" height="31" rx="2" fill="#eff2f4" stroke="#d7e0e7"/>
+<text x="1241" y="561" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">B Mon</text>
+<rect x="1216" y="574" width="56" height="31" rx="2" fill="#5e98b6" stroke="#d7e0e7"/>
+<text x="1243" y="595" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">11/16</text>
+<rect x="1216" y="608" width="56" height="31" rx="2" fill="#4487a9" stroke="#d7e0e7"/>
+<text x="1243" y="629" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">13/16</text>
+<rect x="1216" y="642" width="56" height="31" rx="2" fill="#4487a9" stroke="#d7e0e7"/>
+<text x="1243" y="663" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">13/16</text>
+<rect x="1216" y="676" width="56" height="31" rx="2" fill="#518fb0" stroke="#d7e0e7"/>
+<text x="1243" y="697" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">12/16</text>
+<rect x="1216" y="710" width="56" height="31" rx="2" fill="#5e98b6" stroke="#d7e0e7"/>
+<text x="1243" y="731" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">11/16</text>
+<rect x="1216" y="744" width="56" height="31" rx="2" fill="#c7dce7" stroke="#d7e0e7"/>
+<text x="1243" y="765" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">3/16</text>
+<rect x="1216" y="778" width="56" height="31" rx="2" fill="#adcbda" stroke="#d7e0e7"/>
+<text x="1243" y="799" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">5/16</text>
+<text x="1300" y="561" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">B Tue</text>
+<rect x="1275" y="574" width="56" height="31" rx="2" fill="#518fb0" stroke="#d7e0e7"/>
+<text x="1302" y="595" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">12/16</text>
+<rect x="1275" y="608" width="56" height="31" rx="2" fill="#a0c3d4" stroke="#d7e0e7"/>
+<text x="1302" y="629" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">6/16</text>
+<rect x="1275" y="642" width="56" height="31" rx="2" fill="#bad4e0" stroke="#d7e0e7"/>
+<text x="1302" y="663" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">4/16</text>
+<rect x="1275" y="676" width="56" height="31" rx="2" fill="#5e98b6" stroke="#d7e0e7"/>
+<text x="1302" y="697" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">11/16</text>
+<rect x="1275" y="710" width="56" height="31" rx="2" fill="#78a9c2" stroke="#d7e0e7"/>
+<text x="1302" y="731" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">9/16</text>
+<rect x="1275" y="744" width="56" height="31" rx="2" fill="#d5e5ed" stroke="#d7e0e7"/>
+<text x="1302" y="765" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">2/16</text>
+<rect x="1275" y="778" width="56" height="31" rx="2" fill="#adcbda" stroke="#d7e0e7"/>
+<text x="1302" y="799" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">5/16</text>
+<text x="1359" y="561" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">B Wed</text>
+<rect x="1334" y="574" width="56" height="31" rx="2" fill="#4487a9" stroke="#d7e0e7"/>
+<text x="1361" y="595" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">13/16</text>
+<rect x="1334" y="608" width="56" height="31" rx="2" fill="#adcbda" stroke="#d7e0e7"/>
+<text x="1361" y="629" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">5/16</text>
+<rect x="1334" y="642" width="56" height="31" rx="2" fill="#a0c3d4" stroke="#d7e0e7"/>
+<text x="1361" y="663" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">6/16</text>
+<rect x="1334" y="676" width="56" height="31" rx="2" fill="#6ba0bc" stroke="#d7e0e7"/>
+<text x="1361" y="697" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">10/16</text>
+<rect x="1334" y="710" width="56" height="31" rx="2" fill="#78a9c2" stroke="#d7e0e7"/>
+<text x="1361" y="731" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">9/16</text>
+<rect x="1334" y="744" width="56" height="31" rx="2" fill="#c7dce7" stroke="#d7e0e7"/>
+<text x="1361" y="765" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">3/16</text>
+<rect x="1334" y="778" width="56" height="31" rx="2" fill="#bad4e0" stroke="#d7e0e7"/>
+<text x="1361" y="799" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">4/16</text>
+<text x="1418" y="561" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">B Thu</text>
+<rect x="1393" y="574" width="56" height="31" rx="2" fill="#518fb0" stroke="#d7e0e7"/>
+<text x="1420" y="595" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">12/16</text>
+<rect x="1393" y="608" width="56" height="31" rx="2" fill="#bad4e0" stroke="#d7e0e7"/>
+<text x="1420" y="629" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">4/16</text>
+<rect x="1393" y="642" width="56" height="31" rx="2" fill="#d5e5ed" stroke="#d7e0e7"/>
+<text x="1420" y="663" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">2/16</text>
+<rect x="1393" y="676" width="56" height="31" rx="2" fill="#518fb0" stroke="#d7e0e7"/>
+<text x="1420" y="697" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">12/16</text>
+<rect x="1393" y="710" width="56" height="31" rx="2" fill="#4487a9" stroke="#d7e0e7"/>
+<text x="1420" y="731" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">13/16</text>
+<rect x="1393" y="744" width="56" height="31" rx="2" fill="#c7dce7" stroke="#d7e0e7"/>
+<text x="1420" y="765" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">3/16</text>
+<rect x="1393" y="778" width="56" height="31" rx="2" fill="#a0c3d4" stroke="#d7e0e7"/>
+<text x="1420" y="799" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">6/16</text>
+<text x="1477" y="561" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">B Fri</text>
+<rect x="1452" y="574" width="56" height="31" rx="2" fill="#518fb0" stroke="#d7e0e7"/>
+<text x="1479" y="595" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">12/16</text>
+<rect x="1452" y="608" width="56" height="31" rx="2" fill="#adcbda" stroke="#d7e0e7"/>
+<text x="1479" y="629" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">5/16</text>
+<rect x="1452" y="642" width="56" height="31" rx="2" fill="#bad4e0" stroke="#d7e0e7"/>
+<text x="1479" y="663" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">4/16</text>
+<rect x="1452" y="676" width="56" height="31" rx="2" fill="#78a9c2" stroke="#d7e0e7"/>
+<text x="1479" y="697" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">9/16</text>
+<rect x="1452" y="710" width="56" height="31" rx="2" fill="#78a9c2" stroke="#d7e0e7"/>
+<text x="1479" y="731" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">9/16</text>
+<rect x="1452" y="744" width="56" height="31" rx="2" fill="#eff2f4" stroke="#d7e0e7"/>
+<rect x="1452" y="778" width="56" height="31" rx="2" fill="#eff2f4" stroke="#d7e0e7"/>
+<text x="904" y="596" font-size="13" fill="#526879" font-weight="400" text-anchor="end">P1</text>
+<text x="904" y="630" font-size="13" fill="#526879" font-weight="400" text-anchor="end">P2</text>
+<text x="904" y="664" font-size="13" fill="#526879" font-weight="400" text-anchor="end">P3</text>
+<text x="904" y="698" font-size="13" fill="#526879" font-weight="400" text-anchor="end">P4</text>
+<text x="904" y="732" font-size="13" fill="#526879" font-weight="400" text-anchor="end">P5</text>
+<text x="904" y="766" font-size="13" fill="#526879" font-weight="400" text-anchor="end">P6</text>
+<text x="904" y="800" font-size="13" fill="#526879" font-weight="400" text-anchor="end">P7</text>
+<rect x="48" y="857" width="744" height="351" rx="8" fill="#fbfcfd" stroke="#d7e0e7"/>
+<text x="66" y="887" font-size="20" fill="#19344a" font-weight="700" text-anchor="start">Laboratories  ·  24 rooms</text>
+<text x="772" y="887" font-size="15" fill="#526879" font-weight="400" text-anchor="end">Peak 21/24</text>
+<text x="178" y="917" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">A Mon</text>
+<rect x="153" y="930" width="56" height="31" rx="2" fill="#ddebf1" stroke="#d7e0e7"/>
+<text x="180" y="951" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">2/24</text>
+<rect x="153" y="964" width="56" height="31" rx="2" fill="#74a6c0" stroke="#d7e0e7"/>
+<text x="180" y="985" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">14/24</text>
+<rect x="153" y="998" width="56" height="31" rx="2" fill="#3f84a7" stroke="#d7e0e7"/>
+<text x="180" y="1019" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">20/24</text>
+<rect x="153" y="1032" width="56" height="31" rx="2" fill="#ccdfe9" stroke="#d7e0e7"/>
+<text x="180" y="1053" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">4/24</text>
+<rect x="153" y="1066" width="56" height="31" rx="2" fill="#a9c8d8" stroke="#d7e0e7"/>
+<text x="180" y="1087" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">8/24</text>
+<rect x="153" y="1100" width="56" height="31" rx="2" fill="#488aab" stroke="#d7e0e7"/>
+<text x="180" y="1121" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">19/24</text>
+<rect x="153" y="1134" width="56" height="31" rx="2" fill="#488aab" stroke="#d7e0e7"/>
+<text x="180" y="1155" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">19/24</text>
+<text x="237" y="917" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">A Tue</text>
+<rect x="212" y="930" width="56" height="31" rx="2" fill="#ccdfe9" stroke="#d7e0e7"/>
+<text x="239" y="951" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">4/24</text>
+<rect x="212" y="964" width="56" height="31" rx="2" fill="#3f84a7" stroke="#d7e0e7"/>
+<text x="239" y="985" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">20/24</text>
+<rect x="212" y="998" width="56" height="31" rx="2" fill="#518fb0" stroke="#d7e0e7"/>
+<text x="239" y="1019" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">18/24</text>
+<rect x="212" y="1032" width="56" height="31" rx="2" fill="#629bb8" stroke="#d7e0e7"/>
+<text x="239" y="1053" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">16/24</text>
+<rect x="212" y="1066" width="56" height="31" rx="2" fill="#86b2c8" stroke="#d7e0e7"/>
+<text x="239" y="1087" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">12/24</text>
+<rect x="212" y="1100" width="56" height="31" rx="2" fill="#367ea3" stroke="#d7e0e7"/>
+<text x="239" y="1121" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">21/24</text>
+<rect x="212" y="1134" width="56" height="31" rx="2" fill="#488aab" stroke="#d7e0e7"/>
+<text x="239" y="1155" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">19/24</text>
+<text x="296" y="917" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">A Wed</text>
+<rect x="271" y="930" width="56" height="31" rx="2" fill="#ccdfe9" stroke="#d7e0e7"/>
+<text x="298" y="951" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">4/24</text>
+<rect x="271" y="964" width="56" height="31" rx="2" fill="#518fb0" stroke="#d7e0e7"/>
+<text x="298" y="985" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">18/24</text>
+<rect x="271" y="998" width="56" height="31" rx="2" fill="#3f84a7" stroke="#d7e0e7"/>
+<text x="298" y="1019" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">20/24</text>
+<rect x="271" y="1032" width="56" height="31" rx="2" fill="#a0c3d4" stroke="#d7e0e7"/>
+<text x="298" y="1053" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">9/24</text>
+<rect x="271" y="1066" width="56" height="31" rx="2" fill="#a9c8d8" stroke="#d7e0e7"/>
+<text x="298" y="1087" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">8/24</text>
+<rect x="271" y="1100" width="56" height="31" rx="2" fill="#3f84a7" stroke="#d7e0e7"/>
+<text x="298" y="1121" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">20/24</text>
+<rect x="271" y="1134" width="56" height="31" rx="2" fill="#367ea3" stroke="#d7e0e7"/>
+<text x="298" y="1155" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">21/24</text>
+<text x="355" y="917" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">A Thu</text>
+<rect x="330" y="930" width="56" height="31" rx="2" fill="#d5e5ed" stroke="#d7e0e7"/>
+<text x="357" y="951" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">3/24</text>
+<rect x="330" y="964" width="56" height="31" rx="2" fill="#74a6c0" stroke="#d7e0e7"/>
+<text x="357" y="985" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">14/24</text>
+<rect x="330" y="998" width="56" height="31" rx="2" fill="#6ba0bc" stroke="#d7e0e7"/>
+<text x="357" y="1019" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">15/24</text>
+<rect x="330" y="1032" width="56" height="31" rx="2" fill="#c3d9e5" stroke="#d7e0e7"/>
+<text x="357" y="1053" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">5/24</text>
+<rect x="330" y="1066" width="56" height="31" rx="2" fill="#c3d9e5" stroke="#d7e0e7"/>
+<text x="357" y="1087" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">5/24</text>
+<rect x="330" y="1100" width="56" height="31" rx="2" fill="#518fb0" stroke="#d7e0e7"/>
+<text x="357" y="1121" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">18/24</text>
+<rect x="330" y="1134" width="56" height="31" rx="2" fill="#3f84a7" stroke="#d7e0e7"/>
+<text x="357" y="1155" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">20/24</text>
+<text x="414" y="917" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">A Fri</text>
+<rect x="389" y="930" width="56" height="31" rx="2" fill="#ccdfe9" stroke="#d7e0e7"/>
+<text x="416" y="951" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">4/24</text>
+<rect x="389" y="964" width="56" height="31" rx="2" fill="#488aab" stroke="#d7e0e7"/>
+<text x="416" y="985" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">19/24</text>
+<rect x="389" y="998" width="56" height="31" rx="2" fill="#7dacc4" stroke="#d7e0e7"/>
+<text x="416" y="1019" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">13/24</text>
+<rect x="389" y="1032" width="56" height="31" rx="2" fill="#6ba0bc" stroke="#d7e0e7"/>
+<text x="416" y="1053" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">15/24</text>
+<rect x="389" y="1066" width="56" height="31" rx="2" fill="#8eb7cc" stroke="#d7e0e7"/>
+<text x="416" y="1087" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">11/24</text>
+<rect x="389" y="1100" width="56" height="31" rx="2" fill="#eff2f4" stroke="#d7e0e7"/>
+<rect x="389" y="1134" width="56" height="31" rx="2" fill="#eff2f4" stroke="#d7e0e7"/>
+<text x="473" y="917" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">B Mon</text>
+<rect x="448" y="930" width="56" height="31" rx="2" fill="#d5e5ed" stroke="#d7e0e7"/>
+<text x="475" y="951" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">3/24</text>
+<rect x="448" y="964" width="56" height="31" rx="2" fill="#86b2c8" stroke="#d7e0e7"/>
+<text x="475" y="985" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">12/24</text>
+<rect x="448" y="998" width="56" height="31" rx="2" fill="#74a6c0" stroke="#d7e0e7"/>
+<text x="475" y="1019" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">14/24</text>
+<rect x="448" y="1032" width="56" height="31" rx="2" fill="#d5e5ed" stroke="#d7e0e7"/>
+<text x="475" y="1053" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">3/24</text>
+<rect x="448" y="1066" width="56" height="31" rx="2" fill="#b1cedc" stroke="#d7e0e7"/>
+<text x="475" y="1087" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">7/24</text>
+<rect x="448" y="1100" width="56" height="31" rx="2" fill="#3f84a7" stroke="#d7e0e7"/>
+<text x="475" y="1121" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">20/24</text>
+<rect x="448" y="1134" width="56" height="31" rx="2" fill="#3f84a7" stroke="#d7e0e7"/>
+<text x="475" y="1155" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">20/24</text>
+<text x="532" y="917" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">B Tue</text>
+<rect x="507" y="930" width="56" height="31" rx="2" fill="#a9c8d8" stroke="#d7e0e7"/>
+<text x="534" y="951" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">8/24</text>
+<rect x="507" y="964" width="56" height="31" rx="2" fill="#518fb0" stroke="#d7e0e7"/>
+<text x="534" y="985" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">18/24</text>
+<rect x="507" y="998" width="56" height="31" rx="2" fill="#518fb0" stroke="#d7e0e7"/>
+<text x="534" y="1019" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">18/24</text>
+<rect x="507" y="1032" width="56" height="31" rx="2" fill="#74a6c0" stroke="#d7e0e7"/>
+<text x="534" y="1053" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">14/24</text>
+<rect x="507" y="1066" width="56" height="31" rx="2" fill="#86b2c8" stroke="#d7e0e7"/>
+<text x="534" y="1087" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">12/24</text>
+<rect x="507" y="1100" width="56" height="31" rx="2" fill="#367ea3" stroke="#d7e0e7"/>
+<text x="534" y="1121" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">21/24</text>
+<rect x="507" y="1134" width="56" height="31" rx="2" fill="#3f84a7" stroke="#d7e0e7"/>
+<text x="534" y="1155" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">20/24</text>
+<text x="591" y="917" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">B Wed</text>
+<rect x="566" y="930" width="56" height="31" rx="2" fill="#d5e5ed" stroke="#d7e0e7"/>
+<text x="593" y="951" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">3/24</text>
+<rect x="566" y="964" width="56" height="31" rx="2" fill="#3f84a7" stroke="#d7e0e7"/>
+<text x="593" y="985" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">20/24</text>
+<rect x="566" y="998" width="56" height="31" rx="2" fill="#3f84a7" stroke="#d7e0e7"/>
+<text x="593" y="1019" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">20/24</text>
+<rect x="566" y="1032" width="56" height="31" rx="2" fill="#a0c3d4" stroke="#d7e0e7"/>
+<text x="593" y="1053" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">9/24</text>
+<rect x="566" y="1066" width="56" height="31" rx="2" fill="#a9c8d8" stroke="#d7e0e7"/>
+<text x="593" y="1087" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">8/24</text>
+<rect x="566" y="1100" width="56" height="31" rx="2" fill="#518fb0" stroke="#d7e0e7"/>
+<text x="593" y="1121" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">18/24</text>
+<rect x="566" y="1134" width="56" height="31" rx="2" fill="#3f84a7" stroke="#d7e0e7"/>
+<text x="593" y="1155" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">20/24</text>
+<text x="650" y="917" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">B Thu</text>
+<rect x="625" y="930" width="56" height="31" rx="2" fill="#ccdfe9" stroke="#d7e0e7"/>
+<text x="652" y="951" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">4/24</text>
+<rect x="625" y="964" width="56" height="31" rx="2" fill="#86b2c8" stroke="#d7e0e7"/>
+<text x="652" y="985" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">12/24</text>
+<rect x="625" y="998" width="56" height="31" rx="2" fill="#86b2c8" stroke="#d7e0e7"/>
+<text x="652" y="1019" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">12/24</text>
+<rect x="625" y="1032" width="56" height="31" rx="2" fill="#c3d9e5" stroke="#d7e0e7"/>
+<text x="652" y="1053" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">5/24</text>
+<rect x="625" y="1066" width="56" height="31" rx="2" fill="#c3d9e5" stroke="#d7e0e7"/>
+<text x="652" y="1087" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">5/24</text>
+<rect x="625" y="1100" width="56" height="31" rx="2" fill="#5a95b4" stroke="#d7e0e7"/>
+<text x="652" y="1121" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">17/24</text>
+<rect x="625" y="1134" width="56" height="31" rx="2" fill="#488aab" stroke="#d7e0e7"/>
+<text x="652" y="1155" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">19/24</text>
+<text x="709" y="917" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">B Fri</text>
+<rect x="684" y="930" width="56" height="31" rx="2" fill="#d5e5ed" stroke="#d7e0e7"/>
+<text x="711" y="951" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">3/24</text>
+<rect x="684" y="964" width="56" height="31" rx="2" fill="#518fb0" stroke="#d7e0e7"/>
+<text x="711" y="985" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">18/24</text>
+<rect x="684" y="998" width="56" height="31" rx="2" fill="#7dacc4" stroke="#d7e0e7"/>
+<text x="711" y="1019" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">13/24</text>
+<rect x="684" y="1032" width="56" height="31" rx="2" fill="#5a95b4" stroke="#d7e0e7"/>
+<text x="711" y="1053" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">17/24</text>
+<rect x="684" y="1066" width="56" height="31" rx="2" fill="#7dacc4" stroke="#d7e0e7"/>
+<text x="711" y="1087" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">13/24</text>
+<rect x="684" y="1100" width="56" height="31" rx="2" fill="#eff2f4" stroke="#d7e0e7"/>
+<rect x="684" y="1134" width="56" height="31" rx="2" fill="#eff2f4" stroke="#d7e0e7"/>
+<text x="136" y="952" font-size="13" fill="#526879" font-weight="400" text-anchor="end">P1</text>
+<text x="136" y="986" font-size="13" fill="#526879" font-weight="400" text-anchor="end">P2</text>
+<text x="136" y="1020" font-size="13" fill="#526879" font-weight="400" text-anchor="end">P3</text>
+<text x="136" y="1054" font-size="13" fill="#526879" font-weight="400" text-anchor="end">P4</text>
+<text x="136" y="1088" font-size="13" fill="#526879" font-weight="400" text-anchor="end">P5</text>
+<text x="136" y="1122" font-size="13" fill="#526879" font-weight="400" text-anchor="end">P6</text>
+<text x="136" y="1156" font-size="13" fill="#526879" font-weight="400" text-anchor="end">P7</text>
+<rect x="816" y="857" width="744" height="351" rx="8" fill="#fbfcfd" stroke="#d7e0e7"/>
+<text x="834" y="887" font-size="20" fill="#19344a" font-weight="700" text-anchor="start">PE venues  ·  16 rooms</text>
+<text x="1540" y="887" font-size="15" fill="#526879" font-weight="400" text-anchor="end">Peak 13/16</text>
+<text x="946" y="917" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">A Mon</text>
+<rect x="921" y="930" width="56" height="31" rx="2" fill="#eff6f9" stroke="#d7e0e7"/>
+<text x="948" y="951" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">0/16</text>
+<rect x="921" y="964" width="56" height="31" rx="2" fill="#eff6f9" stroke="#d7e0e7"/>
+<text x="948" y="985" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">0/16</text>
+<rect x="921" y="998" width="56" height="31" rx="2" fill="#eff6f9" stroke="#d7e0e7"/>
+<text x="948" y="1019" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">0/16</text>
+<rect x="921" y="1032" width="56" height="31" rx="2" fill="#4487a9" stroke="#d7e0e7"/>
+<text x="948" y="1053" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">13/16</text>
+<rect x="921" y="1066" width="56" height="31" rx="2" fill="#eff6f9" stroke="#d7e0e7"/>
+<text x="948" y="1087" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">0/16</text>
+<rect x="921" y="1100" width="56" height="31" rx="2" fill="#eff6f9" stroke="#d7e0e7"/>
+<text x="948" y="1121" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">0/16</text>
+<rect x="921" y="1134" width="56" height="31" rx="2" fill="#eff6f9" stroke="#d7e0e7"/>
+<text x="948" y="1155" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">0/16</text>
+<text x="1005" y="917" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">A Tue</text>
+<rect x="980" y="930" width="56" height="31" rx="2" fill="#eff6f9" stroke="#d7e0e7"/>
+<text x="1007" y="951" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">0/16</text>
+<rect x="980" y="964" width="56" height="31" rx="2" fill="#eff6f9" stroke="#d7e0e7"/>
+<text x="1007" y="985" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">0/16</text>
+<rect x="980" y="998" width="56" height="31" rx="2" fill="#78a9c2" stroke="#d7e0e7"/>
+<text x="1007" y="1019" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">9/16</text>
+<rect x="980" y="1032" width="56" height="31" rx="2" fill="#4487a9" stroke="#d7e0e7"/>
+<text x="1007" y="1053" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">13/16</text>
+<rect x="980" y="1066" width="56" height="31" rx="2" fill="#eff6f9" stroke="#d7e0e7"/>
+<text x="1007" y="1087" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">0/16</text>
+<rect x="980" y="1100" width="56" height="31" rx="2" fill="#78a9c2" stroke="#d7e0e7"/>
+<text x="1007" y="1121" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">9/16</text>
+<rect x="980" y="1134" width="56" height="31" rx="2" fill="#eff6f9" stroke="#d7e0e7"/>
+<text x="1007" y="1155" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">0/16</text>
+<text x="1064" y="917" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">A Wed</text>
+<rect x="1039" y="930" width="56" height="31" rx="2" fill="#eff6f9" stroke="#d7e0e7"/>
+<text x="1066" y="951" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">0/16</text>
+<rect x="1039" y="964" width="56" height="31" rx="2" fill="#78a9c2" stroke="#d7e0e7"/>
+<text x="1066" y="985" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">9/16</text>
+<rect x="1039" y="998" width="56" height="31" rx="2" fill="#eff6f9" stroke="#d7e0e7"/>
+<text x="1066" y="1019" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">0/16</text>
+<rect x="1039" y="1032" width="56" height="31" rx="2" fill="#4487a9" stroke="#d7e0e7"/>
+<text x="1066" y="1053" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">13/16</text>
+<rect x="1039" y="1066" width="56" height="31" rx="2" fill="#eff6f9" stroke="#d7e0e7"/>
+<text x="1066" y="1087" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">0/16</text>
+<rect x="1039" y="1100" width="56" height="31" rx="2" fill="#eff6f9" stroke="#d7e0e7"/>
+<text x="1066" y="1121" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">0/16</text>
+<rect x="1039" y="1134" width="56" height="31" rx="2" fill="#eff6f9" stroke="#d7e0e7"/>
+<text x="1066" y="1155" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">0/16</text>
+<text x="1123" y="917" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">A Thu</text>
+<rect x="1098" y="930" width="56" height="31" rx="2" fill="#eff6f9" stroke="#d7e0e7"/>
+<text x="1125" y="951" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">0/16</text>
+<rect x="1098" y="964" width="56" height="31" rx="2" fill="#eff6f9" stroke="#d7e0e7"/>
+<text x="1125" y="985" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">0/16</text>
+<rect x="1098" y="998" width="56" height="31" rx="2" fill="#78a9c2" stroke="#d7e0e7"/>
+<text x="1125" y="1019" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">9/16</text>
+<rect x="1098" y="1032" width="56" height="31" rx="2" fill="#eff6f9" stroke="#d7e0e7"/>
+<text x="1125" y="1053" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">0/16</text>
+<rect x="1098" y="1066" width="56" height="31" rx="2" fill="#eff6f9" stroke="#d7e0e7"/>
+<text x="1125" y="1087" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">0/16</text>
+<rect x="1098" y="1100" width="56" height="31" rx="2" fill="#78a9c2" stroke="#d7e0e7"/>
+<text x="1125" y="1121" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">9/16</text>
+<rect x="1098" y="1134" width="56" height="31" rx="2" fill="#eff6f9" stroke="#d7e0e7"/>
+<text x="1125" y="1155" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">0/16</text>
+<text x="1182" y="917" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">A Fri</text>
+<rect x="1157" y="930" width="56" height="31" rx="2" fill="#eff6f9" stroke="#d7e0e7"/>
+<text x="1184" y="951" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">0/16</text>
+<rect x="1157" y="964" width="56" height="31" rx="2" fill="#eff6f9" stroke="#d7e0e7"/>
+<text x="1184" y="985" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">0/16</text>
+<rect x="1157" y="998" width="56" height="31" rx="2" fill="#78a9c2" stroke="#d7e0e7"/>
+<text x="1184" y="1019" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">9/16</text>
+<rect x="1157" y="1032" width="56" height="31" rx="2" fill="#4487a9" stroke="#d7e0e7"/>
+<text x="1184" y="1053" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">13/16</text>
+<rect x="1157" y="1066" width="56" height="31" rx="2" fill="#eff6f9" stroke="#d7e0e7"/>
+<text x="1184" y="1087" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">0/16</text>
+<rect x="1157" y="1100" width="56" height="31" rx="2" fill="#eff2f4" stroke="#d7e0e7"/>
+<rect x="1157" y="1134" width="56" height="31" rx="2" fill="#eff2f4" stroke="#d7e0e7"/>
+<text x="1241" y="917" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">B Mon</text>
+<rect x="1216" y="930" width="56" height="31" rx="2" fill="#eff6f9" stroke="#d7e0e7"/>
+<text x="1243" y="951" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">0/16</text>
+<rect x="1216" y="964" width="56" height="31" rx="2" fill="#eff6f9" stroke="#d7e0e7"/>
+<text x="1243" y="985" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">0/16</text>
+<rect x="1216" y="998" width="56" height="31" rx="2" fill="#eff6f9" stroke="#d7e0e7"/>
+<text x="1243" y="1019" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">0/16</text>
+<rect x="1216" y="1032" width="56" height="31" rx="2" fill="#4487a9" stroke="#d7e0e7"/>
+<text x="1243" y="1053" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">13/16</text>
+<rect x="1216" y="1066" width="56" height="31" rx="2" fill="#eff6f9" stroke="#d7e0e7"/>
+<text x="1243" y="1087" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">0/16</text>
+<rect x="1216" y="1100" width="56" height="31" rx="2" fill="#eff6f9" stroke="#d7e0e7"/>
+<text x="1243" y="1121" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">0/16</text>
+<rect x="1216" y="1134" width="56" height="31" rx="2" fill="#eff6f9" stroke="#d7e0e7"/>
+<text x="1243" y="1155" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">0/16</text>
+<text x="1300" y="917" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">B Tue</text>
+<rect x="1275" y="930" width="56" height="31" rx="2" fill="#eff6f9" stroke="#d7e0e7"/>
+<text x="1302" y="951" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">0/16</text>
+<rect x="1275" y="964" width="56" height="31" rx="2" fill="#eff6f9" stroke="#d7e0e7"/>
+<text x="1302" y="985" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">0/16</text>
+<rect x="1275" y="998" width="56" height="31" rx="2" fill="#78a9c2" stroke="#d7e0e7"/>
+<text x="1302" y="1019" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">9/16</text>
+<rect x="1275" y="1032" width="56" height="31" rx="2" fill="#4487a9" stroke="#d7e0e7"/>
+<text x="1302" y="1053" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">13/16</text>
+<rect x="1275" y="1066" width="56" height="31" rx="2" fill="#eff6f9" stroke="#d7e0e7"/>
+<text x="1302" y="1087" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">0/16</text>
+<rect x="1275" y="1100" width="56" height="31" rx="2" fill="#78a9c2" stroke="#d7e0e7"/>
+<text x="1302" y="1121" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">9/16</text>
+<rect x="1275" y="1134" width="56" height="31" rx="2" fill="#eff6f9" stroke="#d7e0e7"/>
+<text x="1302" y="1155" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">0/16</text>
+<text x="1359" y="917" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">B Wed</text>
+<rect x="1334" y="930" width="56" height="31" rx="2" fill="#eff6f9" stroke="#d7e0e7"/>
+<text x="1361" y="951" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">0/16</text>
+<rect x="1334" y="964" width="56" height="31" rx="2" fill="#78a9c2" stroke="#d7e0e7"/>
+<text x="1361" y="985" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">9/16</text>
+<rect x="1334" y="998" width="56" height="31" rx="2" fill="#eff6f9" stroke="#d7e0e7"/>
+<text x="1361" y="1019" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">0/16</text>
+<rect x="1334" y="1032" width="56" height="31" rx="2" fill="#4487a9" stroke="#d7e0e7"/>
+<text x="1361" y="1053" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">13/16</text>
+<rect x="1334" y="1066" width="56" height="31" rx="2" fill="#eff6f9" stroke="#d7e0e7"/>
+<text x="1361" y="1087" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">0/16</text>
+<rect x="1334" y="1100" width="56" height="31" rx="2" fill="#eff6f9" stroke="#d7e0e7"/>
+<text x="1361" y="1121" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">0/16</text>
+<rect x="1334" y="1134" width="56" height="31" rx="2" fill="#4487a9" stroke="#d7e0e7"/>
+<text x="1361" y="1155" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">13/16</text>
+<text x="1418" y="917" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">B Thu</text>
+<rect x="1393" y="930" width="56" height="31" rx="2" fill="#eff6f9" stroke="#d7e0e7"/>
+<text x="1420" y="951" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">0/16</text>
+<rect x="1393" y="964" width="56" height="31" rx="2" fill="#eff6f9" stroke="#d7e0e7"/>
+<text x="1420" y="985" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">0/16</text>
+<rect x="1393" y="998" width="56" height="31" rx="2" fill="#78a9c2" stroke="#d7e0e7"/>
+<text x="1420" y="1019" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">9/16</text>
+<rect x="1393" y="1032" width="56" height="31" rx="2" fill="#eff6f9" stroke="#d7e0e7"/>
+<text x="1420" y="1053" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">0/16</text>
+<rect x="1393" y="1066" width="56" height="31" rx="2" fill="#eff6f9" stroke="#d7e0e7"/>
+<text x="1420" y="1087" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">0/16</text>
+<rect x="1393" y="1100" width="56" height="31" rx="2" fill="#78a9c2" stroke="#d7e0e7"/>
+<text x="1420" y="1121" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">9/16</text>
+<rect x="1393" y="1134" width="56" height="31" rx="2" fill="#eff6f9" stroke="#d7e0e7"/>
+<text x="1420" y="1155" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">0/16</text>
+<text x="1477" y="917" font-size="13" fill="#526879" font-weight="400" text-anchor="middle">B Fri</text>
+<rect x="1452" y="930" width="56" height="31" rx="2" fill="#eff6f9" stroke="#d7e0e7"/>
+<text x="1479" y="951" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">0/16</text>
+<rect x="1452" y="964" width="56" height="31" rx="2" fill="#4487a9" stroke="#d7e0e7"/>
+<text x="1479" y="985" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">13/16</text>
+<rect x="1452" y="998" width="56" height="31" rx="2" fill="#78a9c2" stroke="#d7e0e7"/>
+<text x="1479" y="1019" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">9/16</text>
+<rect x="1452" y="1032" width="56" height="31" rx="2" fill="#4487a9" stroke="#d7e0e7"/>
+<text x="1479" y="1053" font-size="11" fill="#ffffff" font-weight="600" text-anchor="middle">13/16</text>
+<rect x="1452" y="1066" width="56" height="31" rx="2" fill="#eff6f9" stroke="#d7e0e7"/>
+<text x="1479" y="1087" font-size="11" fill="#19344a" font-weight="600" text-anchor="middle">0/16</text>
+<rect x="1452" y="1100" width="56" height="31" rx="2" fill="#eff2f4" stroke="#d7e0e7"/>
+<rect x="1452" y="1134" width="56" height="31" rx="2" fill="#eff2f4" stroke="#d7e0e7"/>
+<text x="904" y="952" font-size="13" fill="#526879" font-weight="400" text-anchor="end">P1</text>
+<text x="904" y="986" font-size="13" fill="#526879" font-weight="400" text-anchor="end">P2</text>
+<text x="904" y="1020" font-size="13" fill="#526879" font-weight="400" text-anchor="end">P3</text>
+<text x="904" y="1054" font-size="13" fill="#526879" font-weight="400" text-anchor="end">P4</text>
+<text x="904" y="1088" font-size="13" fill="#526879" font-weight="400" text-anchor="end">P5</text>
+<text x="904" y="1122" font-size="13" fill="#526879" font-weight="400" text-anchor="end">P6</text>
+<text x="904" y="1156" font-size="13" fill="#526879" font-weight="400" text-anchor="end">P7</text>
+<text x="48" y="1230" font-size="15" fill="#63788a" font-weight="400" text-anchor="start">Source: out/timetable_teachers.csv and data/school.json · Friday P6–P7 do not exist.</text>
+</svg>
