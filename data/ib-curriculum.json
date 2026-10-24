@@ -1,0 +1,104 @@
+{
+  "comment": "Grade 11/12 IBDP block totals come from Module_1112_IB.xlsx. Course names come from the supplied 2025-II G10 to G11 Course Selection Pre-survey photograph. The browser timetable is a deterministic demonstration block plan, not an official room or teacher assignment.",
+  "blocks": [
+    { "id": "group1", "name": "Group 1 — Language A", "minutes": 480 },
+    { "id": "group2", "name": "Group 2 — Second Language", "minutes": 410 },
+    { "id": "group3", "name": "Group 3 — Individuals & Societies", "minutes": 380 },
+    { "id": "group4", "name": "Group 4 — Science", "minutes": 400 },
+    { "id": "group5", "name": "Group 5 — Mathematics", "minutes": 430 },
+    { "id": "group6", "name": "Group 6 — Arts / Additional subject", "minutes": 430 },
+    { "id": "tok", "name": "Theory of Knowledge", "minutes": 320 },
+    { "id": "pe", "name": "PE", "minutes": 110 },
+    { "id": "cas", "name": "CAS", "minutes": 80 }
+  ],
+  "course_groups": {
+    "group1": {
+      "label": "Group 1 — Language A",
+      "options": [
+        "English A: Literature HL",
+        "English A: Language and Literature SL",
+        "English A: Literature SL",
+        "Chinese A: Literature HL",
+        "Chinese A: Literature SL",
+        "Japanese A: Literature self-taught SL",
+        "Korean A: Literature self-taught SL",
+        "Other A: Literature self-taught SL"
+      ]
+    },
+    "group2": {
+      "label": "Group 2 — Language B / second language",
+      "options": [
+        "Chinese A: Language and Literature SL (Bilingual)",
+        "Chinese B: Mandarin HL",
+        "Chinese B: Mandarin SL",
+        "English B HL",
+        "English B SL",
+        "French ab initio SL",
+        "Spanish ab initio SL"
+      ]
+    },
+    "group3": {
+      "label": "Group 3 — Individuals & Societies",
+      "options": [
+        "History HL",
+        "History SL",
+        "Economics HL",
+        "Economics SL",
+        "Business Management SL",
+        "Psychology HL",
+        "Psychology SL",
+        "Philosophy SL"
+      ]
+    },
+    "group4": {
+      "label": "Group 4 — Science",
+      "options": [
+        "Computer Science HL",
+        "Computer Science SL",
+        "Biology HL",
+        "Biology SL",
+        "Chemistry HL",
+        "Chemistry SL",
+        "Physics HL",
+        "Physics SL",
+        "Environmental Systems and Societies SL"
+      ]
+    },
+    "group5": {
+      "label": "Group 5 — Mathematics",
+      "options": [
+        "Mathematics: Analysis and Approaches HL",
+        "Mathematics: Analysis and Approaches SL",
+        "Mathematics: Applications and Interpretation HL",
+        "Mathematics: Applications and Interpretation SL"
+      ]
+    },
+    "group6": {
+      "label": "Group 6 — The Arts",
+      "options": [
+        "Visual Arts HL",
+        "Visual Arts SL",
+        "Music HL",
+        "Music SL",
+        "Theater HL",
+        "Theater SL"
+      ]
+    }
+  },
+  "schedule_blocks": {
+    "A": {
+      "Mon": ["tok", "group3", "group1", "group6", "group5", "group2", "group4"],
+      "Tue": ["tok", "cas", "cas", "group2", "group5", "group4", "group1"],
+      "Wed": ["group5", "group6", "group1", "group3", "pe", "group1", "group2"],
+      "Thu": ["group6", "group2", "tok", "group4", "group5", "group1", "group3"],
+      "Fri": ["group6", "group1", "group2", "group3", "group4"]
+    },
+    "B": {
+      "Mon": ["tok", "group3", "group1", "group6", "group5", "group2", "group4"],
+      "Tue": ["tok", "group1", "group2", "group3", "group5", "group4", "group1"],
+      "Wed": ["group6", "group4", "group1", "group3", "pe", "group5", "group2"],
+      "Thu": ["group6", "group2", "tok", "group4", "group5", "group1", "group3"],
+      "Fri": ["group6", "group1", "group3", "group2", "group4"]
+    }
+  }
+}

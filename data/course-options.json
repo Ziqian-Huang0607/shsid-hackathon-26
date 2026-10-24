@@ -1,0 +1,125 @@
+{
+  "9": {
+    "world_language": ["Spanish", "French", "German", "Japanese"],
+    "module2": ["Biology", "Geography", "Computer Science"],
+    "module3": ["Music", "Art"]
+  },
+  "10": {
+    "world_language": ["Spanish", "French", "German", "Japanese"],
+    "module2": [
+      "Economics",
+      "Computer Science",
+      "Geography",
+      "Theatre",
+      "Visual Arts",
+      "Music Appreciation"
+    ]
+  },
+  "11": {
+    "mathematics": ["Calculus H", "AP Calculus AB", "AP Calculus BC", "AP Statistics"],
+    "language": ["Chinese", "French", "Japanese", "Spanish"],
+    "science1": ["Physics", "Chemistry", "Biology", "AP Physics 1", "AP Chemistry", "AP Biology"],
+    "science2": ["Physics", "Chemistry", "AP Physics 1", "AP Chemistry"],
+    "module2": [
+      "United States Overview",
+      "Chinese History",
+      "Western Civilization 1",
+      "Geography",
+      "AP Psychology",
+      "AP Computer Science A",
+      "AP US History",
+      "AP Drawing",
+      "AP World History",
+      "AP Human Geography",
+      "AP Microeconomics",
+      "AP 3-D Art and Design",
+      "AP Macroeconomics"
+    ],
+    "module3": [
+      "Environmental Engineering",
+      "Philosophy",
+      "Creative Writing",
+      "Psychology",
+      "Business Management",
+      "Computer Skills",
+      "Introduction to Law",
+      "AP Music Theory"
+    ],
+    "module4": [
+      "A Cappella & Ensemble Singing",
+      "Art Song Singing",
+      "Applied Acting Technique",
+      "Arts",
+      "AP Macroeconomics",
+      "AP Environmental Science",
+      "AP Microeconomics"
+    ]
+  },
+  "12": {
+    "mathematics": [
+      "Further Mathematics H",
+      "Advanced Mathematics H",
+      "Multivariable Calculus H",
+      "Statistics in Practice H",
+      "AP Statistics",
+      "AP Calculus AB"
+    ],
+    "science1": [
+      "Physics",
+      "Chemistry",
+      "Organic Chemistry H",
+      "Biology",
+      "AP Physics 2",
+      "AP Physics C: Mechanics",
+      "AP Chemistry",
+      "AP Biology",
+      "AP Environmental Science"
+    ],
+    "science2": [
+      "Physics",
+      "Chemistry",
+      "Organic Chemistry H",
+      "Biology",
+      "AP Physics 2",
+      "AP Physics C: Mechanics",
+      "AP Chemistry",
+      "AP Biology",
+      "AP Environmental Science"
+    ],
+    "module2": [
+      "American Government and Politics",
+      "Accounting",
+      "Western Civilization 2",
+      "Philosophy",
+      "Introduction to Law",
+      "Introduction to Sociology",
+      "AP Psychology",
+      "AP Music Theory",
+      "AP US History",
+      "AP Macroeconomics",
+      "AP Art History"
+    ],
+    "module3": [
+      "Environmental Engineering",
+      "Philosophy",
+      "Advanced Creative Writing",
+      "Psychology",
+      "Business Management",
+      "Computer Skills",
+      "Introduction to Law",
+      "Introduction to Sociology",
+      "World Language: French",
+      "World Language: Japanese",
+      "World Language: Spanish"
+    ],
+    "module4": [
+      "Digital Music Design",
+      "Art Song Singing",
+      "Drama",
+      "World Language: French",
+      "World Language: Japanese",
+      "World Language: Spanish",
+      "AP Macroeconomics"
+    ]
+  }
+}

@@ -28,6 +28,8 @@ Key scale numbers (seed-7 full-school run): 1000 students (250/grade),
 main.py                  # CLI entry: build → baseline → optimise → validate → export
 data/
   curriculum.json        # grade programmes (G9–G12), course minutes, difficulty scores
+  course-options.json    # student-facing course dropdown choices for each grade/module
+  ib-curriculum.json     # G11/G12 IBDP groups, choices, minutes, and demo block plan
   school.json            # rooms, capacity, penalty weights, thresholds (tune here, not in code)
 scheduler/
   timegrid.py            # 2-week grid: 10 days × 7 periods, uneven durations 60/40/40/45/55/40/40
@@ -40,6 +42,9 @@ scheduler/
   report.py              # metrics, baseline-vs-optimised comparison, CSV/JSON/MD exports
 scripts/import_modules.py# re-extract minutes from modules.xlsx (needs pandas + openpyxl)
 scripts/render_figures.py# regenerate README SVG figures from exported CSVs (stdlib)
+site/
+  scripts/generate-data.mjs # distil optimized CSV output into compact browser data
+  dist/                     # dependency-free student timetable web interface
 tests/
   run.py                 # zero-dependency test runner
   test_scheduler.py      # 11 test functions (test_*)
@@ -60,6 +65,7 @@ python main.py run --students 100 --iters 4000 --attempts 1   # fast demo
 python tests/run.py                                       # run the 11 tests without pytest
 python -m pytest tests/                                   # same tests via pytest (if installed)
 python scripts/import_modules.py path/to/modules.xlsx     # re-derive curriculum minutes from source
+node site/scripts/generate-data.mjs                       # refresh timetable UI data
 ```
 
 CLI flags (all on `main.py run`): `--students N` (per grade, default 250),

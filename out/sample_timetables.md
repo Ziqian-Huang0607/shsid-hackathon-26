@@ -9,25 +9,25 @@ The full student CSV includes teachers and rooms for every session.
 
 | Period | Mon | Tue | Wed | Thu | Fri |
 |---|---|---|---|---|---|
-| P1 (60 min) | English | Chinese | History | Mathematics (Geometry) | Physics |
-| P2 (40 min) | Physics | Module 2 | Physics | English | History |
-| P3 (40 min) | History | Chemistry | Mathematics (Geometry) | Module 2 | Mathematics (Geometry) |
-| P4 (45 min) | PE | English | PE | Optional | Physics |
-| P5 (55 min) | Chemistry | Module 3 | Module 3 | Module 2 | English |
-| P6 (40 min) | English | History | English | World Language | — |
-| P7 (40 min) | Module 2 | Mathematics (Geometry) | Chemistry | Mathematics (Geometry) | — |
+| P1 (60 min) | Module 3 | History | Physics | Chinese | Module 2 |
+| P2 (40 min) | Mathematics (Geometry) | Chemistry | World Language | Physics | Module 2 |
+| P3 (40 min) | Chinese | Mathematics (Geometry) | English | English | English |
+| P4 (45 min) | Module 3 | Chemistry | PE | PE | Optional |
+| P5 (55 min) | Physics | Module 2 | Mathematics (Geometry) | Mathematics (Geometry) | English |
+| P6 (40 min) | English | PE | History | Chemistry | — |
+| P7 (40 min) | Mathematics (Geometry) | History | Chemistry | History | — |
 
 ### Week B
 
 | Period | Mon | Tue | Wed | Thu | Fri |
 |---|---|---|---|---|---|
-| P1 (60 min) | Chinese | Chinese | History | Chinese | Chemistry |
-| P2 (40 min) | Physics | Module 2 | Physics | CAS | PE |
-| P3 (40 min) | History | Chemistry | Mathematics (Geometry) | CAS | Mathematics (Geometry) |
-| P4 (45 min) | PE | English | PE | Optional | Physics |
-| P5 (55 min) | Chemistry | Module 3 | Mathematics (Geometry) | Module 2 | English |
-| P6 (40 min) | English | History | English | World Language | — |
-| P7 (40 min) | Module 2 | Mathematics (Geometry) | Chemistry | Mathematics (Geometry) | — |
+| P1 (60 min) | Module 3 | History | Physics | Chinese | Module 2 |
+| P2 (40 min) | CAS | Chemistry | Chinese | Physics | Module 2 |
+| P3 (40 min) | CAS | Mathematics (Geometry) | English | English | English |
+| P4 (45 min) | English | Chemistry | PE | PE | Optional |
+| P5 (55 min) | Physics | Module 2 | Mathematics (Geometry) | Mathematics (Geometry) | Mathematics (Geometry) |
+| P6 (40 min) | English | Chinese | World Language | Chemistry | — |
+| P7 (40 min) | History | English | Chemistry | History | — |
 
 ## Grade 10 — G10-S001
 
@@ -35,25 +35,25 @@ The full student CSV includes teachers and rooms for every session.
 
 | Period | Mon | Tue | Wed | Thu | Fri |
 |---|---|---|---|---|---|
-| P1 (60 min) | Mathematics | English | History | Module 1: Chemistry | Module 2 |
-| P2 (40 min) | World Language | Module 2 | Module 1: Physics | Chinese | English |
-| P3 (40 min) | Module 1: Physics | Mathematics | Module 1: Physics | Self-study | Mathematics |
-| P4 (45 min) | History | PE | Mathematics | Optional | PE |
-| P5 (55 min) | English | Module 1: Chemistry | English | Chinese | Chinese |
-| P6 (40 min) | Self-study | Module 1: Physics | Module 1: Chemistry | Mathematics | — |
-| P7 (40 min) | Module 2 | History | Self-study | English | — |
+| P1 (60 min) | History | English | English | Module 2 | Module 2 |
+| P2 (40 min) | PE | Mathematics | Module 1: Chemistry | English | English |
+| P3 (40 min) | Mathematics | Module 2 | World Language | Module 1: Physics | Module 1: Chemistry |
+| P4 (45 min) | Chinese | Module 1: Chemistry | Optional | PE | PE |
+| P5 (55 min) | English | Chinese | Mathematics | Mathematics | Mathematics |
+| P6 (40 min) | Self-study | History | Self-study | History | — |
+| P7 (40 min) | Module 1: Physics | Module 1: Physics | Module 1: Physics | Module 1: Chemistry | — |
 
 ### Week B
 
 | Period | Mon | Tue | Wed | Thu | Fri |
 |---|---|---|---|---|---|
-| P1 (60 min) | Mathematics | Module 1: Chemistry | History | Module 1: Chemistry | Module 2 |
-| P2 (40 min) | World Language | Module 2 | Module 1: Physics | CAS | English |
-| P3 (40 min) | Module 1: Physics | Mathematics | Module 1: Physics | CAS | Mathematics |
-| P4 (45 min) | Chinese | PE | Mathematics | Optional | PE |
-| P5 (55 min) | English | Module 1: Chemistry | English | Chinese | History |
-| P6 (40 min) | Self-study | Module 1: Physics | Module 2 | Mathematics | — |
-| P7 (40 min) | Module 2 | History | PE | English | — |
+| P1 (60 min) | History | English | History | Module 2 | Module 2 |
+| P2 (40 min) | CAS | Mathematics | Module 1: Chemistry | English | English |
+| P3 (40 min) | CAS | Module 2 | World Language | Module 1: Physics | Module 1: Chemistry |
+| P4 (45 min) | English | Module 1: Chemistry | Optional | PE | PE |
+| P5 (55 min) | Mathematics | Chinese | Mathematics | Mathematics | Chinese |
+| P6 (40 min) | Self-study | History | Self-study | Chinese | — |
+| P7 (40 min) | Module 1: Physics | Module 1: Physics | Module 1: Physics | Module 1: Chemistry | — |
 
 ## Grade 11 — G11-S001
 
@@ -61,25 +61,25 @@ The full student CSV includes teachers and rooms for every session.
 
 | Period | Mon | Tue | Wed | Thu | Fri |
 |---|---|---|---|---|---|
-| P1 (60 min) | English | Mathematics | English | Mathematics | Module 4: Electives |
-| P2 (40 min) | Language | English | PE | English | Module 4: Electives |
-| P3 (40 min) | Module 1: Science | PE | English | PE | Module 3: Electives |
-| P4 (45 min) | Language | Module 2: Electives | Module 1: Science | Language | Mathematics |
-| P5 (55 min) | Mathematics | Module 3: Electives | Mathematics | Module 2: Electives | Module 2: Electives |
-| P6 (40 min) | Personal Growth | Module 1: Science | Module 4: Electives | Module 4: Electives | — |
-| P7 (40 min) | Module 4: Electives | Module 3: Electives | Module 1: Science | Module 1: Science | — |
+| P1 (60 min) | English | Module 2: Electives | English | Mathematics | English |
+| P2 (40 min) | Module 4: Electives | Module 1: Science | Module 1: Science | English | Module 1: Science |
+| P3 (40 min) | Module 1: Science | Module 3: Electives | Personal Growth | Module 4: Electives | Module 4: Electives |
+| P4 (45 min) | Module 2: Electives | Module 2: Electives | Language | Module 1: Science | Language |
+| P5 (55 min) | Mathematics | Mathematics | Mathematics | Language | Module 3: Electives |
+| P6 (40 min) | Personal Growth | CAS | Self-study | English | — |
+| P7 (40 min) | Module 1: Science | CAS | Self-study | Module 3: Electives | — |
 
 ### Week B
 
 | Period | Mon | Tue | Wed | Thu | Fri |
 |---|---|---|---|---|---|
-| P1 (60 min) | English | Mathematics | English | Language | Module 4: Electives |
-| P2 (40 min) | CAS | English | PE | English | Module 1: Science |
-| P3 (40 min) | CAS | PE | English | PE | Module 3: Electives |
-| P4 (45 min) | Module 2: Electives | Module 2: Electives | Module 1: Science | Language | Mathematics |
-| P5 (55 min) | Mathematics | Module 3: Electives | Mathematics | Module 2: Electives | Module 2: Electives |
-| P6 (40 min) | Module 1: Science | Module 1: Science | Module 4: Electives | Module 1: Science | — |
-| P7 (40 min) | Module 4: Electives | Module 1: Science | Personal Growth | Module 1: Science | — |
+| P1 (60 min) | Module 2: Electives | Module 4: Electives | Module 4: Electives | Module 2: Electives | English |
+| P2 (40 min) | Module 4: Electives | Module 1: Science | Module 1: Science | Self-study | Module 1: Science |
+| P3 (40 min) | Module 1: Science | Module 2: Electives | English | Module 4: Electives | Module 4: Electives |
+| P4 (45 min) | Module 2: Electives | Language | Language | Module 1: Science | Mathematics |
+| P5 (55 min) | Mathematics | Mathematics | Mathematics | Mathematics | Module 3: Electives |
+| P6 (40 min) | Self-study | English | Self-study | English | — |
+| P7 (40 min) | Module 1: Science | English | Self-study | Module 3: Electives | — |
 
 ## Grade 12 — G12-S001
 
@@ -87,22 +87,22 @@ The full student CSV includes teachers and rooms for every session.
 
 | Period | Mon | Tue | Wed | Thu | Fri |
 |---|---|---|---|---|---|
-| P1 (60 min) | Mathematics | Module 1: Honors Organic Chemistry | English | English | Mathematics |
-| P2 (40 min) | Language | Module 1: AP Physics 2 | Mathematics | Module 2 | English |
-| P3 (40 min) | Module 1: Honors Organic Chemistry | Module 1: AP Physics 2 | Module 1: AP Physics 2 | Module 1: AP Physics 2 | PE |
-| P4 (45 min) | Module 1: Honors Organic Chemistry | English | Module 1: Honors Organic Chemistry | Module 1: Honors Organic Chemistry | Module 2 |
-| P5 (55 min) | Module 2 | Language | Module 2 | Optional | Language |
-| P6 (40 min) | English | PE | Module 1: AP Physics 2 | PE | — |
-| P7 (40 min) | Module 1: AP Physics 2 | Mathematics | Mathematics | Personal Growth | — |
+| P1 (60 min) | English | Module 2 | Module 2 | English | Mathematics |
+| P2 (40 min) | Mathematics | PE | English | Module 1: Honors Organic Chemistry | Personal Growth |
+| P3 (40 min) | Language | Module 1: AP Physics 2 | Module 1: Honors Organic Chemistry | Module 1: AP Physics 2 | English |
+| P4 (45 min) | Module 1: Honors Organic Chemistry | Module 1: Honors Organic Chemistry | English | Module 1: Honors Organic Chemistry | Mathematics |
+| P5 (55 min) | Language | Mathematics | Optional | Module 2 | Mathematics |
+| P6 (40 min) | Module 1: AP Physics 2 | CAS | Module 1: AP Physics 2 | PE | — |
+| P7 (40 min) | Module 1: AP Physics 2 | CAS | PE | Module 1: AP Physics 2 | — |
 
 ### Week B
 
 | Period | Mon | Tue | Wed | Thu | Fri |
 |---|---|---|---|---|---|
-| P1 (60 min) | Mathematics | Module 1: Honors Organic Chemistry | English | English | Mathematics |
-| P2 (40 min) | CAS | Language | Mathematics | English | English |
-| P3 (40 min) | CAS | Module 1: AP Physics 2 | Module 1: AP Physics 2 | Module 1: AP Physics 2 | PE |
-| P4 (45 min) | Module 1: Honors Organic Chemistry | English | Module 1: Honors Organic Chemistry | Module 1: Honors Organic Chemistry | Module 2 |
-| P5 (55 min) | Module 2 | Language | Module 2 | Optional | Module 1: Honors Organic Chemistry |
-| P6 (40 min) | Personal Growth | PE | Module 1: AP Physics 2 | PE | — |
-| P7 (40 min) | Module 1: AP Physics 2 | Mathematics | Mathematics | Module 1: AP Physics 2 | — |
+| P1 (60 min) | English | Module 2 | Module 2 | English | Module 1: Honors Organic Chemistry |
+| P2 (40 min) | Mathematics | PE | English | Module 1: Honors Organic Chemistry | Personal Growth |
+| P3 (40 min) | Module 1: Honors Organic Chemistry | Module 1: AP Physics 2 | Module 1: Honors Organic Chemistry | Module 1: AP Physics 2 | English |
+| P4 (45 min) | Module 1: Honors Organic Chemistry | Module 1: Honors Organic Chemistry | English | Mathematics | Mathematics |
+| P5 (55 min) | Language | Mathematics | Optional | Module 2 | Language |
+| P6 (40 min) | Module 1: AP Physics 2 | Mathematics | Module 1: AP Physics 2 | PE | — |
+| P7 (40 min) | Module 1: AP Physics 2 | Language | PE | Module 1: AP Physics 2 | — |

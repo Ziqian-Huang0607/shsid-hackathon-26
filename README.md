@@ -16,6 +16,37 @@ python3 scripts/render_figures.py
 
 The first command runs the default seed-7 experiment with 250 students per grade, three optimization attempts, and 8,000 annealing iterations per attempt. Use `python3 main.py run --help` for the `--students`, `--iters`, `--attempts`, `--seed`, `--data`, and `--out` options. The second command runs the 11 tests without third-party packages. The third regenerates the two figures below from the exported optimized timetable and configured room capacities; run it after each scheduling run. All three commands use only the standard library.
 
+## Student timetable interface
+
+The static interface in `site/` turns the optimized output into a student-facing
+two-week timetable named **SHSID Timetable**. Students select Grade 9–12 and
+choose courses from grade-specific dropdown lists curated from the supplied
+course-selection forms. They can also choose the Grade 11/12 PE exemption and
+Grade 12 Optional settings where applicable. Grade 11 and Grade 12 students choose
+one or two sciences: a two-science programme uses the Module 3/4 blocks, while a
+one-science programme may include Module 3, Module 4, or both. Grade 12's AP
+Physics 2 and Honors Organic Chemistry names are representative source-data
+labels, not fixed UI selections. The resulting view supports Week A/B switching,
+room and teacher details, responsive layouts, and print/PDF output.
+
+Grade 11 and Grade 12 also have a separate IB Diploma track. Its six subject
+groups, TOK, PE, CAS, and 3,040-minute cycle come from `Module_1112_IB.xlsx`.
+Students choose one subject from Groups 1–5, then either an Arts subject from
+Group 6 or one additional Group 1, 3, or 4 subject. The displayed IB timetable is a
+deterministic block demonstration; its rooms and teachers remain unassigned.
+
+Regenerate the compact browser data after a new scheduling run, then preview the
+site locally:
+
+```bash
+node site/scripts/generate-data.mjs
+python3 -m http.server 4173 --bind 127.0.0.1 --directory site/dist
+```
+
+The interface deliberately presents a representative optimized cohort. Module
+choices personalize the block labels, but room and teacher assignments remain
+model output, not an official student roster.
+
 The run writes the following files to `out/`:
 
 | File | Contents |

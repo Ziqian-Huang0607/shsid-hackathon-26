@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Build a personalized two-week SHSID timetable from your grade and course choices."
+    />
+    <meta name="theme-color" content="#f5f2ea" />
+    <title>SHSID Timetable</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="SHSID Timetable home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 36 36" role="img">
+            <path d="M7 9.5 18 4l11 5.5v17L18 32 7 26.5z" fill="currentColor" />
+            <path d="M12 13.5h12M12 18h12M12 22.5h7" stroke="#fff" stroke-width="2.2" stroke-linecap="round" />
+          </svg>
+        </span>
+        <span><strong>SHSID</strong> Timetable</span>
+      </a>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">HACKSHSID 2026 · GRADES 9–12</p>
+          <h1>Your classes.<br /><em>Your</em> two weeks.</h1>
+          <p class="hero-description">
+            Choose your grade and programme. Personalize the module timetable,
+            or build a separate IB Diploma cycle for Grades 11 and 12.
+          </p>
+          <a class="primary-cta" href="#builder">
+            Build my timetable
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m7 4 6 6-6 6" /></svg>
+          </a>
+        </div>
+        <div class="hero-visual" aria-label="Abstract weekly schedule preview">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="mini-schedule">
+            <div class="mini-heading"><span>WEEK A</span><span>08:30</span></div>
+            <div class="mini-grid">
+              <span class="mini-label">MON</span><span class="mini-cell coral">English</span><span class="mini-cell mint">Math</span>
+              <span class="mini-label">TUE</span><span class="mini-cell violet">Physics</span><span class="mini-cell yellow">Module</span>
+              <span class="mini-label">WED</span><span class="mini-cell blue">Chinese</span><span class="mini-cell coral">History</span>
+              <span class="mini-label">THU</span><span class="mini-cell mint">Math</span><span class="mini-cell violet">Chem</span>
+              <span class="mini-label">FRI</span><span class="mini-cell yellow wide">CAS · 80 min</span>
+            </div>
+          </div>
+          <div class="hero-stamp"><b>2</b><span>WEEK<br />CYCLE</span></div>
+        </div>
+      </section>
+
+      <section class="builder-section" id="builder">
+        <div class="section-heading">
+          <p class="eyebrow">MAKE IT YOURS</p>
+          <h2>Tell us what you take.</h2>
+        </div>
+
+        <div class="builder-shell">
+          <form class="builder-card" id="schedule-form">
+            <div class="step-label"><span>01</span> Your basics</div>
+            <label class="field-label" for="student-name">Your name <small>optional</small></label>
+            <input id="student-name" name="studentName" type="text" placeholder="e.g. Alex" autocomplete="name" />
+
+            <fieldset class="grade-fieldset">
+              <legend class="field-label">Your grade</legend>
+              <div class="grade-picker" id="grade-picker">
+                <label><input type="radio" name="grade" value="9" checked /><span>9</span></label>
+                <label><input type="radio" name="grade" value="10" /><span>10</span></label>
+                <label><input type="radio" name="grade" value="11" /><span>11</span></label>
+                <label><input type="radio" name="grade" value="12" /><span>12</span></label>
+              </div>
+            </fieldset>
+
+            <div class="divider"></div>
+            <div class="step-label"><span>02</span> Your programme</div>
+            <div id="programme-options" class="programme-options" aria-live="polite"></div>
+
+            <button class="generate-button" type="submit">
+              Generate my timetable
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12m-5-5 5 5-5 5" /></svg>
+            </button>
+            <p class="form-note" id="form-note">Uses representative room and teacher assignments from the timetable model.</p>
+          </form>
+        </div>
+      </section>
+
+      <section class="result-section" id="result" hidden>
+        <div class="result-topline">
+          <div>
+            <p class="eyebrow">YOUR TWO-WEEK CYCLE</p>
+            <h2 id="result-title">Your timetable</h2>
+            <p id="result-subtitle"></p>
+          </div>
+          <div class="result-actions">
+            <button type="button" class="icon-button" id="edit-button">
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m13.5 3.5 3 3L7 16H4v-3z" /></svg>
+              Edit choices
+            </button>
+            <button type="button" class="icon-button" id="print-button">
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M6 7V3h8v4M6 14H4V8h12v6h-2m-8-3h8v6H6z" /></svg>
+              Print / PDF
+            </button>
+          </div>
+        </div>
+
+        <div class="result-stats" id="result-stats"></div>
+
+        <div class="week-controls" aria-label="Choose timetable week">
+          <div class="week-tabs" role="tablist">
+            <button type="button" role="tab" class="week-tab active" data-week="A" aria-selected="true">Week A</button>
+            <button type="button" role="tab" class="week-tab" data-week="B" aria-selected="false">Week B</button>
+          </div>
+          <div class="legend" id="legend"></div>
+        </div>
+
+        <div class="schedule-scroll">
+          <div class="schedule-grid" id="schedule-grid" role="grid" aria-label="Weekly class timetable"></div>
+        </div>
+        <p class="mobile-hint">Tap any class to see its teacher, room, and duration.</p>
+      </section>
+    </main>
+
+    <dialog id="class-dialog" class="class-dialog">
+      <button type="button" class="dialog-close" aria-label="Close class details">×</button>
+      <p class="eyebrow" id="dialog-slot"></p>
+      <h3 id="dialog-course"></h3>
+      <dl>
+        <div><dt>Teacher</dt><dd id="dialog-teacher"></dd></div>
+        <div><dt>Room</dt><dd id="dialog-room"></dd></div>
+        <div><dt>Building</dt><dd id="dialog-building"></dd></div>
+        <div><dt>Length</dt><dd id="dialog-duration"></dd></div>
+      </dl>
+    </dialog>
+
+    <footer>
+      <p><strong>SHSID Timetable</strong> · Build a personalized Grade 9–12 two-week schedule.</p>
+      <p>Simulation data · Not an official school schedule</p>
+    </footer>
+    <script src="./app.js" defer></script>
+  </body>
+</html>
